@@ -6,7 +6,7 @@ description: "HEP Event Analysis Library"
 logo: RestFrames_icon_120x120.png # 120x120 px default image used for Twitter summary card
 teaser: RestFrames_icon_400x250.png # 400x250 px default teaser image used in image archive grid
 locale: en
-url:
+url: https://javier-barea.github.io/RestFrames/
 # url: http://RestFrames.com
 
 # Jekyll configuration
