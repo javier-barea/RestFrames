@@ -40,7 +40,7 @@ titlecase: true
 # Site owner
 owner:
   name: Christopher Rogan
-  web: http://RestFrames.com
+  web: https://javier-barea.github.io/RestFrames/  #http://RestFrames.com 
   email: christophersrogan@gmail.com
   bio: "~physicist"
   avatar: bio-photo.jpg # 160x160 px image for author byline
