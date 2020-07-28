@@ -132,7 +132,7 @@ $(function() {
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="comment">// InvisibleFrame class</span></div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment"></span>  <span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  InvisibleFrame&lt;T&gt;::InvisibleFrame(<span class="keyword">const</span> std::string&amp; sname, </div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="a00709.html#a493abf06dc7ccf043c5e008a1f427d50">   40</a></span>&#160;  <a class="code" href="a00709.html#a493abf06dc7ccf043c5e008a1f427d50">InvisibleFrame&lt;T&gt;::InvisibleFrame</a>(<span class="keyword">const</span> std::string&amp; sname, </div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                    <span class="keyword">const</span> std::string&amp; stitle)</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    : T(sname, stitle)</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  {</div>
@@ -140,11 +140,11 @@ $(function() {
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  }</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  InvisibleFrame&lt;T&gt;::~InvisibleFrame() {}</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <a class="code" href="a00709.html">InvisibleFrame&lt;T&gt;::~InvisibleFrame</a>() {}</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  </div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keywordtype">bool</span> InvisibleFrame&lt;T&gt;::IsSoundBody()<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordflow">if</span>(RFBase::IsSoundBody()) </div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="a00709.html#a493abf06dc7ccf043c5e008a1f427d50">   52</a></span>&#160;    <span class="keywordflow">if</span>(RFBase::IsSoundBody()) </div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordflow">if</span>(!RestFrame::IsSoundBody())</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;      <span class="keywordflow">return</span> T::SetBody(<span class="keyword">false</span>);</div>
@@ -167,10 +167,12 @@ $(function() {
 <div class="ttc" id="aa00374_html"><div class="ttname"><a href="a00374.html">ReconstructionFrame.hh</a></div></div>
 <div class="ttc" id="aa00317_html"><div class="ttname"><a href="a00317.html">InvisibleFrame.hh</a></div></div>
 <div class="ttc" id="aa00302_html"><div class="ttname"><a href="a00302.html">GeneratorFrame.hh</a></div></div>
+<div class="ttc" id="aa00709_html"><div class="ttname"><a href="a00709.html">RestFrames::InvisibleFrame</a></div><div class="ttdef"><b>Definition:</b> <a href="a00317_source.html#l00043">InvisibleFrame.hh:43</a></div></div>
+<div class="ttc" id="aa00709_html_a493abf06dc7ccf043c5e008a1f427d50"><div class="ttname"><a href="a00709.html#a493abf06dc7ccf043c5e008a1f427d50">RestFrames::InvisibleFrame::InvisibleFrame</a></div><div class="ttdeci">InvisibleFrame(const std::string &amp;sname, const std::string &amp;stitle)</div><div class="ttdoc">Standard constructor.</div><div class="ttdef"><b>Definition:</b> <a href="a00476_source.html#l00040">InvisibleFrame.cc:40</a></div></div>
 <!-- HTML footer for doxygen 1.8.9.1-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 15 2020 18:01:00 for RestFrames by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 28 2020 16:00:35 for RestFrames by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.19
 </small></address>

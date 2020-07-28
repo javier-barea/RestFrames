@@ -130,9 +130,9 @@ $(function() {
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="comment">// ppLabGenFrame class</span></div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  ppLabGenFrame::ppLabGenFrame(<span class="keyword">const</span> std::string&amp; sname, </div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="a00781.html#ae48307c95c94a211267f6442caa9f4ea">   38</a></span>&#160;  <a class="code" href="a00781.html#ae48307c95c94a211267f6442caa9f4ea">ppLabGenFrame::ppLabGenFrame</a>(<span class="keyword">const</span> std::string&amp; sname, </div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                   <span class="keyword">const</span> std::string&amp; stitle) : </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    LabGenFrame(sname, stitle)</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="code" href="a00741.html">LabGenFrame</a>(sname, stitle)</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  {</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    m_deltaLogX = 0;</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    </div>
@@ -149,9 +149,9 @@ $(function() {
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  ppLabGenFrame::~ppLabGenFrame() {}</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="a00769.html#a65119a854bbf3fdf0506ce8eb2d3ef17">   57</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="a00769.html#a65119a854bbf3fdf0506ce8eb2d3ef17">ppLabGenFrame::Clear</a>(){</div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="a00781.html#a65119a854bbf3fdf0506ce8eb2d3ef17">   57</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="a00781.html#a65119a854bbf3fdf0506ce8eb2d3ef17">ppLabGenFrame::Clear</a>(){</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    m_deltaLogX = 0;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <a class="code" href="a00729.html#ad97e17b803d9e601d4c10414824a55e4">LabGenFrame::Clear</a>();</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <a class="code" href="a00741.html#ad97e17b803d9e601d4c10414824a55e4">LabGenFrame::Clear</a>();</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  }</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keywordtype">void</span> ppLabGenFrame::SetPDFqqbar(){</div>
@@ -252,16 +252,16 @@ $(function() {
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;      <span class="keywordtype">double</span> expo = -m_deltaLogX*log(C);</div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;      <span class="keywordtype">double</span> Xp1 = sqrt(C*exp(expo));</div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;      <span class="keywordtype">double</span> Xp2 = sqrt(C*exp(-expo));</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;      SetLongitudinalMomentum(m_Ep1*Xp1 - m_Ep2*Xp2);</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;      <a class="code" href="a00741.html#a4bb748c38f4b57ba16b592e7de15e062">SetLongitudinalMomentum</a>(m_Ep1*Xp1 - m_Ep2*Xp2);</div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    } <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;      SetLongitudinalMomentum(0.);</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;      <a class="code" href="a00741.html#a4bb748c38f4b57ba16b592e7de15e062">SetLongitudinalMomentum</a>(0.);</div>
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160; </div>
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    <span class="keywordflow">return</span> SetMind(<span class="keyword">true</span>);</div>
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;  }</div>
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160; </div>
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;  <span class="keywordtype">double</span> ppLabGenFrame::GetProbMCMC(<span class="keywordtype">double</span> mass)<span class="keyword"> const </span>{</div>
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    <span class="keywordflow">if</span>(mass &lt; 0)</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;      mass = <a class="code" href="a00677.html#a1194c0f8218ac545a801e3f4ad7376f8">GetChildFrame</a>().<a class="code" href="a00677.html#ae0101090e69f3671d552312c8ac094ca">GetMass</a>();</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;      mass = <a class="code" href="a00689.html#a1194c0f8218ac545a801e3f4ad7376f8">GetChildFrame</a>().<a class="code" href="a00689.html#ae0101090e69f3671d552312c8ac094ca">GetMass</a>();</div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    </div>
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    <span class="keywordtype">double</span> C = mass*mass/(4.*m_Ep1*m_Ep2);</div>
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    <span class="keywordtype">double</span> expo = -m_deltaLogX*log(C);</div>
@@ -323,15 +323,18 @@ $(function() {
 <div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160; </div>
 <div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aa00677_html_ae0101090e69f3671d552312c8ac094ca"><div class="ttname"><a href="a00677.html#ae0101090e69f3671d552312c8ac094ca">RestFrames::GeneratorFrame::GetMass</a></div><div class="ttdeci">virtual double GetMass() const</div><div class="ttdoc">Get the mass of this frame.</div><div class="ttdef"><b>Definition:</b> <a href="a00461_source.html#l00088">GeneratorFrame.cc:88</a></div></div>
-<div class="ttc" id="aa00677_html_a1194c0f8218ac545a801e3f4ad7376f8"><div class="ttname"><a href="a00677.html#a1194c0f8218ac545a801e3f4ad7376f8">RestFrames::GeneratorFrame::GetChildFrame</a></div><div class="ttdeci">virtual GeneratorFrame &amp; GetChildFrame(int i=0) const</div><div class="ttdoc">Get the frame of the i th child.</div><div class="ttdef"><b>Definition:</b> <a href="a00461_source.html#l00112">GeneratorFrame.cc:112</a></div></div>
+<div class="ttc" id="aa00741_html_ad97e17b803d9e601d4c10414824a55e4"><div class="ttname"><a href="a00741.html#ad97e17b803d9e601d4c10414824a55e4">RestFrames::LabGenFrame::Clear</a></div><div class="ttdeci">virtual void Clear()</div><div class="ttdoc">Clears LabGenFrame from all connections to other objects.</div><div class="ttdef"><b>Definition:</b> <a href="a00500_source.html#l00056">LabGenFrame.cc:56</a></div></div>
+<div class="ttc" id="aa00689_html_ae0101090e69f3671d552312c8ac094ca"><div class="ttname"><a href="a00689.html#ae0101090e69f3671d552312c8ac094ca">RestFrames::GeneratorFrame::GetMass</a></div><div class="ttdeci">virtual double GetMass() const</div><div class="ttdoc">Get the mass of this frame.</div><div class="ttdef"><b>Definition:</b> <a href="a00461_source.html#l00088">GeneratorFrame.cc:88</a></div></div>
+<div class="ttc" id="aa00741_html_a4bb748c38f4b57ba16b592e7de15e062"><div class="ttname"><a href="a00741.html#a4bb748c38f4b57ba16b592e7de15e062">RestFrames::LabGenFrame::SetLongitudinalMomentum</a></div><div class="ttdeci">virtual void SetLongitudinalMomentum(double val)</div><div class="ttdoc">Sets longitudinal momentum of this frame.</div><div class="ttdef"><b>Definition:</b> <a href="a00500_source.html#l00090">LabGenFrame.cc:90</a></div></div>
+<div class="ttc" id="aa00781_html_a65119a854bbf3fdf0506ce8eb2d3ef17"><div class="ttname"><a href="a00781.html#a65119a854bbf3fdf0506ce8eb2d3ef17">RestFrames::ppLabGenFrame::Clear</a></div><div class="ttdeci">virtual void Clear()</div><div class="ttdoc">Clears LabGenFrame from all connections to other objects.</div><div class="ttdef"><b>Definition:</b> <a href="a00530_source.html#l00057">ppLabGenFrame.cc:57</a></div></div>
+<div class="ttc" id="aa00689_html_a1194c0f8218ac545a801e3f4ad7376f8"><div class="ttname"><a href="a00689.html#a1194c0f8218ac545a801e3f4ad7376f8">RestFrames::GeneratorFrame::GetChildFrame</a></div><div class="ttdeci">virtual GeneratorFrame &amp; GetChildFrame(int i=0) const</div><div class="ttdoc">Get the frame of the i th child.</div><div class="ttdef"><b>Definition:</b> <a href="a00461_source.html#l00112">GeneratorFrame.cc:112</a></div></div>
+<div class="ttc" id="aa00741_html"><div class="ttname"><a href="a00741.html">RestFrames::LabGenFrame</a></div><div class="ttdef"><b>Definition:</b> <a href="a00341_source.html#l00041">LabGenFrame.hh:41</a></div></div>
 <div class="ttc" id="aa00371_html"><div class="ttname"><a href="a00371.html">ppLabGenFrame.hh</a></div></div>
-<div class="ttc" id="aa00769_html_a65119a854bbf3fdf0506ce8eb2d3ef17"><div class="ttname"><a href="a00769.html#a65119a854bbf3fdf0506ce8eb2d3ef17">RestFrames::ppLabGenFrame::Clear</a></div><div class="ttdeci">virtual void Clear()</div><div class="ttdoc">Clears GeneratorFrame of all connections to other objects.</div><div class="ttdef"><b>Definition:</b> <a href="a00530_source.html#l00057">ppLabGenFrame.cc:57</a></div></div>
-<div class="ttc" id="aa00729_html_ad97e17b803d9e601d4c10414824a55e4"><div class="ttname"><a href="a00729.html#ad97e17b803d9e601d4c10414824a55e4">RestFrames::LabGenFrame::Clear</a></div><div class="ttdeci">virtual void Clear()</div><div class="ttdoc">Clears GeneratorFrame of all connections to other objects.</div><div class="ttdef"><b>Definition:</b> <a href="a00500_source.html#l00056">LabGenFrame.cc:56</a></div></div>
+<div class="ttc" id="aa00781_html_ae48307c95c94a211267f6442caa9f4ea"><div class="ttname"><a href="a00781.html#ae48307c95c94a211267f6442caa9f4ea">RestFrames::ppLabGenFrame::ppLabGenFrame</a></div><div class="ttdeci">ppLabGenFrame(const std::string &amp;sname, const std::string &amp;stitle)</div><div class="ttdoc">Standard constructor.</div><div class="ttdef"><b>Definition:</b> <a href="a00530_source.html#l00038">ppLabGenFrame.cc:38</a></div></div>
 <!-- HTML footer for doxygen 1.8.9.1-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 15 2020 18:01:01 for RestFrames by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 28 2020 16:00:36 for RestFrames by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.19
 </small></address>

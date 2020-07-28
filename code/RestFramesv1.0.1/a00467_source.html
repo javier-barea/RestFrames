@@ -134,16 +134,16 @@ $(function() {
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">namespace </span>RestFrames {</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                       </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  HistPlot::HistPlot(<span class="keyword">const</span> std::string&amp; sname, <span class="keyword">const</span> std::string&amp; stitle)</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    : RFPlot(sname, stitle)</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="a00697.html#ab25215cc5efd85377270262b3d4f771e">   40</a></span>&#160;  <a class="code" href="a00697.html#ab25215cc5efd85377270262b3d4f771e">HistPlot::HistPlot</a>(<span class="keyword">const</span> std::string&amp; sname, <span class="keyword">const</span> std::string&amp; stitle)</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    : <a class="code" href="a00833.html">RFPlot</a>(sname, stitle)</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  {</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    SetPlotLabel(<span class="stringliteral">&quot;#bf{#it{RestFrames}} Event Generation&quot;</span>);</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    SetPlotTitle(<a class="code" href="a00785.html#a259119e7402734e6f27ce840d4cd9abe">GetTitle</a>());</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <a class="code" href="a00697.html#a1cd5481c3f0467ceda3a584f5a5c4db1">SetPlotLabel</a>(<span class="stringliteral">&quot;#bf{#it{RestFrames}} Event Generation&quot;</span>);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="a00697.html#a37026133709f19b6766e1bfaacc2fd84">SetPlotTitle</a>(<a class="code" href="a00797.html#a259119e7402734e6f27ce840d4cd9abe">GetTitle</a>());</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    SetScaleLabel(<span class="stringliteral">&quot;a. u.&quot;</span>);</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    m_Scale = 1.;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    m_SetScale = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    m_Rebin = 4;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    m_Log.SetSource(<span class="stringliteral">&quot;HistPlot &quot;</span>+<a class="code" href="a00785.html#a393add2ce5a03e97238ac2c90f545f0e">GetName</a>());</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    m_Log.<a class="code" href="a00825.html#ab0c48bffdb0e7e1c645a104a0a89faaa">SetSource</a>(<span class="stringliteral">&quot;HistPlot &quot;</span>+<a class="code" href="a00797.html#a393add2ce5a03e97238ac2c90f545f0e">GetName</a>());</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    SetStyle();</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  }</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
@@ -154,10 +154,10 @@ $(function() {
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">int</span> Nc = m_Cats.GetN();</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; Nc; i++)</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;      <span class="keyword">delete</span> &amp;m_Cats[i];</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <a class="code" href="a00685.html#a2278319c24b53c26eccacd5a1a5e160c">Clear</a>();</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <a class="code" href="a00697.html#a2278319c24b53c26eccacd5a1a5e160c">Clear</a>();</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  }</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="a00685.html#a2278319c24b53c26eccacd5a1a5e160c">   63</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="a00685.html#a2278319c24b53c26eccacd5a1a5e160c">HistPlot::Clear</a>(){</div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="a00697.html#a2278319c24b53c26eccacd5a1a5e160c">   63</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="a00697.html#a2278319c24b53c26eccacd5a1a5e160c">HistPlot::Clear</a>(){</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">int</span> N = m_1DHists.size();</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; N; i++)</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;      <span class="keyword">delete</span> m_1DHists[i];</div>
@@ -177,14 +177,14 @@ $(function() {
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    m_Plot2D_Vars.clear();</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    m_Plot2D_Cat.clear();</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    m_Plot2D_Color.clear();</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <a class="code" href="a00821.html#a4da0d574ebaca343a85231a34e0ba376">RFPlot::Clear</a>();</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <a class="code" href="a00833.html#a4da0d574ebaca343a85231a34e0ba376">RFPlot::Clear</a>();</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  }</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <a class="code" href="a00693.html">HistPlotVar</a> <span class="keyword">const</span>&amp; HistPlot::GetNewVar(<span class="keyword">const</span> std::string&amp; name,</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <a class="code" href="a00705.html">HistPlotVar</a> <span class="keyword">const</span>&amp; HistPlot::GetNewVar(<span class="keyword">const</span> std::string&amp; name,</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                     <span class="keyword">const</span> std::string&amp; title, </div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                     <span class="keywordtype">double</span> minval, <span class="keywordtype">double</span> maxval,</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                     <span class="keyword">const</span> std::string&amp; unit){</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <a class="code" href="a00693.html">HistPlotVar</a>* var = <span class="keyword">new</span> <a class="code" href="a00693.html">HistPlotVar</a>(name,title,minval,maxval,unit);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <a class="code" href="a00705.html">HistPlotVar</a>* var = <span class="keyword">new</span> <a class="code" href="a00705.html">HistPlotVar</a>(name,title,minval,maxval,unit);</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    m_Vars += *var;</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordflow">return</span> *var;</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  }</div>
@@ -224,7 +224,7 @@ $(function() {
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    }</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;      }</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;      <span class="keywordflow">if</span>(!exists){</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    std::string name = GetUniqueName(var.GetName()+<span class="stringliteral">&quot;_&quot;</span>+<a class="code" href="a00785.html#a393add2ce5a03e97238ac2c90f545f0e">GetName</a>());</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    std::string name = GetUniqueName(var.GetName()+<span class="stringliteral">&quot;_&quot;</span>+<a class="code" href="a00797.html#a393add2ce5a03e97238ac2c90f545f0e">GetName</a>());</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    TH1D* hist = <span class="keyword">new</span> TH1D(name.c_str(),name.c_str(),</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;                  256,var.GetMin(),var.GetMax());</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    m_HistToVar[hist] = &amp;var;</div>
@@ -245,7 +245,7 @@ $(function() {
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;      }</div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    }</div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    <span class="keywordflow">if</span>(!exists){</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;      std::string name = GetUniqueName(var.GetName()+<span class="stringliteral">&quot;_&quot;</span>+cats[c].GetName()+<span class="stringliteral">&quot;_&quot;</span>+<a class="code" href="a00785.html#a393add2ce5a03e97238ac2c90f545f0e">GetName</a>());</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;      std::string name = GetUniqueName(var.GetName()+<span class="stringliteral">&quot;_&quot;</span>+cats[c].GetName()+<span class="stringliteral">&quot;_&quot;</span>+<a class="code" href="a00797.html#a393add2ce5a03e97238ac2c90f545f0e">GetName</a>());</div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;      TH1D* hist = <span class="keyword">new</span> TH1D(name.c_str(),name.c_str(),</div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;                256,var.GetMin(),var.GetMax());</div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;      m_HistToVar[hist] = &amp;var;</div>
@@ -289,7 +289,7 @@ $(function() {
 <div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    }</div>
 <div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;      }</div>
 <div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;      <span class="keywordflow">if</span>(!exists){</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    std::string name = GetUniqueName(varX.GetName()+<span class="stringliteral">&quot;_v_&quot;</span>+varY.GetName()+<span class="stringliteral">&quot;_&quot;</span>+<a class="code" href="a00785.html#a393add2ce5a03e97238ac2c90f545f0e">GetName</a>());</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    std::string name = GetUniqueName(varX.GetName()+<span class="stringliteral">&quot;_v_&quot;</span>+varY.GetName()+<span class="stringliteral">&quot;_&quot;</span>+<a class="code" href="a00797.html#a393add2ce5a03e97238ac2c90f545f0e">GetName</a>());</div>
 <div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    TH2D* hist = <span class="keyword">new</span> TH2D(name.c_str(),name.c_str(),</div>
 <div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;                  128,varX.GetMin(),varX.GetMax(),</div>
 <div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;                  128,varY.GetMin(),varY.GetMax());</div>
@@ -319,7 +319,7 @@ $(function() {
 <div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    }</div>
 <div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;    <span class="keywordflow">if</span>(!exists){</div>
 <div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;      std::string name = GetUniqueName(varX.GetName()+<span class="stringliteral">&quot;_v_&quot;</span>+varY.GetName()+<span class="stringliteral">&quot;_&quot;</span>+</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;                       cats[c].GetName()+<span class="stringliteral">&quot;_&quot;</span>+<a class="code" href="a00785.html#a393add2ce5a03e97238ac2c90f545f0e">GetName</a>());</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;                       cats[c].GetName()+<span class="stringliteral">&quot;_&quot;</span>+<a class="code" href="a00797.html#a393add2ce5a03e97238ac2c90f545f0e">GetName</a>());</div>
 <div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;      TH2D* hist = <span class="keyword">new</span> TH2D(name.c_str(),name.c_str(),</div>
 <div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;                128,varX.GetMin(),varX.GetMax(),</div>
 <div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;                128,varY.GetMin(),varY.GetMax());</div>
@@ -407,7 +407,7 @@ $(function() {
 <div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;      }</div>
 <div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    }</div>
 <div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160; </div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;    std::string name = GetUniqueName(<span class="stringliteral">&quot;c_&quot;</span>+var.GetName()+<span class="stringliteral">&quot;_&quot;</span>+catname+<a class="code" href="a00785.html#a393add2ce5a03e97238ac2c90f545f0e">GetName</a>());</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;    std::string name = GetUniqueName(<span class="stringliteral">&quot;c_&quot;</span>+var.GetName()+<span class="stringliteral">&quot;_&quot;</span>+catname+<a class="code" href="a00797.html#a393add2ce5a03e97238ac2c90f545f0e">GetName</a>());</div>
 <div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;    TCanvas* can = <span class="keyword">new</span> TCanvas(name.c_str(),name.c_str(),600,500);</div>
 <div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;    can-&gt;SetLeftMargin(0.2);</div>
 <div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;    can-&gt;SetRightMargin(0.05);</div>
@@ -529,10 +529,10 @@ $(function() {
 <div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;      </div>
 <div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;      leg-&gt;Draw();</div>
 <div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;    }</div>
-<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;    <span class="keywordflow">if</span>(N == 1 &amp;&amp; !cats[0].<a class="code" href="a00785.html#a2ed7cbbcc860fa79abb4eea10d1f900f">IsEmpty</a>()){</div>
+<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;    <span class="keywordflow">if</span>(N == 1 &amp;&amp; !cats[0].<a class="code" href="a00797.html#a2ed7cbbcc860fa79abb4eea10d1f900f">IsEmpty</a>()){</div>
 <div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;      l.SetTextSize(0.05);</div>
 <div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;      l.SetTextFont(132);</div>
-<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;      l.DrawLatex(0.23,0.84,cats[0].<a class="code" href="a00785.html#a259119e7402734e6f27ce840d4cd9abe">GetTitle</a>().c_str());</div>
+<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;      l.DrawLatex(0.23,0.84,cats[0].<a class="code" href="a00797.html#a259119e7402734e6f27ce840d4cd9abe">GetTitle</a>().c_str());</div>
 <div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;    }</div>
 <div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160; </div>
 <div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;    AddCanvas(can);</div>
@@ -568,7 +568,7 @@ $(function() {
 <div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;      }</div>
 <div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;    }</div>
 <div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;    </div>
-<div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;    std::string name = GetUniqueName(<span class="stringliteral">&quot;c_&quot;</span>+varX.GetName()+<span class="stringliteral">&quot;_v_&quot;</span>+varY.GetName()+<span class="stringliteral">&quot;_&quot;</span>+catname+<a class="code" href="a00785.html#a393add2ce5a03e97238ac2c90f545f0e">GetName</a>());</div>
+<div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;    std::string name = GetUniqueName(<span class="stringliteral">&quot;c_&quot;</span>+varX.GetName()+<span class="stringliteral">&quot;_v_&quot;</span>+varY.GetName()+<span class="stringliteral">&quot;_&quot;</span>+catname+<a class="code" href="a00797.html#a393add2ce5a03e97238ac2c90f545f0e">GetName</a>());</div>
 <div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;    TCanvas* can = <span class="keyword">new</span> TCanvas(name.c_str(),name.c_str(),600,500);</div>
 <div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;    can-&gt;Draw();</div>
 <div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;    <span class="keywordflow">if</span>(invert_colors){</div>
@@ -662,11 +662,11 @@ $(function() {
 <div class="line"><a name="l00565"></a><span class="lineno">  565</span>&#160;    m_ScaleLabel = label;</div>
 <div class="line"><a name="l00566"></a><span class="lineno">  566</span>&#160;  }</div>
 <div class="line"><a name="l00567"></a><span class="lineno">  567</span>&#160; </div>
-<div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160;  <span class="keywordtype">void</span> HistPlot::SetPlotLabel(<span class="keyword">const</span> std::string&amp; label){</div>
+<div class="line"><a name="l00568"></a><span class="lineno"><a class="line" href="a00697.html#a1cd5481c3f0467ceda3a584f5a5c4db1">  568</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="a00697.html#a1cd5481c3f0467ceda3a584f5a5c4db1">HistPlot::SetPlotLabel</a>(<span class="keyword">const</span> std::string&amp; label){</div>
 <div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;    m_PlotLabel = label;</div>
 <div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160;  }</div>
 <div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160; </div>
-<div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160;  <span class="keywordtype">void</span> HistPlot::SetPlotTitle(<span class="keyword">const</span> std::string&amp; title){</div>
+<div class="line"><a name="l00572"></a><span class="lineno"><a class="line" href="a00697.html#a37026133709f19b6766e1bfaacc2fd84">  572</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="a00697.html#a37026133709f19b6766e1bfaacc2fd84">HistPlot::SetPlotTitle</a>(<span class="keyword">const</span> std::string&amp; title){</div>
 <div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160;    m_PlotTitle = title;</div>
 <div class="line"><a name="l00574"></a><span class="lineno">  574</span>&#160;  }</div>
 <div class="line"><a name="l00575"></a><span class="lineno">  575</span>&#160; </div>
@@ -677,8 +677,8 @@ $(function() {
 <div class="line"><a name="l00580"></a><span class="lineno">  580</span>&#160; </div>
 <div class="line"><a name="l00581"></a><span class="lineno">  581</span>&#160;  <span class="keywordtype">void</span> HistPlot::WriteHist(<span class="keyword">const</span> std::string&amp; name){</div>
 <div class="line"><a name="l00582"></a><span class="lineno">  582</span>&#160;    TFile* file = <span class="keyword">new</span> TFile(name.c_str(),<span class="stringliteral">&quot;UPDATE&quot;</span>);</div>
-<div class="line"><a name="l00583"></a><span class="lineno">  583</span>&#160;    file-&gt;mkdir((<a class="code" href="a00785.html#a393add2ce5a03e97238ac2c90f545f0e">GetName</a>()+<span class="stringliteral">&quot;/hist&quot;</span>).c_str());</div>
-<div class="line"><a name="l00584"></a><span class="lineno">  584</span>&#160;    file-&gt;cd((<a class="code" href="a00785.html#a393add2ce5a03e97238ac2c90f545f0e">GetName</a>()+<span class="stringliteral">&quot;/hist&quot;</span>).c_str());</div>
+<div class="line"><a name="l00583"></a><span class="lineno">  583</span>&#160;    file-&gt;mkdir((<a class="code" href="a00797.html#a393add2ce5a03e97238ac2c90f545f0e">GetName</a>()+<span class="stringliteral">&quot;/hist&quot;</span>).c_str());</div>
+<div class="line"><a name="l00584"></a><span class="lineno">  584</span>&#160;    file-&gt;cd((<a class="code" href="a00797.html#a393add2ce5a03e97238ac2c90f545f0e">GetName</a>()+<span class="stringliteral">&quot;/hist&quot;</span>).c_str());</div>
 <div class="line"><a name="l00585"></a><span class="lineno">  585</span>&#160;    <span class="keywordtype">int</span> N = m_1DHists.size();</div>
 <div class="line"><a name="l00586"></a><span class="lineno">  586</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; N; i++)</div>
 <div class="line"><a name="l00587"></a><span class="lineno">  587</span>&#160;      m_1DHists[i]-&gt;Write(<span class="stringliteral">&quot;&quot;</span>,TObject::kOverwrite);</div>
@@ -691,19 +691,24 @@ $(function() {
 <div class="line"><a name="l00594"></a><span class="lineno">  594</span>&#160; </div>
 <div class="line"><a name="l00595"></a><span class="lineno">  595</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aa00833_html_a4da0d574ebaca343a85231a34e0ba376"><div class="ttname"><a href="a00833.html#a4da0d574ebaca343a85231a34e0ba376">RestFrames::RFPlot::Clear</a></div><div class="ttdeci">virtual void Clear()</div><div class="ttdoc">Clears RFBase of all connections to other objects.</div><div class="ttdef"><b>Definition:</b> <a href="a00557_source.html#l00048">RFPlot.cc:48</a></div></div>
 <div class="ttc" id="aa00308_html"><div class="ttname"><a href="a00308.html">HistPlot.hh</a></div></div>
+<div class="ttc" id="aa00797_html_a2ed7cbbcc860fa79abb4eea10d1f900f"><div class="ttname"><a href="a00797.html#a2ed7cbbcc860fa79abb4eea10d1f900f">RestFrames::RFBase::IsEmpty</a></div><div class="ttdeci">bool IsEmpty() const</div><div class="ttdoc">Checks whether this is default (empty) instance of class.</div><div class="ttdef"><b>Definition:</b> <a href="a00542_source.html#l00084">RFBase.cc:84</a></div></div>
+<div class="ttc" id="aa00833_html"><div class="ttname"><a href="a00833.html">RestFrames::RFPlot</a></div><div class="ttdef"><b>Definition:</b> <a href="a00401_source.html#l00041">RFPlot.hh:41</a></div></div>
 <div class="ttc" id="aa00311_html"><div class="ttname"><a href="a00311.html">HistPlotCategory.hh</a></div></div>
-<div class="ttc" id="aa00685_html_a2278319c24b53c26eccacd5a1a5e160c"><div class="ttname"><a href="a00685.html#a2278319c24b53c26eccacd5a1a5e160c">RestFrames::HistPlot::Clear</a></div><div class="ttdeci">virtual void Clear()</div><div class="ttdoc">Clears RFBase of all connections to other objects.</div><div class="ttdef"><b>Definition:</b> <a href="a00467_source.html#l00063">HistPlot.cc:63</a></div></div>
-<div class="ttc" id="aa00785_html_a393add2ce5a03e97238ac2c90f545f0e"><div class="ttname"><a href="a00785.html#a393add2ce5a03e97238ac2c90f545f0e">RestFrames::RFBase::GetName</a></div><div class="ttdeci">std::string GetName() const</div><div class="ttdoc">Returns object name.</div><div class="ttdef"><b>Definition:</b> <a href="a00542_source.html#l00104">RFBase.cc:104</a></div></div>
+<div class="ttc" id="aa00697_html_a1cd5481c3f0467ceda3a584f5a5c4db1"><div class="ttname"><a href="a00697.html#a1cd5481c3f0467ceda3a584f5a5c4db1">RestFrames::HistPlot::SetPlotLabel</a></div><div class="ttdeci">void SetPlotLabel(const std::string &amp;label)</div><div class="ttdoc">Sets plot's label.</div><div class="ttdef"><b>Definition:</b> <a href="a00467_source.html#l00568">HistPlot.cc:568</a></div></div>
+<div class="ttc" id="aa00705_html"><div class="ttname"><a href="a00705.html">RestFrames::HistPlotVar</a></div><div class="ttdef"><b>Definition:</b> <a href="a00314_source.html#l00040">HistPlotVar.hh:40</a></div></div>
+<div class="ttc" id="aa00825_html_ab0c48bffdb0e7e1c645a104a0a89faaa"><div class="ttname"><a href="a00825.html#ab0c48bffdb0e7e1c645a104a0a89faaa">RestFrames::RFLog::SetSource</a></div><div class="ttdeci">void SetSource(const std::string &amp;source)</div><div class="ttdoc">Sets source of ...</div><div class="ttdef"><b>Definition:</b> <a href="a00554_source.html#l00182">RFLog.cc:182</a></div></div>
 <div class="ttc" id="aa00314_html"><div class="ttname"><a href="a00314.html">HistPlotVar.hh</a></div></div>
-<div class="ttc" id="aa00693_html"><div class="ttname"><a href="a00693.html">RestFrames::HistPlotVar</a></div><div class="ttdef"><b>Definition:</b> <a href="a00314_source.html#l00040">HistPlotVar.hh:40</a></div></div>
-<div class="ttc" id="aa00785_html_a2ed7cbbcc860fa79abb4eea10d1f900f"><div class="ttname"><a href="a00785.html#a2ed7cbbcc860fa79abb4eea10d1f900f">RestFrames::RFBase::IsEmpty</a></div><div class="ttdeci">bool IsEmpty() const</div><div class="ttdoc">Checks whether this is default (empty) instance of class.</div><div class="ttdef"><b>Definition:</b> <a href="a00542_source.html#l00084">RFBase.cc:84</a></div></div>
-<div class="ttc" id="aa00785_html_a259119e7402734e6f27ce840d4cd9abe"><div class="ttname"><a href="a00785.html#a259119e7402734e6f27ce840d4cd9abe">RestFrames::RFBase::GetTitle</a></div><div class="ttdeci">std::string GetTitle() const</div><div class="ttdoc">Returns object title.</div><div class="ttdef"><b>Definition:</b> <a href="a00542_source.html#l00108">RFBase.cc:108</a></div></div>
-<div class="ttc" id="aa00821_html_a4da0d574ebaca343a85231a34e0ba376"><div class="ttname"><a href="a00821.html#a4da0d574ebaca343a85231a34e0ba376">RestFrames::RFPlot::Clear</a></div><div class="ttdeci">virtual void Clear()</div><div class="ttdoc">Clears RFBase of all connections to other objects.</div><div class="ttdef"><b>Definition:</b> <a href="a00557_source.html#l00048">RFPlot.cc:48</a></div></div>
+<div class="ttc" id="aa00697_html_ab25215cc5efd85377270262b3d4f771e"><div class="ttname"><a href="a00697.html#ab25215cc5efd85377270262b3d4f771e">RestFrames::HistPlot::HistPlot</a></div><div class="ttdeci">HistPlot(const std::string &amp;sname, const std::string &amp;stitle)</div><div class="ttdoc">Standard constructor.</div><div class="ttdef"><b>Definition:</b> <a href="a00467_source.html#l00040">HistPlot.cc:40</a></div></div>
+<div class="ttc" id="aa00797_html_a259119e7402734e6f27ce840d4cd9abe"><div class="ttname"><a href="a00797.html#a259119e7402734e6f27ce840d4cd9abe">RestFrames::RFBase::GetTitle</a></div><div class="ttdeci">std::string GetTitle() const</div><div class="ttdoc">Returns object title.</div><div class="ttdef"><b>Definition:</b> <a href="a00542_source.html#l00108">RFBase.cc:108</a></div></div>
+<div class="ttc" id="aa00697_html_a2278319c24b53c26eccacd5a1a5e160c"><div class="ttname"><a href="a00697.html#a2278319c24b53c26eccacd5a1a5e160c">RestFrames::HistPlot::Clear</a></div><div class="ttdeci">virtual void Clear()</div><div class="ttdoc">Clears HistPlot from all connections to other objects.</div><div class="ttdef"><b>Definition:</b> <a href="a00467_source.html#l00063">HistPlot.cc:63</a></div></div>
+<div class="ttc" id="aa00697_html_a37026133709f19b6766e1bfaacc2fd84"><div class="ttname"><a href="a00697.html#a37026133709f19b6766e1bfaacc2fd84">RestFrames::HistPlot::SetPlotTitle</a></div><div class="ttdeci">void SetPlotTitle(const std::string &amp;title)</div><div class="ttdoc">Sets plot's title.</div><div class="ttdef"><b>Definition:</b> <a href="a00467_source.html#l00572">HistPlot.cc:572</a></div></div>
+<div class="ttc" id="aa00797_html_a393add2ce5a03e97238ac2c90f545f0e"><div class="ttname"><a href="a00797.html#a393add2ce5a03e97238ac2c90f545f0e">RestFrames::RFBase::GetName</a></div><div class="ttdeci">std::string GetName() const</div><div class="ttdoc">Returns object name.</div><div class="ttdef"><b>Definition:</b> <a href="a00542_source.html#l00104">RFBase.cc:104</a></div></div>
 <!-- HTML footer for doxygen 1.8.9.1-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 15 2020 18:01:00 for RestFrames by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 28 2020 16:00:35 for RestFrames by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.19
 </small></address>

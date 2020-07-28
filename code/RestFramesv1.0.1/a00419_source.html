@@ -135,29 +135,29 @@ $(function() {
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="keyword">class </span>TreePlotNode;</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keyword">class </span>Jigsaw;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="a00845.html">   40</a></span>&#160;  <span class="keyword">class </span><a class="code" href="a00845.html">TreePlotLink</a> {</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="a00857.html">   40</a></span>&#160;  <span class="keyword">class </span><a class="code" href="a00857.html">TreePlotLink</a> {</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="code" href="a00845.html">TreePlotLink</a>(<a class="code" href="a00849.html">TreePlotNode</a>* Node1Ptr, <a class="code" href="a00849.html">TreePlotNode</a>* Node2Ptr);</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    ~<a class="code" href="a00845.html">TreePlotLink</a>();</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="code" href="a00857.html">TreePlotLink</a>(<a class="code" href="a00861.html">TreePlotNode</a>* Node1Ptr, <a class="code" href="a00861.html">TreePlotNode</a>* Node2Ptr);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    ~<a class="code" href="a00857.html">TreePlotLink</a>();</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">void</span> SetLabel(<span class="keyword">const</span> std::string&amp; label);</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">void</span> SetWavy(<span class="keywordtype">bool</span> wavy);</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">void</span> SetJigsaw(<span class="keyword">const</span> <a class="code" href="a00721.html">Jigsaw</a>&amp; jigsaw);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">void</span> SetJigsaw(<span class="keyword">const</span> <a class="code" href="a00733.html">Jigsaw</a>&amp; jigsaw);</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="code" href="a00849.html">TreePlotNode</a>* GetNode1() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="code" href="a00849.html">TreePlotNode</a>* GetNode2() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="code" href="a00861.html">TreePlotNode</a>* GetNode1() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="code" href="a00861.html">TreePlotNode</a>* GetNode2() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">bool</span> DoWavy() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    std::string GetLabel() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordtype">bool</span> DoLabel() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <a class="code" href="a00721.html">Jigsaw</a> <span class="keyword">const</span>&amp; GetJigsaw() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <a class="code" href="a00733.html">Jigsaw</a> <span class="keyword">const</span>&amp; GetJigsaw() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <a class="code" href="a00849.html">TreePlotNode</a>* m_Node1Ptr;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <a class="code" href="a00849.html">TreePlotNode</a>* m_Node2Ptr;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <a class="code" href="a00861.html">TreePlotNode</a>* m_Node1Ptr;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <a class="code" href="a00861.html">TreePlotNode</a>* m_Node2Ptr;</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">bool</span> m_Wavy;</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">bool</span> m_DoLabel;</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    std::string m_Label;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keyword">const</span> <a class="code" href="a00721.html">Jigsaw</a>* m_JigsawPtr;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keyword">const</span> <a class="code" href="a00733.html">Jigsaw</a>* m_JigsawPtr;</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;   </div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  };</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
@@ -165,13 +165,13 @@ $(function() {
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aa00849_html"><div class="ttname"><a href="a00849.html">RestFrames::TreePlotNode</a></div><div class="ttdef"><b>Definition:</b> <a href="a00422_source.html#l00042">TreePlotNode.hh:42</a></div></div>
-<div class="ttc" id="aa00845_html"><div class="ttname"><a href="a00845.html">RestFrames::TreePlotLink</a></div><div class="ttdef"><b>Definition:</b> <a href="a00419_source.html#l00040">TreePlotLink.hh:40</a></div></div>
-<div class="ttc" id="aa00721_html"><div class="ttname"><a href="a00721.html">RestFrames::Jigsaw</a></div><div class="ttdoc">abstract base class for all Jigsaw objects</div><div class="ttdef"><b>Definition:</b> <a href="a00335_source.html#l00044">Jigsaw.hh:44</a></div></div>
+<div class="ttc" id="aa00733_html"><div class="ttname"><a href="a00733.html">RestFrames::Jigsaw</a></div><div class="ttdoc">abstract base class for all Jigsaw objects</div><div class="ttdef"><b>Definition:</b> <a href="a00335_source.html#l00044">Jigsaw.hh:44</a></div></div>
+<div class="ttc" id="aa00861_html"><div class="ttname"><a href="a00861.html">RestFrames::TreePlotNode</a></div><div class="ttdef"><b>Definition:</b> <a href="a00422_source.html#l00042">TreePlotNode.hh:42</a></div></div>
+<div class="ttc" id="aa00857_html"><div class="ttname"><a href="a00857.html">RestFrames::TreePlotLink</a></div><div class="ttdef"><b>Definition:</b> <a href="a00419_source.html#l00040">TreePlotLink.hh:40</a></div></div>
 <!-- HTML footer for doxygen 1.8.9.1-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 15 2020 18:00:59 for RestFrames by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 28 2020 16:00:33 for RestFrames by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.19
 </small></address>

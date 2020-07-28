@@ -131,15 +131,15 @@ $(function() {
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="comment">// DecayGenFrame class</span></div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  DecayGenFrame::DecayGenFrame(<span class="keyword">const</span> std::string&amp; sname, </div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="a00681.html#a8ffa069bafd653ca1dc65416b88d4c45">   39</a></span>&#160;  <a class="code" href="a00681.html#a0475402d3b0ee8d2c7e88ab6e0c9b2c0">DecayGenFrame::DecayGenFrame</a>(<span class="keyword">const</span> std::string&amp; sname, </div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                   <span class="keyword">const</span> std::string&amp; stitle) </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    : DecayFrame&lt;GeneratorFrame&gt;(sname,stitle)</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    : <a class="code" href="a00677.html">DecayFrame</a>&lt;<a class="code" href="a00689.html">GeneratorFrame</a>&gt;(sname,stitle)</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  {</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    m_CosDecayAngle = -2.;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    m_DeltaPhiDecayPlane = -2.;</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  }</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  DecayGenFrame::DecayGenFrame() : DecayFrame&lt;GeneratorFrame&gt;() {}</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="a00681.html#a0475402d3b0ee8d2c7e88ab6e0c9b2c0">   47</a></span>&#160;  <a class="code" href="a00681.html#a0475402d3b0ee8d2c7e88ab6e0c9b2c0">DecayGenFrame::DecayGenFrame</a>() : <a class="code" href="a00677.html">DecayFrame</a>&lt;<a class="code" href="a00689.html">GeneratorFrame</a>&gt;() {}</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  </div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  DecayGenFrame::~DecayGenFrame() {}</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
@@ -148,13 +148,13 @@ $(function() {
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordflow">if</span>(!RestFrame::IsSoundBody())</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">int</span> Nchild = <a class="code" href="a00781.html#a98d149d4215b47ba1d83c5985835627a">GetNChildren</a>();</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordflow">if</span>(Nchild &lt; 2 || <a class="code" href="a00677.html#ac4949ebf7cfd7577cca6e6b844005204">GetParentFrame</a>().<a class="code" href="a00785.html#a2ed7cbbcc860fa79abb4eea10d1f900f">IsEmpty</a>()) </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">int</span> Nchild = <a class="code" href="a00793.html#a98d149d4215b47ba1d83c5985835627a">GetNChildren</a>();</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordflow">if</span>(Nchild &lt; 2 || <a class="code" href="a00689.html#ac4949ebf7cfd7577cca6e6b844005204">GetParentFrame</a>().<a class="code" href="a00797.html#a2ed7cbbcc860fa79abb4eea10d1f900f">IsEmpty</a>()) </div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;      <span class="keywordflow">return</span> SetBody(<span class="keyword">false</span>);</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordflow">return</span> SetBody(<span class="keyword">true</span>);</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  }</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keywordtype">void</span> DecayGenFrame::SetMass(<span class="keywordtype">double</span> val){</div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="a00681.html#a1730c446bca67ff12c1e7602e1f53527">   62</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="a00681.html#a1730c446bca67ff12c1e7602e1f53527">DecayGenFrame::SetMass</a>(<span class="keywordtype">double</span> val){</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    SetMind(<span class="keyword">false</span>);</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordflow">if</span>(val &lt; 0.){</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;      m_Log &lt;&lt; LogWarning;</div>
@@ -167,7 +167,7 @@ $(function() {
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  }</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="keywordtype">void</span> DecayGenFrame::SetCosDecayAngle(<span class="keywordtype">double</span> val){</div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="a00681.html#a6ed2d982a7d403f9a634de7366a01df1">   75</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="a00681.html#a6ed2d982a7d403f9a634de7366a01df1">DecayGenFrame::SetCosDecayAngle</a>(<span class="keywordtype">double</span> val){</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordflow">if</span>(val &lt; 0.){</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;      m_Log &lt;&lt; LogWarning;</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;      m_Log &lt;&lt; <span class="stringliteral">&quot;CosDecay angle must be in [-1, 1]: &quot;</span>;</div>
@@ -178,7 +178,7 @@ $(function() {
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    }</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  }</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <span class="keywordtype">void</span> DecayGenFrame::SetDeltaPhiDecayPlane(<span class="keywordtype">double</span> val){</div>
+<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="a00681.html#a7f310147b0ba1ce505511558cf819ba9">   86</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="a00681.html#a7f310147b0ba1ce505511558cf819ba9">DecayGenFrame::SetDeltaPhiDecayPlane</a>(<span class="keywordtype">double</span> val){</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordflow">while</span>(val &gt; acos(-1.)*2.) val -= acos(-1.)*2.;</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordflow">while</span>(val &lt; 0.) val += acos(-1.)*2.;</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    m_DeltaPhiDecayPlane = val;</div>
@@ -190,7 +190,7 @@ $(function() {
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    m_DeltaPhiDecayPlane = -2.;</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  }</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <span class="keywordtype">void</span> DecayGenFrame::SetVariableMass(<span class="keywordtype">bool</span> varymass) {</div>
+<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="a00681.html#ad2bbfbe1185786d35cc16bd5d2c234e6">   98</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="a00681.html#ad2bbfbe1185786d35cc16bd5d2c234e6">DecayGenFrame::SetVariableMass</a>(<span class="keywordtype">bool</span> varymass) {</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    SetMind(<span class="keyword">false</span>);</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    SetVariableMassMCMC(varymass);</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  }</div>
@@ -200,7 +200,7 @@ $(function() {
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;      <span class="keywordflow">return</span> SetMind(<span class="keyword">false</span>);</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keywordtype">double</span> min_mass = GetMinimumMassMCMC();</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordflow">if</span>(m_Mass &lt; min_mass &amp;&amp; !<a class="code" href="a00677.html#ab64ac080d2e1331760d48a09d1a2d7fd">IsVariableMassMCMC</a>()){</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordflow">if</span>(m_Mass &lt; min_mass &amp;&amp; !<a class="code" href="a00689.html#ab64ac080d2e1331760d48a09d1a2d7fd">IsVariableMassMCMC</a>()){</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;      m_Log &lt;&lt; LogWarning;</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;      m_Log &lt;&lt; <span class="stringliteral">&quot;Unable to initialize analysis: &quot;</span>;</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;      m_Log &lt;&lt; <span class="stringliteral">&quot;decay frame mass (&quot;</span> &lt;&lt; m_Mass &lt;&lt; <span class="stringliteral">&quot;) &quot;</span>;</div>
@@ -212,13 +212,13 @@ $(function() {
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    m_ChildIndexMCMC.clear();</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    m_ChildMassMCMC.clear();</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    m_ChildProbMCMC.clear();</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keywordtype">double</span> Mass = <a class="code" href="a00677.html#ae0101090e69f3671d552312c8ac094ca">GetMass</a>();</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keywordtype">double</span> Mass = <a class="code" href="a00689.html#ae0101090e69f3671d552312c8ac094ca">GetMass</a>();</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    m_Log &lt;&lt; LogInfo;</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="keywordtype">int</span> N = <a class="code" href="a00781.html#a98d149d4215b47ba1d83c5985835627a">GetNChildren</a>();</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="keywordtype">int</span> N = <a class="code" href="a00793.html#a98d149d4215b47ba1d83c5985835627a">GetNChildren</a>();</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; N; i++){</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;      <span class="keywordtype">double</span> cmass = 0.;</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;      <span class="keywordtype">double</span> cprob = 1.;</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;      GeneratorFrame&amp; child = <a class="code" href="a00677.html#a1194c0f8218ac545a801e3f4ad7376f8">GetChildFrame</a>(i);</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;      <a class="code" href="a00689.html#ab48589dcf6bb3e83e61846b4cf6ed960">GeneratorFrame</a>&amp; child = <a class="code" href="a00689.html#a1194c0f8218ac545a801e3f4ad7376f8">GetChildFrame</a>(i);</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;      <span class="keywordflow">if</span>(child.IsVariableMassMCMC()){</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    child.GenerateMassMCMC(cmass, cprob, Mass);</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    SetMassMCMC(cmass, child);</div>
@@ -242,7 +242,7 @@ $(function() {
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;  }</div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160; </div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;  <span class="keywordtype">bool</span> DecayGenFrame::IterateMCMC(){</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    <span class="keywordtype">int</span> N = <a class="code" href="a00781.html#a98d149d4215b47ba1d83c5985835627a">GetNChildren</a>();</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    <span class="keywordtype">int</span> N = <a class="code" href="a00793.html#a98d149d4215b47ba1d83c5985835627a">GetNChildren</a>();</div>
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160; </div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    std::vector&lt;double&gt; InterMassFrac;</div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    InterMassFrac.push_back(0.);</div>
@@ -251,12 +251,12 @@ $(function() {
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    qsort((<span class="keywordtype">double</span>*)(&amp;InterMassFrac[0])+1,N-2,<span class="keyword">sizeof</span>(<span class="keywordtype">double</span>),DoubleMax);</div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    InterMassFrac.push_back(1.);</div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    </div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    <span class="keywordtype">double</span> probOld = GetProbMCMC();</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    <span class="keywordtype">double</span> probOld = <a class="code" href="a00681.html#a9e26dd1027852df6115e0c49b5bc447c">GetProbMCMC</a>();</div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160; </div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    std::vector&lt;double&gt; InterMassFracOld = m_InterMassFracMCMC;</div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    m_InterMassFracMCMC = InterMassFrac;</div>
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160; </div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    <span class="keywordtype">double</span> probNew = GetProbMCMC();</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    <span class="keywordtype">double</span> probNew = <a class="code" href="a00681.html#a9e26dd1027852df6115e0c49b5bc447c">GetProbMCMC</a>();</div>
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160; </div>
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    <span class="keywordflow">if</span>(probOld &gt; 0.)</div>
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;      <span class="keywordflow">if</span>(probNew/probOld &lt; GetRandom())</div>
@@ -265,12 +265,12 @@ $(function() {
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    <span class="keywordtype">int</span> Nvar = m_ChildIndexMCMC.size();</div>
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> v = 0; v &lt; Nvar; v++){</div>
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;      <span class="keywordtype">int</span> index = m_ChildIndexMCMC[v];</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;      GeneratorFrame&amp; child = <a class="code" href="a00677.html#a1194c0f8218ac545a801e3f4ad7376f8">GetChildFrame</a>(index);</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;      <a class="code" href="a00689.html#ab48589dcf6bb3e83e61846b4cf6ed960">GeneratorFrame</a>&amp; child = <a class="code" href="a00689.html#a1194c0f8218ac545a801e3f4ad7376f8">GetChildFrame</a>(index);</div>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;      </div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;      <span class="keywordtype">double</span> massMax = <a class="code" href="a00677.html#ae0101090e69f3671d552312c8ac094ca">GetMass</a>();</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;      <span class="keywordtype">double</span> massMax = <a class="code" href="a00689.html#ae0101090e69f3671d552312c8ac094ca">GetMass</a>();</div>
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;      <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; N; i++)</div>
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    <span class="keywordflow">if</span>(i != index)</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;      massMax -= <a class="code" href="a00677.html#a1194c0f8218ac545a801e3f4ad7376f8">GetChildFrame</a>(i).<a class="code" href="a00677.html#ae0101090e69f3671d552312c8ac094ca">GetMass</a>();</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;      massMax -= <a class="code" href="a00689.html#a1194c0f8218ac545a801e3f4ad7376f8">GetChildFrame</a>(i).<a class="code" href="a00689.html#ae0101090e69f3671d552312c8ac094ca">GetMass</a>();</div>
 <div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160; </div>
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;      <span class="keywordtype">double</span> ChildMass = 0.;</div>
 <div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;      <span class="keywordtype">double</span> ChildProb = 0.;</div>
@@ -280,9 +280,9 @@ $(function() {
 <div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;      probOld /= m_ChildProbMCMC[v];</div>
 <div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;      probNew /= ChildProb;</div>
 <div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160; </div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;      probOld *= GetProbMCMC();</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;      probOld *= <a class="code" href="a00681.html#a9e26dd1027852df6115e0c49b5bc447c">GetProbMCMC</a>();</div>
 <div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;      SetMassMCMC(ChildMass, child);</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;      probNew *= GetProbMCMC();</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;      probNew *= <a class="code" href="a00681.html#a9e26dd1027852df6115e0c49b5bc447c">GetProbMCMC</a>();</div>
 <div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;      </div>
 <div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;      <span class="keywordflow">if</span>(probOld &gt; 0){</div>
 <div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    <span class="keywordflow">if</span>(probNew/probOld &lt; GetRandom()){</div>
@@ -297,14 +297,14 @@ $(function() {
 <div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    <span class="keywordflow">return</span> SetMind(<span class="keyword">true</span>);</div>
 <div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;  }</div>
 <div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160; </div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;  <span class="keywordtype">double</span> DecayGenFrame::GetProbMCMC(<span class="keywordtype">double</span> mass)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00205"></a><span class="lineno"><a class="line" href="a00681.html#a9e26dd1027852df6115e0c49b5bc447c">  205</a></span>&#160;  <span class="keywordtype">double</span> <a class="code" href="a00681.html#a9e26dd1027852df6115e0c49b5bc447c">DecayGenFrame::GetProbMCMC</a>(<span class="keywordtype">double</span> mass)<span class="keyword"> const </span>{</div>
 <div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    <span class="keywordflow">if</span>(mass &lt; 0.)</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;      mass = <a class="code" href="a00677.html#ae0101090e69f3671d552312c8ac094ca">GetMass</a>();</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;      mass = <a class="code" href="a00689.html#ae0101090e69f3671d552312c8ac094ca">GetMass</a>();</div>
 <div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160; </div>
 <div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    <span class="keywordtype">double</span> SumChildMass = 0.;</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    <span class="keywordtype">int</span> N = <a class="code" href="a00781.html#a98d149d4215b47ba1d83c5985835627a">GetNChildren</a>();</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    <span class="keywordtype">int</span> N = <a class="code" href="a00793.html#a98d149d4215b47ba1d83c5985835627a">GetNChildren</a>();</div>
 <div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; N; i++)</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;      SumChildMass += <a class="code" href="a00677.html#a1194c0f8218ac545a801e3f4ad7376f8">GetChildFrame</a>(i).<a class="code" href="a00677.html#ae0101090e69f3671d552312c8ac094ca">GetMass</a>();</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;      SumChildMass += <a class="code" href="a00689.html#a1194c0f8218ac545a801e3f4ad7376f8">GetChildFrame</a>(i).<a class="code" href="a00689.html#ae0101090e69f3671d552312c8ac094ca">GetMass</a>();</div>
 <div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160; </div>
 <div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    <span class="keywordflow">if</span>(mass &lt; SumChildMass)</div>
 <div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;      <span class="keywordflow">return</span> 0.;</div>
@@ -313,12 +313,12 @@ $(function() {
 <div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    std::vector&lt;double&gt; InterMass;</div>
 <div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; N; i++){</div>
 <div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;      InterMass.push_back(m_InterMassFracMCMC[N-1-i]*ETOT + SumChildMass);</div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;      SumChildMass -= <a class="code" href="a00677.html#a1194c0f8218ac545a801e3f4ad7376f8">GetChildFrame</a>(i).<a class="code" href="a00677.html#ae0101090e69f3671d552312c8ac094ca">GetMass</a>();</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;      SumChildMass -= <a class="code" href="a00689.html#a1194c0f8218ac545a801e3f4ad7376f8">GetChildFrame</a>(i).<a class="code" href="a00689.html#ae0101090e69f3671d552312c8ac094ca">GetMass</a>();</div>
 <div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    }</div>
 <div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160; </div>
 <div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;    <span class="keywordtype">double</span> prob = 1.;</div>
 <div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; N-1; i++)</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;      prob *= GetP(InterMass[i], InterMass[i+1], <a class="code" href="a00677.html#a1194c0f8218ac545a801e3f4ad7376f8">GetChildFrame</a>(i).<a class="code" href="a00677.html#ae0101090e69f3671d552312c8ac094ca">GetMass</a>())/mass;</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;      prob *= GetP(InterMass[i], InterMass[i+1], <a class="code" href="a00689.html#a1194c0f8218ac545a801e3f4ad7376f8">GetChildFrame</a>(i).<a class="code" href="a00689.html#ae0101090e69f3671d552312c8ac094ca">GetMass</a>())/mass;</div>
 <div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    </div>
 <div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    prob /= mass*mass;</div>
 <div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160; </div>
@@ -327,14 +327,14 @@ $(function() {
 <div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160; </div>
 <div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;  <span class="keywordtype">void</span> DecayGenFrame::GenerateMassMCMC(<span class="keywordtype">double</span>&amp; mass, <span class="keywordtype">double</span>&amp; prob, </div>
 <div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;                       <span class="keywordtype">double</span> max)<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;    <span class="keywordtype">int</span> N = <a class="code" href="a00781.html#a98d149d4215b47ba1d83c5985835627a">GetNChildren</a>();</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;    <span class="keywordtype">int</span> N = <a class="code" href="a00793.html#a98d149d4215b47ba1d83c5985835627a">GetNChildren</a>();</div>
 <div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;    <span class="keywordtype">double</span> SumMinChildMass = 0.;</div>
 <div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;    <span class="keywordtype">double</span> SumChildMass = 0.;</div>
 <div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; N; i++){</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;      GeneratorFrame&amp; child = <a class="code" href="a00677.html#a1194c0f8218ac545a801e3f4ad7376f8">GetChildFrame</a>(i);</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;      SumChildMass += child.GetMass();</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;      <span class="keywordflow">if</span>(!child.IsVariableMassMCMC())</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;    SumMinChildMass += child.GetMass();</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;      <a class="code" href="a00689.html">GeneratorFrame</a>&amp; child = <a class="code" href="a00689.html#a1194c0f8218ac545a801e3f4ad7376f8">GetChildFrame</a>(i);</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;      SumChildMass += child.<a class="code" href="a00689.html#ae0101090e69f3671d552312c8ac094ca">GetMass</a>();</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;      <span class="keywordflow">if</span>(!child.<a class="code" href="a00689.html#ab64ac080d2e1331760d48a09d1a2d7fd">IsVariableMassMCMC</a>())</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;    SumMinChildMass += child.<a class="code" href="a00689.html#ae0101090e69f3671d552312c8ac094ca">GetMass</a>();</div>
 <div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;      <span class="keywordflow">else</span> </div>
 <div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    SumMinChildMass += child.GetMinimumMassMCMC();</div>
 <div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;    }</div>
@@ -377,14 +377,14 @@ $(function() {
 <div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;    std::vector&lt;double&gt; ChildMasses;</div>
 <div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;    <span class="keywordtype">double</span> SumChildMass = 0.;</div>
 <div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;    <span class="keywordtype">double</span> cmass;</div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;    <span class="keywordtype">int</span> N = <a class="code" href="a00781.html#a98d149d4215b47ba1d83c5985835627a">GetNChildren</a>();</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;    <span class="keywordtype">int</span> N = <a class="code" href="a00793.html#a98d149d4215b47ba1d83c5985835627a">GetNChildren</a>();</div>
 <div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; N; i++){</div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;      cmass = <a class="code" href="a00677.html#a1194c0f8218ac545a801e3f4ad7376f8">GetChildFrame</a>(i).<a class="code" href="a00677.html#ae0101090e69f3671d552312c8ac094ca">GetMass</a>();</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;      cmass = <a class="code" href="a00689.html#a1194c0f8218ac545a801e3f4ad7376f8">GetChildFrame</a>(i).<a class="code" href="a00689.html#ae0101090e69f3671d552312c8ac094ca">GetMass</a>();</div>
 <div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;      ChildMasses.push_back(cmass);</div>
 <div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;      SumChildMass += cmass;</div>
 <div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;    }</div>
 <div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;   </div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;    <span class="keywordtype">double</span> ETOT = <a class="code" href="a00677.html#ae0101090e69f3671d552312c8ac094ca">GetMass</a>() - SumChildMass;</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;    <span class="keywordtype">double</span> ETOT = <a class="code" href="a00689.html#ae0101090e69f3671d552312c8ac094ca">GetMass</a>() - SumChildMass;</div>
 <div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;    std::vector&lt;double&gt; InterMass;</div>
 <div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; N; i++){</div>
 <div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;      InterMass.push_back(m_InterMassFracMCMC[N-1-i]*ETOT + SumChildMass);</div>
@@ -396,7 +396,7 @@ $(function() {
 <div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;    SetSpirit(<span class="keyword">true</span>);</div>
 <div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160; </div>
 <div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;    TVector3 n_par = GetParentBoostVector();</div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;    TVector3 n_perp = <a class="code" href="a00677.html#ac4949ebf7cfd7577cca6e6b844005204">GetParentFrame</a>().<a class="code" href="a00781.html#a13ca0060c5e1fd264ff84fdc2180c16a">GetDecayPlaneNormalVector</a>(*<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;    TVector3 n_perp = <a class="code" href="a00689.html#ac4949ebf7cfd7577cca6e6b844005204">GetParentFrame</a>().<a class="code" href="a00793.html#a13ca0060c5e1fd264ff84fdc2180c16a">GetDecayPlaneNormalVector</a>(*<span class="keyword">this</span>);</div>
 <div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160; </div>
 <div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;    <span class="keywordflow">if</span>(n_par.Cross(n_perp).Mag() &lt;= 0.){</div>
 <div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;      n_par.SetXYZ(1.,0.,0.);</div>
@@ -472,18 +472,27 @@ $(function() {
 <div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160; </div>
 <div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aa00677_html_ae0101090e69f3671d552312c8ac094ca"><div class="ttname"><a href="a00677.html#ae0101090e69f3671d552312c8ac094ca">RestFrames::GeneratorFrame::GetMass</a></div><div class="ttdeci">virtual double GetMass() const</div><div class="ttdoc">Get the mass of this frame.</div><div class="ttdef"><b>Definition:</b> <a href="a00461_source.html#l00088">GeneratorFrame.cc:88</a></div></div>
-<div class="ttc" id="aa00781_html_a98d149d4215b47ba1d83c5985835627a"><div class="ttname"><a href="a00781.html#a98d149d4215b47ba1d83c5985835627a">RestFrames::RestFrame::GetNChildren</a></div><div class="ttdeci">int GetNChildren() const</div><div class="ttdoc">Get the number of child frames inheriting from this one.</div><div class="ttdef"><b>Definition:</b> <a href="a00539_source.html#l00229">RestFrame.cc:229</a></div></div>
+<div class="ttc" id="aa00689_html_ab48589dcf6bb3e83e61846b4cf6ed960"><div class="ttname"><a href="a00689.html#ab48589dcf6bb3e83e61846b4cf6ed960">RestFrames::GeneratorFrame::GeneratorFrame</a></div><div class="ttdeci">GeneratorFrame()</div><div class="ttdoc">Empty constructor.</div><div class="ttdef"><b>Definition:</b> <a href="a00461_source.html#l00072">GeneratorFrame.cc:72</a></div></div>
+<div class="ttc" id="aa00797_html_a2ed7cbbcc860fa79abb4eea10d1f900f"><div class="ttname"><a href="a00797.html#a2ed7cbbcc860fa79abb4eea10d1f900f">RestFrames::RFBase::IsEmpty</a></div><div class="ttdeci">bool IsEmpty() const</div><div class="ttdoc">Checks whether this is default (empty) instance of class.</div><div class="ttdef"><b>Definition:</b> <a href="a00542_source.html#l00084">RFBase.cc:84</a></div></div>
+<div class="ttc" id="aa00689_html_ab64ac080d2e1331760d48a09d1a2d7fd"><div class="ttname"><a href="a00689.html#ab64ac080d2e1331760d48a09d1a2d7fd">RestFrames::GeneratorFrame::IsVariableMassMCMC</a></div><div class="ttdeci">bool IsVariableMassMCMC() const</div><div class="ttdoc">Frame is capable having a variable mass? (true/false)</div><div class="ttdef"><b>Definition:</b> <a href="a00461_source.html#l00226">GeneratorFrame.cc:226</a></div></div>
+<div class="ttc" id="aa00689_html_ae0101090e69f3671d552312c8ac094ca"><div class="ttname"><a href="a00689.html#ae0101090e69f3671d552312c8ac094ca">RestFrames::GeneratorFrame::GetMass</a></div><div class="ttdeci">virtual double GetMass() const</div><div class="ttdoc">Get the mass of this frame.</div><div class="ttdef"><b>Definition:</b> <a href="a00461_source.html#l00088">GeneratorFrame.cc:88</a></div></div>
 <div class="ttc" id="aa00296_html"><div class="ttname"><a href="a00296.html">DecayGenFrame.hh</a></div></div>
-<div class="ttc" id="aa00677_html_a1194c0f8218ac545a801e3f4ad7376f8"><div class="ttname"><a href="a00677.html#a1194c0f8218ac545a801e3f4ad7376f8">RestFrames::GeneratorFrame::GetChildFrame</a></div><div class="ttdeci">virtual GeneratorFrame &amp; GetChildFrame(int i=0) const</div><div class="ttdoc">Get the frame of the i th child.</div><div class="ttdef"><b>Definition:</b> <a href="a00461_source.html#l00112">GeneratorFrame.cc:112</a></div></div>
-<div class="ttc" id="aa00677_html_ac4949ebf7cfd7577cca6e6b844005204"><div class="ttname"><a href="a00677.html#ac4949ebf7cfd7577cca6e6b844005204">RestFrames::GeneratorFrame::GetParentFrame</a></div><div class="ttdeci">virtual GeneratorFrame const  &amp; GetParentFrame() const</div><div class="ttdoc">Returns the parent of this frame.</div><div class="ttdef"><b>Definition:</b> <a href="a00461_source.html#l00104">GeneratorFrame.cc:104</a></div></div>
-<div class="ttc" id="aa00785_html_a2ed7cbbcc860fa79abb4eea10d1f900f"><div class="ttname"><a href="a00785.html#a2ed7cbbcc860fa79abb4eea10d1f900f">RestFrames::RFBase::IsEmpty</a></div><div class="ttdeci">bool IsEmpty() const</div><div class="ttdoc">Checks whether this is default (empty) instance of class.</div><div class="ttdef"><b>Definition:</b> <a href="a00542_source.html#l00084">RFBase.cc:84</a></div></div>
-<div class="ttc" id="aa00781_html_a13ca0060c5e1fd264ff84fdc2180c16a"><div class="ttname"><a href="a00781.html#a13ca0060c5e1fd264ff84fdc2180c16a">RestFrames::RestFrame::GetDecayPlaneNormalVector</a></div><div class="ttdeci">TVector3 GetDecayPlaneNormalVector(const RestFrame &amp;frame=RestFrame::Empty()) const</div><div class="ttdoc">Returns the vector normal to the decay plane of this frame.</div><div class="ttdef"><b>Definition:</b> <a href="a00539_source.html#l00829">RestFrame.cc:829</a></div></div>
-<div class="ttc" id="aa00677_html_ab64ac080d2e1331760d48a09d1a2d7fd"><div class="ttname"><a href="a00677.html#ab64ac080d2e1331760d48a09d1a2d7fd">RestFrames::GeneratorFrame::IsVariableMassMCMC</a></div><div class="ttdeci">bool IsVariableMassMCMC() const</div><div class="ttdoc">Frame is capable having a variable mass? (true/false)</div><div class="ttdef"><b>Definition:</b> <a href="a00461_source.html#l00226">GeneratorFrame.cc:226</a></div></div>
+<div class="ttc" id="aa00793_html_a13ca0060c5e1fd264ff84fdc2180c16a"><div class="ttname"><a href="a00793.html#a13ca0060c5e1fd264ff84fdc2180c16a">RestFrames::RestFrame::GetDecayPlaneNormalVector</a></div><div class="ttdeci">TVector3 GetDecayPlaneNormalVector(const RestFrame &amp;frame=RestFrame::Empty()) const</div><div class="ttdoc">Returns the vector normal to the decay plane of this frame.</div><div class="ttdef"><b>Definition:</b> <a href="a00539_source.html#l00829">RestFrame.cc:829</a></div></div>
+<div class="ttc" id="aa00681_html_a1730c446bca67ff12c1e7602e1f53527"><div class="ttname"><a href="a00681.html#a1730c446bca67ff12c1e7602e1f53527">RestFrames::DecayGenFrame::SetMass</a></div><div class="ttdeci">virtual void SetMass(double val)</div><div class="ttdoc">Sets mass of current frame.</div><div class="ttdef"><b>Definition:</b> <a href="a00455_source.html#l00062">DecayGenFrame.cc:62</a></div></div>
+<div class="ttc" id="aa00793_html_a98d149d4215b47ba1d83c5985835627a"><div class="ttname"><a href="a00793.html#a98d149d4215b47ba1d83c5985835627a">RestFrames::RestFrame::GetNChildren</a></div><div class="ttdeci">int GetNChildren() const</div><div class="ttdoc">Get the number of child frames inheriting from this one.</div><div class="ttdef"><b>Definition:</b> <a href="a00539_source.html#l00229">RestFrame.cc:229</a></div></div>
+<div class="ttc" id="aa00681_html_a0475402d3b0ee8d2c7e88ab6e0c9b2c0"><div class="ttname"><a href="a00681.html#a0475402d3b0ee8d2c7e88ab6e0c9b2c0">RestFrames::DecayGenFrame::DecayGenFrame</a></div><div class="ttdeci">DecayGenFrame()</div><div class="ttdoc">Empty constructor.</div><div class="ttdef"><b>Definition:</b> <a href="a00455_source.html#l00047">DecayGenFrame.cc:47</a></div></div>
+<div class="ttc" id="aa00689_html_ac4949ebf7cfd7577cca6e6b844005204"><div class="ttname"><a href="a00689.html#ac4949ebf7cfd7577cca6e6b844005204">RestFrames::GeneratorFrame::GetParentFrame</a></div><div class="ttdeci">virtual GeneratorFrame const  &amp; GetParentFrame() const</div><div class="ttdoc">Returns the parent of this frame.</div><div class="ttdef"><b>Definition:</b> <a href="a00461_source.html#l00104">GeneratorFrame.cc:104</a></div></div>
+<div class="ttc" id="aa00681_html_a6ed2d982a7d403f9a634de7366a01df1"><div class="ttname"><a href="a00681.html#a6ed2d982a7d403f9a634de7366a01df1">RestFrames::DecayGenFrame::SetCosDecayAngle</a></div><div class="ttdeci">virtual void SetCosDecayAngle(double val)</div><div class="ttdoc">Sets cosine of decay angle.</div><div class="ttdef"><b>Definition:</b> <a href="a00455_source.html#l00075">DecayGenFrame.cc:75</a></div></div>
+<div class="ttc" id="aa00689_html"><div class="ttname"><a href="a00689.html">RestFrames::GeneratorFrame</a></div><div class="ttdef"><b>Definition:</b> <a href="a00302_source.html#l00042">GeneratorFrame.hh:42</a></div></div>
+<div class="ttc" id="aa00689_html_a1194c0f8218ac545a801e3f4ad7376f8"><div class="ttname"><a href="a00689.html#a1194c0f8218ac545a801e3f4ad7376f8">RestFrames::GeneratorFrame::GetChildFrame</a></div><div class="ttdeci">virtual GeneratorFrame &amp; GetChildFrame(int i=0) const</div><div class="ttdoc">Get the frame of the i th child.</div><div class="ttdef"><b>Definition:</b> <a href="a00461_source.html#l00112">GeneratorFrame.cc:112</a></div></div>
+<div class="ttc" id="aa00677_html"><div class="ttname"><a href="a00677.html">RestFrames::DecayFrame</a></div><div class="ttdef"><b>Definition:</b> <a href="a00293_source.html#l00038">DecayFrame.hh:38</a></div></div>
+<div class="ttc" id="aa00681_html_a7f310147b0ba1ce505511558cf819ba9"><div class="ttname"><a href="a00681.html#a7f310147b0ba1ce505511558cf819ba9">RestFrames::DecayGenFrame::SetDeltaPhiDecayPlane</a></div><div class="ttdeci">virtual void SetDeltaPhiDecayPlane(double val)</div><div class="ttdoc">Sets delta-phi of decay plane.</div><div class="ttdef"><b>Definition:</b> <a href="a00455_source.html#l00086">DecayGenFrame.cc:86</a></div></div>
+<div class="ttc" id="aa00681_html_ad2bbfbe1185786d35cc16bd5d2c234e6"><div class="ttname"><a href="a00681.html#ad2bbfbe1185786d35cc16bd5d2c234e6">RestFrames::DecayGenFrame::SetVariableMass</a></div><div class="ttdeci">virtual void SetVariableMass(bool varymass=true)</div><div class="ttdoc">Sets variable mass of current frame.</div><div class="ttdef"><b>Definition:</b> <a href="a00455_source.html#l00098">DecayGenFrame.cc:98</a></div></div>
+<div class="ttc" id="aa00681_html_a9e26dd1027852df6115e0c49b5bc447c"><div class="ttname"><a href="a00681.html#a9e26dd1027852df6115e0c49b5bc447c">RestFrames::DecayGenFrame::GetProbMCMC</a></div><div class="ttdeci">virtual double GetProbMCMC(double mass=-1.) const</div><div class="ttdoc">Returns probabilty of...</div><div class="ttdef"><b>Definition:</b> <a href="a00455_source.html#l00205">DecayGenFrame.cc:205</a></div></div>
 <!-- HTML footer for doxygen 1.8.9.1-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 15 2020 18:01:00 for RestFrames by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 28 2020 16:00:34 for RestFrames by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.19
 </small></address>

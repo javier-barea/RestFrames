@@ -185,7 +185,7 @@ $(function() {
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    TLorentzVector Pvis1 = GetDependancyStates(0).GetFourVector();</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    TLorentzVector Pvis2 = GetDependancyStates(1).GetFourVector();</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    TLorentzVector INV = GetParentState().<a class="code" href="a00837.html#a538d28484b82b7bb2560f482879907f3">GetFourVector</a>();</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    TLorentzVector INV = GetParentState().<a class="code" href="a00849.html#a538d28484b82b7bb2560f482879907f3">GetFourVector</a>();</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="comment">// go to the rest frame of (Pvis1+Pvis2+INV system)</span></div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    TVector3 Boost = (Pvis1+Pvis2+INV).BoostVector();</div>
@@ -244,8 +244,8 @@ $(function() {
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    INV1.Boost(Boost);</div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    INV2.Boost(Boost);</div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160; </div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    GetChildState(0).<a class="code" href="a00837.html#ad94f9ab87499da559a6bf96b5f2d9d2d">SetFourVector</a>(INV1);</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    GetChildState(1).<a class="code" href="a00837.html#ad94f9ab87499da559a6bf96b5f2d9d2d">SetFourVector</a>(INV2);</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    GetChildState(0).<a class="code" href="a00849.html#ad94f9ab87499da559a6bf96b5f2d9d2d">SetFourVector</a>(INV1);</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    GetChildState(1).<a class="code" href="a00849.html#ad94f9ab87499da559a6bf96b5f2d9d2d">SetFourVector</a>(INV2);</div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    </div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    <span class="keywordflow">return</span> SetSpirit(<span class="keyword">true</span>);</div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;  }</div>
@@ -254,13 +254,13 @@ $(function() {
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160; </div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aa00837_html_a538d28484b82b7bb2560f482879907f3"><div class="ttname"><a href="a00837.html#a538d28484b82b7bb2560f482879907f3">RestFrames::State::GetFourVector</a></div><div class="ttdeci">virtual TLorentzVector GetFourVector() const</div><div class="ttdoc">Returns four vector of this frame.</div><div class="ttdef"><b>Definition:</b> <a href="a00569_source.html#l00159">State.cc:159</a></div></div>
-<div class="ttc" id="aa00837_html_ad94f9ab87499da559a6bf96b5f2d9d2d"><div class="ttname"><a href="a00837.html#ad94f9ab87499da559a6bf96b5f2d9d2d">RestFrames::State::SetFourVector</a></div><div class="ttdeci">virtual void SetFourVector(const TLorentzVector &amp;V)</div><div class="ttdoc">Sets four-vector of this frame.</div><div class="ttdef"><b>Definition:</b> <a href="a00569_source.html#l00155">State.cc:155</a></div></div>
+<div class="ttc" id="aa00849_html_ad94f9ab87499da559a6bf96b5f2d9d2d"><div class="ttname"><a href="a00849.html#ad94f9ab87499da559a6bf96b5f2d9d2d">RestFrames::State::SetFourVector</a></div><div class="ttdeci">virtual void SetFourVector(const TLorentzVector &amp;V)</div><div class="ttdoc">Sets four-vector of this frame.</div><div class="ttdef"><b>Definition:</b> <a href="a00569_source.html#l00155">State.cc:155</a></div></div>
+<div class="ttc" id="aa00849_html_a538d28484b82b7bb2560f482879907f3"><div class="ttname"><a href="a00849.html#a538d28484b82b7bb2560f482879907f3">RestFrames::State::GetFourVector</a></div><div class="ttdeci">virtual TLorentzVector GetFourVector() const</div><div class="ttdoc">Returns four vector of this frame.</div><div class="ttdef"><b>Definition:</b> <a href="a00569_source.html#l00159">State.cc:159</a></div></div>
 <div class="ttc" id="aa00290_html"><div class="ttname"><a href="a00290.html">ContraBoostInvJigsaw.hh</a></div></div>
 <!-- HTML footer for doxygen 1.8.9.1-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 15 2020 18:01:00 for RestFrames by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 28 2020 16:00:34 for RestFrames by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.19
 </small></address>

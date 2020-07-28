@@ -139,18 +139,18 @@ $(function() {
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keywordtype">bool</span> RFLog::m_Color = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keywordtype">int</span> RFLog::m_NMAX = 100;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="a00813.html#a528afc56eee681ffc285292ec03d8c0d">   45</a></span>&#160;  <a class="code" href="a00813.html#adada7b0acda0d6afe73a248ba4700296">RFLog::RFLog</a>(<span class="keyword">const</span> std::string&amp; source, <a class="code" href="a00398.html#a76730caee81a607b69d391935a4dc1f2">LogType</a> def_type)</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="a00825.html#a528afc56eee681ffc285292ec03d8c0d">   45</a></span>&#160;  <a class="code" href="a00825.html#adada7b0acda0d6afe73a248ba4700296">RFLog::RFLog</a>(<span class="keyword">const</span> std::string&amp; source, <a class="code" href="a00398.html#a76730caee81a607b69d391935a4dc1f2">LogType</a> def_type)</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    : m_DefType(def_type)</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  {</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    Init();</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    SetSource(source);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="code" href="a00825.html#ab0c48bffdb0e7e1c645a104a0a89faaa">SetSource</a>(source);</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  }</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
-<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="a00813.html#adada7b0acda0d6afe73a248ba4700296">   52</a></span>&#160;  <a class="code" href="a00813.html#adada7b0acda0d6afe73a248ba4700296">RFLog::RFLog</a>(){</div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="a00825.html#adada7b0acda0d6afe73a248ba4700296">   52</a></span>&#160;  <a class="code" href="a00825.html#adada7b0acda0d6afe73a248ba4700296">RFLog::RFLog</a>(){</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    Init();</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  }</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <a class="code" href="a00813.html">RFLog</a> g_Log(<span class="stringliteral">&quot;RestFrames Global&quot;</span>);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <a class="code" href="a00825.html">RFLog</a> g_Log(<span class="stringliteral">&quot;RestFrames Global&quot;</span>);</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  RFLog::~RFLog() {}</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
@@ -276,11 +276,11 @@ $(function() {
 <div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;      m_Message &lt;&lt; listPtr-&gt;Get(i).GetName() &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;</div>
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;  }</div>
 <div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160; </div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;  <span class="keywordtype">void</span> RFLog::SetSource(<span class="keyword">const</span> std::string&amp; source){ </div>
+<div class="line"><a name="l00182"></a><span class="lineno"><a class="line" href="a00825.html#ab0c48bffdb0e7e1c645a104a0a89faaa">  182</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="a00825.html#ab0c48bffdb0e7e1c645a104a0a89faaa">RFLog::SetSource</a>(<span class="keyword">const</span> std::string&amp; source){ </div>
 <div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    m_Source = source; </div>
 <div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;  }</div>
 <div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160; </div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;  <span class="keywordtype">void</span> SetLogPrint(LogType type, <span class="keywordtype">bool</span> print){</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;  <span class="keywordtype">void</span> SetLogPrint(<a class="code" href="a00398.html#a76730caee81a607b69d391935a4dc1f2">LogType</a> type, <span class="keywordtype">bool</span> print){</div>
 <div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    RFLog::m_PrintMap[type] = print;</div>
 <div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;  }</div>
 <div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160; </div>
@@ -294,15 +294,15 @@ $(function() {
 <div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    <span class="keywordflow">if</span>(ostr) RFLog::m_Ostr = ostr;</div>
 <div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;  }</div>
 <div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160; </div>
-<div class="line"><a name="l00200"></a><span class="lineno"><a class="line" href="a00813.html#a78a0030f7da0137168f495652c935019">  200</a></span>&#160;  <span class="keywordtype">void</span> SetLogColor(<span class="keywordtype">bool</span> color){</div>
+<div class="line"><a name="l00200"></a><span class="lineno"><a class="line" href="a00825.html#a78a0030f7da0137168f495652c935019">  200</a></span>&#160;  <span class="keywordtype">void</span> SetLogColor(<span class="keywordtype">bool</span> color){</div>
 <div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    RFLog::m_Color = color;</div>
 <div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;  }</div>
 <div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160; </div>
-<div class="line"><a name="l00204"></a><span class="lineno"><a class="line" href="a00813.html#a7098ca43fc308712dc560111a8a40691">  204</a></span>&#160;  <span class="keywordtype">void</span> SetLogMaxWidth(<span class="keywordtype">int</span> NMAX){</div>
+<div class="line"><a name="l00204"></a><span class="lineno"><a class="line" href="a00398.html#a8efb46dba906a4b7520cd308794c7ed5">  204</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="a00398.html#a8efb46dba906a4b7520cd308794c7ed5">SetLogMaxWidth</a>(<span class="keywordtype">int</span> NMAX){</div>
 <div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    <span class="keywordflow">if</span>(NMAX &gt; 0) RFLog::m_NMAX = NMAX;</div>
 <div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;  }</div>
 <div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160; </div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;  <span class="keyword">template</span> &lt;&gt; <a class="code" href="a00813.html">RFLog</a>&amp; RFLog::operator &lt;&lt; (<span class="keyword">const</span> <a class="code" href="a00785.html">RFBase</a>* arg){</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;  <span class="keyword">template</span> &lt;&gt; RFLog&amp; RFLog::operator &lt;&lt; (<span class="keyword">const</span> RFBase* arg){</div>
 <div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    PrintObject(arg);</div>
 <div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
 <div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;  }</div>
@@ -318,15 +318,16 @@ $(function() {
 <div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aa00386_html"><div class="ttname"><a href="a00386.html">RFBase.hh</a></div></div>
+<div class="ttc" id="aa00398_html_a8efb46dba906a4b7520cd308794c7ed5"><div class="ttname"><a href="a00398.html#a8efb46dba906a4b7520cd308794c7ed5">RestFrames::SetLogMaxWidth</a></div><div class="ttdeci">void SetLogMaxWidth(int NMAX)</div><div class="ttdef"><b>Definition:</b> <a href="a00554_source.html#l00204">RFLog.cc:204</a></div></div>
 <div class="ttc" id="aa00398_html_a76730caee81a607b69d391935a4dc1f2"><div class="ttname"><a href="a00398.html#a76730caee81a607b69d391935a4dc1f2">RestFrames::LogType</a></div><div class="ttdeci">LogType</div><div class="ttdoc">Type of Log Message.</div><div class="ttdef"><b>Definition:</b> <a href="a00398_source.html#l00045">RFLog.hh:45</a></div></div>
-<div class="ttc" id="aa00813_html"><div class="ttname"><a href="a00813.html">RestFrames::RFLog</a></div><div class="ttdef"><b>Definition:</b> <a href="a00398_source.html#l00051">RFLog.hh:51</a></div></div>
-<div class="ttc" id="aa00813_html_adada7b0acda0d6afe73a248ba4700296"><div class="ttname"><a href="a00813.html#adada7b0acda0d6afe73a248ba4700296">RestFrames::RFLog::RFLog</a></div><div class="ttdeci">RFLog()</div><div class="ttdoc">Empty constructor.</div><div class="ttdef"><b>Definition:</b> <a href="a00554_source.html#l00052">RFLog.cc:52</a></div></div>
+<div class="ttc" id="aa00825_html"><div class="ttname"><a href="a00825.html">RestFrames::RFLog</a></div><div class="ttdef"><b>Definition:</b> <a href="a00398_source.html#l00051">RFLog.hh:51</a></div></div>
+<div class="ttc" id="aa00825_html_ab0c48bffdb0e7e1c645a104a0a89faaa"><div class="ttname"><a href="a00825.html#ab0c48bffdb0e7e1c645a104a0a89faaa">RestFrames::RFLog::SetSource</a></div><div class="ttdeci">void SetSource(const std::string &amp;source)</div><div class="ttdoc">Sets source of ...</div><div class="ttdef"><b>Definition:</b> <a href="a00554_source.html#l00182">RFLog.cc:182</a></div></div>
 <div class="ttc" id="aa00398_html"><div class="ttname"><a href="a00398.html">RFLog.hh</a></div></div>
-<div class="ttc" id="aa00785_html"><div class="ttname"><a href="a00785.html">RestFrames::RFBase</a></div><div class="ttdoc">Base class for all RestFrame package objects.</div><div class="ttdef"><b>Definition:</b> <a href="a00386_source.html#l00053">RFBase.hh:53</a></div></div>
+<div class="ttc" id="aa00825_html_adada7b0acda0d6afe73a248ba4700296"><div class="ttname"><a href="a00825.html#adada7b0acda0d6afe73a248ba4700296">RestFrames::RFLog::RFLog</a></div><div class="ttdeci">RFLog()</div><div class="ttdoc">Empty constructor.</div><div class="ttdef"><b>Definition:</b> <a href="a00554_source.html#l00052">RFLog.cc:52</a></div></div>
 <!-- HTML footer for doxygen 1.8.9.1-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 15 2020 18:01:01 for RestFrames by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 28 2020 16:00:37 for RestFrames by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.19
 </small></address>

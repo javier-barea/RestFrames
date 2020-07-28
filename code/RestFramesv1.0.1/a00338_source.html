@@ -133,38 +133,45 @@ $(function() {
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="comment">// LabFrame class</span></div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment"></span>  <span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="a00725.html">   41</a></span>&#160;  <span class="keyword">class </span><a class="code" href="a00725.html">LabFrame</a> : <span class="keyword">public</span> T {</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="a00737.html">   41</a></span>&#160;  <span class="keyword">class </span><a class="code" href="a00737.html">LabFrame</a> : <span class="keyword">public</span> T {</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <a class="code" href="a00725.html">LabFrame</a>(<span class="keyword">const</span> std::string&amp; sname, <span class="keyword">const</span> std::string&amp; stitle);</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="a00725.html">LabFrame</a>();</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="a00725.html">LabFrame</a>();</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">void</span> SetChildFrame(<a class="code" href="a00781.html">RestFrame</a>&amp; frame);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> InitializeTree();</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> InitializeAnalysis() = 0;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> ClearEvent() = 0;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> AnalyzeEvent() = 0;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="comment">// Analysis functions</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    TVector3 GetInvisibleMomentum() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> IsSoundBody() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  };</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;}</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;      </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="code" href="a00737.html#a6c164149acd82253a30b9ad4772a9fc2">LabFrame</a>(<span class="keyword">const</span> std::string&amp; sname, <span class="keyword">const</span> std::string&amp; stitle);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <a class="code" href="a00737.html#a6c164149acd82253a30b9ad4772a9fc2">LabFrame</a>();</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="a00737.html">LabFrame</a>();</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a00737.html#a35966f9447014a091a33d052abc628d7">SetChildFrame</a>(<a class="code" href="a00793.html">RestFrame</a>&amp; frame);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> InitializeTree();</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> InitializeAnalysis() = 0;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> ClearEvent() = 0;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> AnalyzeEvent() = 0;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="comment">// Analysis functions</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    TVector3 <a class="code" href="a00737.html#aaccbcd60c55bd0c1b94b61cca16807de">GetInvisibleMomentum</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> IsSoundBody() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  };</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;}</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aa00737_html_aaccbcd60c55bd0c1b94b61cca16807de"><div class="ttname"><a href="a00737.html#aaccbcd60c55bd0c1b94b61cca16807de">RestFrames::LabFrame::GetInvisibleMomentum</a></div><div class="ttdeci">TVector3 GetInvisibleMomentum() const</div><div class="ttdoc">Returns invisible momentum vector of this RestFrame.</div><div class="ttdef"><b>Definition:</b> <a href="a00497_source.html#l00109">LabFrame.cc:109</a></div></div>
+<div class="ttc" id="aa00737_html"><div class="ttname"><a href="a00737.html">RestFrames::LabFrame</a></div><div class="ttdef"><b>Definition:</b> <a href="a00338_source.html#l00041">LabFrame.hh:41</a></div></div>
 <div class="ttc" id="aa00380_html"><div class="ttname"><a href="a00380.html">RestFrame.hh</a></div></div>
-<div class="ttc" id="aa00725_html"><div class="ttname"><a href="a00725.html">RestFrames::LabFrame</a></div><div class="ttdef"><b>Definition:</b> <a href="a00338_source.html#l00041">LabFrame.hh:41</a></div></div>
-<div class="ttc" id="aa00781_html"><div class="ttname"><a href="a00781.html">RestFrames::RestFrame</a></div><div class="ttdoc">abstract base class for all Frame objects</div><div class="ttdef"><b>Definition:</b> <a href="a00380_source.html#l00045">RestFrame.hh:45</a></div></div>
+<div class="ttc" id="aa00737_html_a6c164149acd82253a30b9ad4772a9fc2"><div class="ttname"><a href="a00737.html#a6c164149acd82253a30b9ad4772a9fc2">RestFrames::LabFrame::LabFrame</a></div><div class="ttdeci">LabFrame()</div><div class="ttdoc">\Empty constructor</div><div class="ttdef"><b>Definition:</b> <a href="a00497_source.html#l00048">LabFrame.cc:48</a></div></div>
+<div class="ttc" id="aa00737_html_a35966f9447014a091a33d052abc628d7"><div class="ttname"><a href="a00737.html#a35966f9447014a091a33d052abc628d7">RestFrames::LabFrame::SetChildFrame</a></div><div class="ttdeci">void SetChildFrame(RestFrame &amp;frame)</div><div class="ttdoc">Sets child frame.</div><div class="ttdef"><b>Definition:</b> <a href="a00497_source.html#l00076">LabFrame.cc:76</a></div></div>
+<div class="ttc" id="aa00793_html"><div class="ttname"><a href="a00793.html">RestFrames::RestFrame</a></div><div class="ttdoc">abstract base class for all Frame objects</div><div class="ttdef"><b>Definition:</b> <a href="a00380_source.html#l00045">RestFrame.hh:45</a></div></div>
 <!-- HTML footer for doxygen 1.8.9.1-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 15 2020 18:00:59 for RestFrames by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 28 2020 16:00:31 for RestFrames by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.19
 </small></address>

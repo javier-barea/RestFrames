@@ -133,31 +133,34 @@ $(function() {
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">namespace </span>RestFrames {</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="comment">// VisibleRecoFrame class</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="a00861.html">   41</a></span>&#160;<span class="comment"></span>  <span class="keyword">class </span><a class="code" href="a00861.html">VisibleRecoFrame</a> : <span class="keyword">public</span> <a class="code" href="a00853.html">VisibleFrame</a>&lt;ReconstructionFrame&gt; {</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="a00873.html">   41</a></span>&#160;<span class="comment"></span>  <span class="keyword">class </span><a class="code" href="a00873.html">VisibleRecoFrame</a> : <span class="keyword">public</span> <a class="code" href="a00865.html">VisibleFrame</a>&lt;ReconstructionFrame&gt; {</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <a class="code" href="a00861.html">VisibleRecoFrame</a>(<span class="keyword">const</span> std::string&amp; sname, <span class="keyword">const</span> std::string&amp; stitle);</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="a00861.html">VisibleRecoFrame</a>();</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="a00861.html">VisibleRecoFrame</a>();</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keyword">static</span> <a class="code" href="a00861.html">VisibleRecoFrame</a>&amp; Empty();</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keyword">static</span> <a class="code" href="a00861.html">VisibleRecoFrame</a> m_Empty;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;   </div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  };</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <a class="code" href="a00873.html#af5277def53ca08ad73752f9d0b4af998">VisibleRecoFrame</a>(<span class="keyword">const</span> std::string&amp; sname, <span class="keyword">const</span> std::string&amp; stitle);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <a class="code" href="a00873.html#af5277def53ca08ad73752f9d0b4af998">VisibleRecoFrame</a>();</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="a00873.html">VisibleRecoFrame</a>();</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;}</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keyword">static</span> <a class="code" href="a00873.html">VisibleRecoFrame</a>&amp; Empty();</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keyword">static</span> <a class="code" href="a00873.html">VisibleRecoFrame</a> m_Empty;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;   </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  };</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;}</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aa00374_html"><div class="ttname"><a href="a00374.html">ReconstructionFrame.hh</a></div></div>
 <div class="ttc" id="aa00425_html"><div class="ttname"><a href="a00425.html">VisibleFrame.hh</a></div></div>
-<div class="ttc" id="aa00861_html"><div class="ttname"><a href="a00861.html">RestFrames::VisibleRecoFrame</a></div><div class="ttdef"><b>Definition:</b> <a href="a00431_source.html#l00041">VisibleRecoFrame.hh:41</a></div></div>
-<div class="ttc" id="aa00853_html"><div class="ttname"><a href="a00853.html">RestFrames::VisibleFrame</a></div><div class="ttdef"><b>Definition:</b> <a href="a00425_source.html#l00043">VisibleFrame.hh:43</a></div></div>
+<div class="ttc" id="aa00873_html_af5277def53ca08ad73752f9d0b4af998"><div class="ttname"><a href="a00873.html#af5277def53ca08ad73752f9d0b4af998">RestFrames::VisibleRecoFrame::VisibleRecoFrame</a></div><div class="ttdeci">VisibleRecoFrame()</div><div class="ttdoc">Empty constructor.</div><div class="ttdef"><b>Definition:</b> <a href="a00587_source.html#l00041">VisibleRecoFrame.cc:41</a></div></div>
+<div class="ttc" id="aa00873_html"><div class="ttname"><a href="a00873.html">RestFrames::VisibleRecoFrame</a></div><div class="ttdef"><b>Definition:</b> <a href="a00431_source.html#l00041">VisibleRecoFrame.hh:41</a></div></div>
+<div class="ttc" id="aa00865_html"><div class="ttname"><a href="a00865.html">RestFrames::VisibleFrame</a></div><div class="ttdef"><b>Definition:</b> <a href="a00425_source.html#l00043">VisibleFrame.hh:43</a></div></div>
 <!-- HTML footer for doxygen 1.8.9.1-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 15 2020 18:01:00 for RestFrames by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 28 2020 16:00:33 for RestFrames by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.19
 </small></address>

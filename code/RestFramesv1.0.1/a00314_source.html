@@ -132,15 +132,15 @@ $(function() {
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">namespace </span>RestFrames {</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="comment">// HistPlotVar class</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="a00693.html">   40</a></span>&#160;<span class="comment"></span>  <span class="keyword">class </span><a class="code" href="a00693.html">HistPlotVar</a> : <span class="keyword">public</span> <a class="code" href="a00785.html">RFBase</a> {</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="a00705.html">   40</a></span>&#160;<span class="comment"></span>  <span class="keyword">class </span><a class="code" href="a00705.html">HistPlotVar</a> : <span class="keyword">public</span> <a class="code" href="a00797.html">RFBase</a> {</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <a class="code" href="a00693.html">HistPlotVar</a>(<span class="keyword">const</span> std::string&amp; name, </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <a class="code" href="a00705.html">HistPlotVar</a>(<span class="keyword">const</span> std::string&amp; name, </div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keyword">const</span> std::string&amp; title, </div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keywordtype">double</span> minval, <span class="keywordtype">double</span> maxval,</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keyword">const</span> std::string&amp; unit);</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="a00693.html">HistPlotVar</a>();</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    ~<a class="code" href="a00693.html">HistPlotVar</a>();</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="a00705.html">HistPlotVar</a>();</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    ~<a class="code" href="a00705.html">HistPlotVar</a>();</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">void</span> operator = (<span class="keywordtype">double</span> val) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
@@ -162,7 +162,7 @@ $(function() {
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    std::string GetUnit() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keyword">static</span> <a class="code" href="a00693.html">HistPlotVar</a>&amp; Empty();</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keyword">static</span> <a class="code" href="a00705.html">HistPlotVar</a>&amp; Empty();</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="keyword">private</span>:</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">int</span> m_class_key;</div>
@@ -172,7 +172,7 @@ $(function() {
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordtype">double</span> m_Max;</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keyword">mutable</span> <span class="keywordtype">double</span> m_Val;</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keyword">static</span> <a class="code" href="a00693.html">HistPlotVar</a> m_Empty;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keyword">static</span> <a class="code" href="a00705.html">HistPlotVar</a> m_Empty;</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  };</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
@@ -181,12 +181,12 @@ $(function() {
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aa00386_html"><div class="ttname"><a href="a00386.html">RFBase.hh</a></div></div>
-<div class="ttc" id="aa00693_html"><div class="ttname"><a href="a00693.html">RestFrames::HistPlotVar</a></div><div class="ttdef"><b>Definition:</b> <a href="a00314_source.html#l00040">HistPlotVar.hh:40</a></div></div>
-<div class="ttc" id="aa00785_html"><div class="ttname"><a href="a00785.html">RestFrames::RFBase</a></div><div class="ttdoc">Base class for all RestFrame package objects.</div><div class="ttdef"><b>Definition:</b> <a href="a00386_source.html#l00053">RFBase.hh:53</a></div></div>
+<div class="ttc" id="aa00705_html"><div class="ttname"><a href="a00705.html">RestFrames::HistPlotVar</a></div><div class="ttdef"><b>Definition:</b> <a href="a00314_source.html#l00040">HistPlotVar.hh:40</a></div></div>
+<div class="ttc" id="aa00797_html"><div class="ttname"><a href="a00797.html">RestFrames::RFBase</a></div><div class="ttdoc">Base class for all RestFrame package objects.</div><div class="ttdef"><b>Definition:</b> <a href="a00386_source.html#l00053">RFBase.hh:53</a></div></div>
 <!-- HTML footer for doxygen 1.8.9.1-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 15 2020 18:00:59 for RestFrames by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 28 2020 16:00:31 for RestFrames by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.19
 </small></address>

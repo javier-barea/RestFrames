@@ -131,21 +131,21 @@ $(function() {
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">namespace </span>RestFrames {</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="comment">// DecayFrame class</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment"></span>  <span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt; DecayFrame&lt;T&gt;::DecayFrame(<span class="keyword">const</span> std::string&amp; sname,</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="a00677.html#a918237b77a92d97bc25000520b97ffad">   39</a></span>&#160;<span class="comment"></span>  <span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt; <a class="code" href="a00677.html#a55b86f46cbd185cd1b6bf979146f4101">DecayFrame&lt;T&gt;::DecayFrame</a>(<span class="keyword">const</span> std::string&amp; sname,</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                           <span class="keyword">const</span> std::string&amp; stitle)</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    : T(sname, stitle)</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  {</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    T::m_Type = kDecayFrame;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  }</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  DecayFrame&lt;T&gt;::DecayFrame() : T() {}</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="a00677.html#a918237b77a92d97bc25000520b97ffad">   46</a></span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt; </div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="a00677.html#a55b86f46cbd185cd1b6bf979146f4101">   47</a></span>&#160;  <a class="code" href="a00677.html#a55b86f46cbd185cd1b6bf979146f4101">DecayFrame&lt;T&gt;::DecayFrame</a>() : T() {}</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  </div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  DecayFrame&lt;T&gt;::~DecayFrame() {}</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="a00677.html#a55b86f46cbd185cd1b6bf979146f4101">   50</a></span>&#160;  <a class="code" href="a00677.html">DecayFrame&lt;T&gt;::~DecayFrame</a>() {}</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keywordtype">bool</span> DecayFrame&lt;T&gt;::IsSoundBody()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="a00677.html">DecayFrame&lt;T&gt;::IsSoundBody</a>()<span class="keyword"> const </span>{</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordflow">if</span>(RFBase::IsSoundBody()) </div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordflow">if</span>(!T::IsSoundBody()){</div>
@@ -163,12 +163,14 @@ $(function() {
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aa00374_html"><div class="ttname"><a href="a00374.html">ReconstructionFrame.hh</a></div></div>
+<div class="ttc" id="aa00677_html_a55b86f46cbd185cd1b6bf979146f4101"><div class="ttname"><a href="a00677.html#a55b86f46cbd185cd1b6bf979146f4101">RestFrames::DecayFrame::DecayFrame</a></div><div class="ttdeci">DecayFrame()</div><div class="ttdoc">Empty constructor.</div><div class="ttdef"><b>Definition:</b> <a href="a00452_source.html#l00047">DecayFrame.cc:47</a></div></div>
 <div class="ttc" id="aa00302_html"><div class="ttname"><a href="a00302.html">GeneratorFrame.hh</a></div></div>
+<div class="ttc" id="aa00677_html"><div class="ttname"><a href="a00677.html">RestFrames::DecayFrame</a></div><div class="ttdef"><b>Definition:</b> <a href="a00293_source.html#l00038">DecayFrame.hh:38</a></div></div>
 <div class="ttc" id="aa00293_html"><div class="ttname"><a href="a00293.html">DecayFrame.hh</a></div></div>
 <!-- HTML footer for doxygen 1.8.9.1-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 15 2020 18:01:00 for RestFrames by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 28 2020 16:00:34 for RestFrames by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.19
 </small></address>

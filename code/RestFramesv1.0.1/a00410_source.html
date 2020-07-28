@@ -131,34 +131,40 @@ $(function() {
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">namespace </span>RestFrames {</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="a00833.html">   37</a></span>&#160;  <span class="keyword">class </span><a class="code" href="a00833.html">SetRapidityInvJigsaw</a> : <span class="keyword">public</span> <a class="code" href="a00709.html">InvisibleJigsaw</a> {</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="a00845.html">   37</a></span>&#160;  <span class="keyword">class </span><a class="code" href="a00845.html">SetRapidityInvJigsaw</a> : <span class="keyword">public</span> <a class="code" href="a00721.html">InvisibleJigsaw</a> {</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <a class="code" href="a00833.html">SetRapidityInvJigsaw</a>(<span class="keyword">const</span> std::string&amp; sname, <span class="keyword">const</span> std::string&amp; stitle);</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="code" href="a00833.html">SetRapidityInvJigsaw</a>();</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="a00833.html">SetRapidityInvJigsaw</a>();</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keyword">virtual</span> std::string GetLabel()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;Set Invisible Rapidity&quot;</span>; }</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> SetAxis(<span class="keyword">const</span> TVector3&amp; axis);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> AnalyzeEvent();</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    TVector3 m_Axis;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  </div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  };</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;}</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="a00845.html#ae7642f3ddb01251414b2d03f4b0dcf02">SetRapidityInvJigsaw</a>(<span class="keyword">const</span> std::string&amp; sname, <span class="keyword">const</span> std::string&amp; stitle);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="a00845.html#ae7642f3ddb01251414b2d03f4b0dcf02">SetRapidityInvJigsaw</a>();</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="a00845.html">SetRapidityInvJigsaw</a>();</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="a00845.html#a23f0fca687dd8a12055978ef7e429610">   53</a></span>&#160;    <span class="keyword">virtual</span> std::string <a class="code" href="a00845.html#a23f0fca687dd8a12055978ef7e429610">GetLabel</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;Set Invisible Rapidity&quot;</span>; }</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="a00845.html#ae6071be9335450e0d6f1fc9571fb7e0f">SetAxis</a>(<span class="keyword">const</span> TVector3&amp; axis);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> AnalyzeEvent();</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    TVector3 m_Axis;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  };</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;}</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aa00833_html"><div class="ttname"><a href="a00833.html">RestFrames::SetRapidityInvJigsaw</a></div><div class="ttdef"><b>Definition:</b> <a href="a00410_source.html#l00037">SetRapidityInvJigsaw.hh:37</a></div></div>
-<div class="ttc" id="aa00709_html"><div class="ttname"><a href="a00709.html">RestFrames::InvisibleJigsaw</a></div><div class="ttdef"><b>Definition:</b> <a href="a00326_source.html#l00039">InvisibleJigsaw.hh:39</a></div></div>
+<div class="ttc" id="aa00845_html_a23f0fca687dd8a12055978ef7e429610"><div class="ttname"><a href="a00845.html#a23f0fca687dd8a12055978ef7e429610">RestFrames::SetRapidityInvJigsaw::GetLabel</a></div><div class="ttdeci">virtual std::string GetLabel() const</div><div class="ttdoc">Returns name of this Jigsaw.</div><div class="ttdef"><b>Definition:</b> <a href="a00410_source.html#l00053">SetRapidityInvJigsaw.hh:53</a></div></div>
+<div class="ttc" id="aa00845_html"><div class="ttname"><a href="a00845.html">RestFrames::SetRapidityInvJigsaw</a></div><div class="ttdef"><b>Definition:</b> <a href="a00410_source.html#l00037">SetRapidityInvJigsaw.hh:37</a></div></div>
+<div class="ttc" id="aa00845_html_ae6071be9335450e0d6f1fc9571fb7e0f"><div class="ttname"><a href="a00845.html#ae6071be9335450e0d6f1fc9571fb7e0f">RestFrames::SetRapidityInvJigsaw::SetAxis</a></div><div class="ttdeci">virtual void SetAxis(const TVector3 &amp;axis)</div><div class="ttdoc">Sets axis....</div><div class="ttdef"><b>Definition:</b> <a href="a00566_source.html#l00046">SetRapidityInvJigsaw.cc:46</a></div></div>
 <div class="ttc" id="aa00326_html"><div class="ttname"><a href="a00326.html">InvisibleJigsaw.hh</a></div></div>
+<div class="ttc" id="aa00845_html_ae7642f3ddb01251414b2d03f4b0dcf02"><div class="ttname"><a href="a00845.html#ae7642f3ddb01251414b2d03f4b0dcf02">RestFrames::SetRapidityInvJigsaw::SetRapidityInvJigsaw</a></div><div class="ttdeci">SetRapidityInvJigsaw()</div><div class="ttdoc">Empty constructor.</div><div class="ttdef"><b>Definition:</b> <a href="a00566_source.html#l00042">SetRapidityInvJigsaw.cc:42</a></div></div>
+<div class="ttc" id="aa00721_html"><div class="ttname"><a href="a00721.html">RestFrames::InvisibleJigsaw</a></div><div class="ttdef"><b>Definition:</b> <a href="a00326_source.html#l00039">InvisibleJigsaw.hh:39</a></div></div>
 <!-- HTML footer for doxygen 1.8.9.1-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 15 2020 18:00:59 for RestFrames by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 28 2020 16:00:33 for RestFrames by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.19
 </small></address>

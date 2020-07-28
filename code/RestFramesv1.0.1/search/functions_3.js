@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['empty_502',['Empty',['../a00677.html#a81fa1388135e613f0035040a46d4f025',1,'RestFrames::GeneratorFrame::Empty()'],['../a00781.html#aa35b6aa2c1d010000a9e4a47ac042f8e',1,'RestFrames::RestFrame::Empty()'],['../a00857.html#a4b6b1e20ddc0a112fbbad17de012156c',1,'RestFrames::VisibleGenFrame::Empty()']]],
-  ['emptylist_503',['EmptyList',['../a00781.html#a6cca565739ec438320bffee34ec80d10',1,'RestFrames::RestFrame']]]
+  ['decayframe_567',['DecayFrame',['../a00677.html#a918237b77a92d97bc25000520b97ffad',1,'RestFrames::DecayFrame::DecayFrame(const std::string &amp;sname, const std::string &amp;stitle)'],['../a00677.html#a55b86f46cbd185cd1b6bf979146f4101',1,'RestFrames::DecayFrame::DecayFrame()']]],
+  ['decaygenframe_568',['DecayGenFrame',['../a00681.html#a8ffa069bafd653ca1dc65416b88d4c45',1,'RestFrames::DecayGenFrame::DecayGenFrame(const std::string &amp;sname, const std::string &amp;stitle)'],['../a00681.html#a0475402d3b0ee8d2c7e88ab6e0c9b2c0',1,'RestFrames::DecayGenFrame::DecayGenFrame()']]],
+  ['decayrecoframe_569',['DecayRecoFrame',['../a00685.html#a4b0aeb63bd455ef3a21de0fa18b90c6b',1,'RestFrames::DecayRecoFrame::DecayRecoFrame(const std::string &amp;sname, const std::string &amp;stitle)'],['../a00685.html#a249b703b205a8e975a6e71e555dc227f',1,'RestFrames::DecayRecoFrame::DecayRecoFrame()']]]
 ];

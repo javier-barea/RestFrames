@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['print_574',['Print',['../a00785.html#a141fd7fc2c49089433b4da0a3d901ef0',1,'RestFrames::RFBase']]],
-  ['printgeneratorefficiency_575',['PrintGeneratorEfficiency',['../a00677.html#a57c904c7cde60d97c73aa06459d4334f',1,'RestFrames::GeneratorFrame']]],
-  ['printstring_576',['PrintString',['../a00721.html#a7c04ae5ec6b36bb6e701310ee1b23979',1,'RestFrames::Jigsaw::PrintString()'],['../a00781.html#ab7df27ea84fa0d83fdaf2328ef237caf',1,'RestFrames::RestFrame::PrintString()'],['../a00785.html#a06b762eaddf8d1feef2742548773028e',1,'RestFrames::RFBase::PrintString()']]]
+  ['jigsaw_658',['Jigsaw',['../a00733.html#a4fd8c44505ae97356d1e93ed2d99b984',1,'RestFrames::Jigsaw::Jigsaw(const std::string &amp;sname, const std::string &amp;stitle, int Nchild, int Ndependancy)'],['../a00733.html#a28f1e89dd78e8a877f5ba07f0241182c',1,'RestFrames::Jigsaw::Jigsaw()']]]
 ];

@@ -129,13 +129,13 @@ $(function() {
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">namespace </span>RestFrames {</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="comment">// InvisibleGenFrame class</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment"></span>  InvisibleGenFrame::InvisibleGenFrame(<span class="keyword">const</span> std::string&amp; sname, </div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="a00713.html#ae705ad2e7c46a8256655f25c2bd26985">   37</a></span>&#160;<span class="comment"></span>  <a class="code" href="a00713.html#ae705ad2e7c46a8256655f25c2bd26985">InvisibleGenFrame::InvisibleGenFrame</a>(<span class="keyword">const</span> std::string&amp; sname, </div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                       <span class="keyword">const</span> std::string&amp; stitle)</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    : InvisibleFrame&lt;GeneratorFrame&gt;(sname, stitle) {}</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    : <a class="code" href="a00709.html">InvisibleFrame</a>&lt;<a class="code" href="a00689.html">GeneratorFrame</a>&gt;(sname, stitle) {}</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  InvisibleGenFrame::~InvisibleGenFrame(){ }</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keywordtype">void</span> InvisibleGenFrame::SetMass(<span class="keywordtype">double</span> val){</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="a00713.html#a2fc39fea9a4445ea8fcd5be6b4c95a77">   43</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="a00713.html#a2fc39fea9a4445ea8fcd5be6b4c95a77">InvisibleGenFrame::SetMass</a>(<span class="keywordtype">double</span> val){</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordflow">if</span>(val &lt; 0.){</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;      m_Log &lt;&lt; LogWarning;</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;      m_Log &lt;&lt; <span class="stringliteral">&quot;Unable to set mass to negative value &quot;</span>;</div>
@@ -154,11 +154,15 @@ $(function() {
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aa00713_html_ae705ad2e7c46a8256655f25c2bd26985"><div class="ttname"><a href="a00713.html#ae705ad2e7c46a8256655f25c2bd26985">RestFrames::InvisibleGenFrame::InvisibleGenFrame</a></div><div class="ttdeci">InvisibleGenFrame(const std::string &amp;sname, const std::string &amp;stitle)</div><div class="ttdoc">Standard constructor.</div><div class="ttdef"><b>Definition:</b> <a href="a00479_source.html#l00037">InvisibleGenFrame.cc:37</a></div></div>
+<div class="ttc" id="aa00709_html"><div class="ttname"><a href="a00709.html">RestFrames::InvisibleFrame</a></div><div class="ttdef"><b>Definition:</b> <a href="a00317_source.html#l00043">InvisibleFrame.hh:43</a></div></div>
+<div class="ttc" id="aa00689_html"><div class="ttname"><a href="a00689.html">RestFrames::GeneratorFrame</a></div><div class="ttdef"><b>Definition:</b> <a href="a00302_source.html#l00042">GeneratorFrame.hh:42</a></div></div>
 <div class="ttc" id="aa00320_html"><div class="ttname"><a href="a00320.html">InvisibleGenFrame.hh</a></div></div>
+<div class="ttc" id="aa00713_html_a2fc39fea9a4445ea8fcd5be6b4c95a77"><div class="ttname"><a href="a00713.html#a2fc39fea9a4445ea8fcd5be6b4c95a77">RestFrames::InvisibleGenFrame::SetMass</a></div><div class="ttdeci">virtual void SetMass(double val)</div><div class="ttdoc">Sets mass of current frame.</div><div class="ttdef"><b>Definition:</b> <a href="a00479_source.html#l00043">InvisibleGenFrame.cc:43</a></div></div>
 <!-- HTML footer for doxygen 1.8.9.1-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 15 2020 18:01:00 for RestFrames by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 28 2020 16:00:35 for RestFrames by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.19
 </small></address>

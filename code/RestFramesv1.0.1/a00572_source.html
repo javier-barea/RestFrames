@@ -150,22 +150,22 @@ $(function() {
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="comment">// TreePlot class methods</span></div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="comment">// class which can plot RestFrame trees</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment"></span>  TreePlot::TreePlot(<span class="keyword">const</span> std::string&amp; sname, </div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="a00853.html#a9079b706ac6e20a7fe41671ea3c240a3">   58</a></span>&#160;<span class="comment"></span>  <a class="code" href="a00853.html#a9079b706ac6e20a7fe41671ea3c240a3">TreePlot::TreePlot</a>(<span class="keyword">const</span> std::string&amp; sname, </div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;             <span class="keyword">const</span> std::string&amp; stitle)</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    : RFPlot(sname, stitle){</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    : <a class="code" href="a00833.html">RFPlot</a>(sname, stitle){</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    m_Type = kVanillaTree;</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    m_GroupPtr = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    m_CanvasPtr = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    m_Log.SetSource(<span class="stringliteral">&quot;TreePlot &quot;</span>+<a class="code" href="a00785.html#a393add2ce5a03e97238ac2c90f545f0e">GetName</a>());</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    m_Log.<a class="code" href="a00825.html#ab0c48bffdb0e7e1c645a104a0a89faaa">SetSource</a>(<span class="stringliteral">&quot;TreePlot &quot;</span>+<a class="code" href="a00797.html#a393add2ce5a03e97238ac2c90f545f0e">GetName</a>());</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  }</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  </div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  TreePlot::~TreePlot(){</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    ClearTree();</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  }</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
-<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="a00841.html#ac9ce7bf6c54034b28f5550d45f13807b">   71</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="a00841.html#ac9ce7bf6c54034b28f5550d45f13807b">TreePlot::Clear</a>(){</div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="a00853.html#ac9ce7bf6c54034b28f5550d45f13807b">   71</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="a00853.html#ac9ce7bf6c54034b28f5550d45f13807b">TreePlot::Clear</a>(){</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    ClearTree();</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <a class="code" href="a00821.html#a4da0d574ebaca343a85231a34e0ba376">RFPlot::Clear</a>();</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <a class="code" href="a00833.html#a4da0d574ebaca343a85231a34e0ba376">RFPlot::Clear</a>();</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  }</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="keywordtype">void</span> TreePlot::ClearTree(){</div>
@@ -204,12 +204,12 @@ $(function() {
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keywordflow">if</span>(name == <span class="stringliteral">&quot;&quot;</span>){</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;      <span class="keywordtype">char</span> strn[10];</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;      sprintf(strn,<span class="stringliteral">&quot;%d&quot;</span>,GetNCanvases()+1);</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;      sname = <a class="code" href="a00785.html#a393add2ce5a03e97238ac2c90f545f0e">GetName</a>()+std::string(strn);</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;      sname = <a class="code" href="a00797.html#a393add2ce5a03e97238ac2c90f545f0e">GetName</a>()+std::string(strn);</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    } <span class="keywordflow">else</span> {</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;      sname = name;</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    }</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keywordflow">if</span>(title == <span class="stringliteral">&quot;&quot;</span>)</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;      stitle = <a class="code" href="a00785.html#a259119e7402734e6f27ce840d4cd9abe">GetTitle</a>();</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;      stitle = <a class="code" href="a00797.html#a259119e7402734e6f27ce840d4cd9abe">GetTitle</a>();</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keywordflow">else</span> </div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;      stitle = title;</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    </div>
@@ -243,7 +243,7 @@ $(function() {
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    <span class="keywordflow">if</span>(m_Type == kGroupTree){</div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;      DrawTreeLinks();</div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;      DrawTreeNodes();</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;      DrawTitle(m_GroupPtr-&gt;<a class="code" href="a00785.html#a259119e7402734e6f27ce840d4cd9abe">GetTitle</a>());</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;      DrawTitle(m_GroupPtr-&gt;<a class="code" href="a00797.html#a259119e7402734e6f27ce840d4cd9abe">GetTitle</a>());</div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    }</div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160; </div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    m_CanvasPtr-&gt;Draw();</div>
@@ -822,7 +822,7 @@ $(function() {
 <div class="line"><a name="l00727"></a><span class="lineno">  727</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> f = 1; f &lt; Nf; f++){</div>
 <div class="line"><a name="l00728"></a><span class="lineno">  728</span>&#160;      <span class="keywordflow">if</span>(f%((Nf+1)/2) == 0 &amp;&amp; Nf &gt; 2) title.append(<span class="stringliteral">&quot;}{&quot;</span>);</div>
 <div class="line"><a name="l00729"></a><span class="lineno">  729</span>&#160;      title.append(<span class="stringliteral">&quot;+ &quot;</span>);</div>
-<div class="line"><a name="l00730"></a><span class="lineno">  730</span>&#160;      title.append(frames[f].<a class="code" href="a00785.html#a259119e7402734e6f27ce840d4cd9abe">GetTitle</a>());</div>
+<div class="line"><a name="l00730"></a><span class="lineno">  730</span>&#160;      title.append(frames[f].<a class="code" href="a00797.html#a259119e7402734e6f27ce840d4cd9abe">GetTitle</a>());</div>
 <div class="line"><a name="l00731"></a><span class="lineno">  731</span>&#160;    }</div>
 <div class="line"><a name="l00732"></a><span class="lineno">  732</span>&#160;    <span class="keywordflow">if</span>(Nf &gt; 2) title.append(<span class="stringliteral">&quot;}&quot;</span>);</div>
 <div class="line"><a name="l00733"></a><span class="lineno">  733</span>&#160;   </div>
@@ -955,21 +955,24 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aa00416_html"><div class="ttname"><a href="a00416.html">TreePlot.hh</a></div></div>
 <div class="ttc" id="aa00299_html"><div class="ttname"><a href="a00299.html">DecayRecoFrame.hh</a></div></div>
+<div class="ttc" id="aa00833_html_a4da0d574ebaca343a85231a34e0ba376"><div class="ttname"><a href="a00833.html#a4da0d574ebaca343a85231a34e0ba376">RestFrames::RFPlot::Clear</a></div><div class="ttdeci">virtual void Clear()</div><div class="ttdoc">Clears RFBase of all connections to other objects.</div><div class="ttdef"><b>Definition:</b> <a href="a00557_source.html#l00048">RFPlot.cc:48</a></div></div>
 <div class="ttc" id="aa00422_html"><div class="ttname"><a href="a00422.html">TreePlotNode.hh</a></div></div>
 <div class="ttc" id="aa00329_html"><div class="ttname"><a href="a00329.html">InvisibleRecoFrame.hh</a></div></div>
-<div class="ttc" id="aa00841_html_ac9ce7bf6c54034b28f5550d45f13807b"><div class="ttname"><a href="a00841.html#ac9ce7bf6c54034b28f5550d45f13807b">RestFrames::TreePlot::Clear</a></div><div class="ttdeci">virtual void Clear()</div><div class="ttdoc">Clears RFBase of all connections to other objects.</div><div class="ttdef"><b>Definition:</b> <a href="a00572_source.html#l00071">TreePlot.cc:71</a></div></div>
+<div class="ttc" id="aa00833_html"><div class="ttname"><a href="a00833.html">RestFrames::RFPlot</a></div><div class="ttdef"><b>Definition:</b> <a href="a00401_source.html#l00041">RFPlot.hh:41</a></div></div>
 <div class="ttc" id="aa00431_html"><div class="ttname"><a href="a00431.html">VisibleRecoFrame.hh</a></div></div>
 <div class="ttc" id="aa00413_html"><div class="ttname"><a href="a00413.html">State.hh</a></div></div>
-<div class="ttc" id="aa00785_html_a393add2ce5a03e97238ac2c90f545f0e"><div class="ttname"><a href="a00785.html#a393add2ce5a03e97238ac2c90f545f0e">RestFrames::RFBase::GetName</a></div><div class="ttdeci">std::string GetName() const</div><div class="ttdoc">Returns object name.</div><div class="ttdef"><b>Definition:</b> <a href="a00542_source.html#l00104">RFBase.cc:104</a></div></div>
+<div class="ttc" id="aa00825_html_ab0c48bffdb0e7e1c645a104a0a89faaa"><div class="ttname"><a href="a00825.html#ab0c48bffdb0e7e1c645a104a0a89faaa">RestFrames::RFLog::SetSource</a></div><div class="ttdeci">void SetSource(const std::string &amp;source)</div><div class="ttdoc">Sets source of ...</div><div class="ttdef"><b>Definition:</b> <a href="a00554_source.html#l00182">RFLog.cc:182</a></div></div>
+<div class="ttc" id="aa00797_html_a259119e7402734e6f27ce840d4cd9abe"><div class="ttname"><a href="a00797.html#a259119e7402734e6f27ce840d4cd9abe">RestFrames::RFBase::GetTitle</a></div><div class="ttdeci">std::string GetTitle() const</div><div class="ttdoc">Returns object title.</div><div class="ttdef"><b>Definition:</b> <a href="a00542_source.html#l00108">RFBase.cc:108</a></div></div>
 <div class="ttc" id="aa00419_html"><div class="ttname"><a href="a00419.html">TreePlotLink.hh</a></div></div>
+<div class="ttc" id="aa00853_html_a9079b706ac6e20a7fe41671ea3c240a3"><div class="ttname"><a href="a00853.html#a9079b706ac6e20a7fe41671ea3c240a3">RestFrames::TreePlot::TreePlot</a></div><div class="ttdeci">TreePlot(const std::string &amp;sname, const std::string &amp;stitle)</div><div class="ttdoc">Standard constructor.</div><div class="ttdef"><b>Definition:</b> <a href="a00572_source.html#l00058">TreePlot.cc:58</a></div></div>
+<div class="ttc" id="aa00853_html_ac9ce7bf6c54034b28f5550d45f13807b"><div class="ttname"><a href="a00853.html#ac9ce7bf6c54034b28f5550d45f13807b">RestFrames::TreePlot::Clear</a></div><div class="ttdeci">virtual void Clear()</div><div class="ttdoc">Clears TreePlot from all connections to other objects.</div><div class="ttdef"><b>Definition:</b> <a href="a00572_source.html#l00071">TreePlot.cc:71</a></div></div>
 <div class="ttc" id="aa00335_html"><div class="ttname"><a href="a00335.html">Jigsaw.hh</a></div></div>
-<div class="ttc" id="aa00785_html_a259119e7402734e6f27ce840d4cd9abe"><div class="ttname"><a href="a00785.html#a259119e7402734e6f27ce840d4cd9abe">RestFrames::RFBase::GetTitle</a></div><div class="ttdeci">std::string GetTitle() const</div><div class="ttdoc">Returns object title.</div><div class="ttdef"><b>Definition:</b> <a href="a00542_source.html#l00108">RFBase.cc:108</a></div></div>
 <div class="ttc" id="aa00278_html"><div class="ttname"><a href="a00278.html">CombinatoricGroup.hh</a></div></div>
-<div class="ttc" id="aa00821_html_a4da0d574ebaca343a85231a34e0ba376"><div class="ttname"><a href="a00821.html#a4da0d574ebaca343a85231a34e0ba376">RestFrames::RFPlot::Clear</a></div><div class="ttdeci">virtual void Clear()</div><div class="ttdoc">Clears RFBase of all connections to other objects.</div><div class="ttdef"><b>Definition:</b> <a href="a00557_source.html#l00048">RFPlot.cc:48</a></div></div>
+<div class="ttc" id="aa00797_html_a393add2ce5a03e97238ac2c90f545f0e"><div class="ttname"><a href="a00797.html#a393add2ce5a03e97238ac2c90f545f0e">RestFrames::RFBase::GetName</a></div><div class="ttdeci">std::string GetName() const</div><div class="ttdoc">Returns object name.</div><div class="ttdef"><b>Definition:</b> <a href="a00542_source.html#l00104">RFBase.cc:104</a></div></div>
 <!-- HTML footer for doxygen 1.8.9.1-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 15 2020 18:01:01 for RestFrames by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 28 2020 16:00:38 for RestFrames by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.19
 </small></address>

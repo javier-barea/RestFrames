@@ -129,18 +129,18 @@ $(function() {
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">namespace </span>RestFrames {</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  SetRapidityInvJigsaw::SetRapidityInvJigsaw(<span class="keyword">const</span> std::string&amp; sname, </div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="a00845.html#ab0b0d9e088842dd19cfedfe165186436">   35</a></span>&#160;  <a class="code" href="a00845.html#ae7642f3ddb01251414b2d03f4b0dcf02">SetRapidityInvJigsaw::SetRapidityInvJigsaw</a>(<span class="keyword">const</span> std::string&amp; sname, </div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                         <span class="keyword">const</span> std::string&amp; stitle) : </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    InvisibleJigsaw(sname, stitle, 1, 1)</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <a class="code" href="a00721.html">InvisibleJigsaw</a>(sname, stitle, 1, 1)</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  {</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    m_Axis = <a class="code" href="a00781.html#aba93365f3c525ab1d6f7681c7ca8a7e6">RestFrame::GetAxis</a>();</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    m_Axis = <a class="code" href="a00793.html#aba93365f3c525ab1d6f7681c7ca8a7e6">RestFrame::GetAxis</a>();</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  }</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  SetRapidityInvJigsaw::SetRapidityInvJigsaw() : InvisibleJigsaw() {}</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="a00845.html#ae7642f3ddb01251414b2d03f4b0dcf02">   42</a></span>&#160;  <a class="code" href="a00845.html#ae7642f3ddb01251414b2d03f4b0dcf02">SetRapidityInvJigsaw::SetRapidityInvJigsaw</a>() : <a class="code" href="a00721.html">InvisibleJigsaw</a>() {}</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  SetRapidityInvJigsaw::~SetRapidityInvJigsaw() {}</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keywordtype">void</span> SetRapidityInvJigsaw::SetAxis(<span class="keyword">const</span> TVector3&amp; axis){</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="a00845.html#ae6071be9335450e0d6f1fc9571fb7e0f">   46</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="a00845.html#ae6071be9335450e0d6f1fc9571fb7e0f">SetRapidityInvJigsaw::SetAxis</a>(<span class="keyword">const</span> TVector3&amp; axis){</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    m_Axis = axis;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  }</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
@@ -148,7 +148,7 @@ $(function() {
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordflow">if</span>(!IsSoundMind()) </div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;      <span class="keywordflow">return</span> SetSpirit(<span class="keyword">false</span>);</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    TLorentzVector inv_P = GetParentState().<a class="code" href="a00837.html#a538d28484b82b7bb2560f482879907f3">GetFourVector</a>();</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    TLorentzVector inv_P = GetParentState().<a class="code" href="a00849.html#a538d28484b82b7bb2560f482879907f3">GetFourVector</a>();</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    TLorentzVector vis_P = GetDependancyStates(0).GetFourVector();</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    TVector3 boostZ = vis_P.BoostVector();</div>
@@ -157,22 +157,25 @@ $(function() {
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    inv_P.SetZ(0.0);</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    inv_P.Boost(boostZ);</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    GetChildState(0).<a class="code" href="a00837.html#ad94f9ab87499da559a6bf96b5f2d9d2d">SetFourVector</a>(inv_P);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    GetChildState(0).<a class="code" href="a00849.html#ad94f9ab87499da559a6bf96b5f2d9d2d">SetFourVector</a>(inv_P);</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    </div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordflow">return</span> SetSpirit(<span class="keyword">true</span>);</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  }</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aa00781_html_aba93365f3c525ab1d6f7681c7ca8a7e6"><div class="ttname"><a href="a00781.html#aba93365f3c525ab1d6f7681c7ca8a7e6">RestFrames::RestFrame::GetAxis</a></div><div class="ttdeci">static TVector3 const  &amp; GetAxis()</div><div class="ttdoc">Retrieve axis which defines transverse plane.</div><div class="ttdef"><b>Definition:</b> <a href="a00539_source.html#l00074">RestFrame.cc:74</a></div></div>
 <div class="ttc" id="aa00410_html"><div class="ttname"><a href="a00410.html">SetRapidityInvJigsaw.hh</a></div></div>
+<div class="ttc" id="aa00849_html_ad94f9ab87499da559a6bf96b5f2d9d2d"><div class="ttname"><a href="a00849.html#ad94f9ab87499da559a6bf96b5f2d9d2d">RestFrames::State::SetFourVector</a></div><div class="ttdeci">virtual void SetFourVector(const TLorentzVector &amp;V)</div><div class="ttdoc">Sets four-vector of this frame.</div><div class="ttdef"><b>Definition:</b> <a href="a00569_source.html#l00155">State.cc:155</a></div></div>
 <div class="ttc" id="aa00380_html"><div class="ttname"><a href="a00380.html">RestFrame.hh</a></div></div>
-<div class="ttc" id="aa00837_html_a538d28484b82b7bb2560f482879907f3"><div class="ttname"><a href="a00837.html#a538d28484b82b7bb2560f482879907f3">RestFrames::State::GetFourVector</a></div><div class="ttdeci">virtual TLorentzVector GetFourVector() const</div><div class="ttdoc">Returns four vector of this frame.</div><div class="ttdef"><b>Definition:</b> <a href="a00569_source.html#l00159">State.cc:159</a></div></div>
-<div class="ttc" id="aa00837_html_ad94f9ab87499da559a6bf96b5f2d9d2d"><div class="ttname"><a href="a00837.html#ad94f9ab87499da559a6bf96b5f2d9d2d">RestFrames::State::SetFourVector</a></div><div class="ttdeci">virtual void SetFourVector(const TLorentzVector &amp;V)</div><div class="ttdoc">Sets four-vector of this frame.</div><div class="ttdef"><b>Definition:</b> <a href="a00569_source.html#l00155">State.cc:155</a></div></div>
+<div class="ttc" id="aa00845_html_ae6071be9335450e0d6f1fc9571fb7e0f"><div class="ttname"><a href="a00845.html#ae6071be9335450e0d6f1fc9571fb7e0f">RestFrames::SetRapidityInvJigsaw::SetAxis</a></div><div class="ttdeci">virtual void SetAxis(const TVector3 &amp;axis)</div><div class="ttdoc">Sets axis....</div><div class="ttdef"><b>Definition:</b> <a href="a00566_source.html#l00046">SetRapidityInvJigsaw.cc:46</a></div></div>
+<div class="ttc" id="aa00849_html_a538d28484b82b7bb2560f482879907f3"><div class="ttname"><a href="a00849.html#a538d28484b82b7bb2560f482879907f3">RestFrames::State::GetFourVector</a></div><div class="ttdeci">virtual TLorentzVector GetFourVector() const</div><div class="ttdoc">Returns four vector of this frame.</div><div class="ttdef"><b>Definition:</b> <a href="a00569_source.html#l00159">State.cc:159</a></div></div>
+<div class="ttc" id="aa00793_html_aba93365f3c525ab1d6f7681c7ca8a7e6"><div class="ttname"><a href="a00793.html#aba93365f3c525ab1d6f7681c7ca8a7e6">RestFrames::RestFrame::GetAxis</a></div><div class="ttdeci">static TVector3 const  &amp; GetAxis()</div><div class="ttdoc">Retrieve axis which defines transverse plane.</div><div class="ttdef"><b>Definition:</b> <a href="a00539_source.html#l00074">RestFrame.cc:74</a></div></div>
+<div class="ttc" id="aa00845_html_ae7642f3ddb01251414b2d03f4b0dcf02"><div class="ttname"><a href="a00845.html#ae7642f3ddb01251414b2d03f4b0dcf02">RestFrames::SetRapidityInvJigsaw::SetRapidityInvJigsaw</a></div><div class="ttdeci">SetRapidityInvJigsaw()</div><div class="ttdoc">Empty constructor.</div><div class="ttdef"><b>Definition:</b> <a href="a00566_source.html#l00042">SetRapidityInvJigsaw.cc:42</a></div></div>
+<div class="ttc" id="aa00721_html"><div class="ttname"><a href="a00721.html">RestFrames::InvisibleJigsaw</a></div><div class="ttdef"><b>Definition:</b> <a href="a00326_source.html#l00039">InvisibleJigsaw.hh:39</a></div></div>
 <!-- HTML footer for doxygen 1.8.9.1-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 15 2020 18:01:01 for RestFrames by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 28 2020 16:00:37 for RestFrames by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.19
 </small></address>

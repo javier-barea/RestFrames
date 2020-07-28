@@ -131,33 +131,38 @@ $(function() {
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="comment">// DecayRecoFrame class</span></div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="comment">// Class for an intermediate state</span></div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="comment">// inheriting from DecayFrame and RFrame</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment"></span>  DecayRecoFrame::DecayRecoFrame(<span class="keyword">const</span> std::string&amp; sname, </div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="a00685.html#a4b0aeb63bd455ef3a21de0fa18b90c6b">   39</a></span>&#160;<span class="comment"></span>  <a class="code" href="a00685.html#a249b703b205a8e975a6e71e555dc227f">DecayRecoFrame::DecayRecoFrame</a>(<span class="keyword">const</span> std::string&amp; sname, </div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                 <span class="keyword">const</span> std::string&amp; stitle) </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    : DecayFrame&lt;ReconstructionFrame&gt;(sname,stitle)</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    : <a class="code" href="a00677.html">DecayFrame</a>&lt;<a class="code" href="a00785.html">ReconstructionFrame</a>&gt;(sname,stitle)</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  {</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    m_RType = RDVanilla;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  }</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  DecayRecoFrame::DecayRecoFrame() : DecayFrame&lt;ReconstructionFrame&gt;() {}</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="a00685.html#a249b703b205a8e975a6e71e555dc227f">   46</a></span>&#160;  <a class="code" href="a00685.html#a249b703b205a8e975a6e71e555dc227f">DecayRecoFrame::DecayRecoFrame</a>() : <a class="code" href="a00677.html">DecayFrame</a>&lt;<a class="code" href="a00785.html">ReconstructionFrame</a>&gt;() {}</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  </div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  DecayRecoFrame::~DecayRecoFrame(){ }</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keywordtype">bool</span> DecayRecoFrame::IsSelfAssemblingFrame()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="a00685.html#a87823dc5b5fe17fd2440175bbe259f92">   50</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="a00685.html#a87823dc5b5fe17fd2440175bbe259f92">DecayRecoFrame::IsSelfAssemblingFrame</a>()<span class="keyword"> const </span>{</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordflow">return</span> m_RType == RDSelfAssembling;</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  }</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  DecayRecoFrame&amp; DecayRecoFrame::Empty(){</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <a class="code" href="a00685.html">DecayRecoFrame</a>&amp; DecayRecoFrame::Empty(){</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordflow">return</span> DecayRecoFrame::m_Empty;</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  }</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  DecayRecoFrame DecayRecoFrame::m_Empty;</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aa00685_html_a249b703b205a8e975a6e71e555dc227f"><div class="ttname"><a href="a00685.html#a249b703b205a8e975a6e71e555dc227f">RestFrames::DecayRecoFrame::DecayRecoFrame</a></div><div class="ttdeci">DecayRecoFrame()</div><div class="ttdoc">Empty constructor.</div><div class="ttdef"><b>Definition:</b> <a href="a00458_source.html#l00046">DecayRecoFrame.cc:46</a></div></div>
 <div class="ttc" id="aa00299_html"><div class="ttname"><a href="a00299.html">DecayRecoFrame.hh</a></div></div>
+<div class="ttc" id="aa00677_html"><div class="ttname"><a href="a00677.html">RestFrames::DecayFrame</a></div><div class="ttdef"><b>Definition:</b> <a href="a00293_source.html#l00038">DecayFrame.hh:38</a></div></div>
+<div class="ttc" id="aa00785_html"><div class="ttname"><a href="a00785.html">RestFrames::ReconstructionFrame</a></div><div class="ttdef"><b>Definition:</b> <a href="a00374_source.html#l00041">ReconstructionFrame.hh:41</a></div></div>
+<div class="ttc" id="aa00685_html"><div class="ttname"><a href="a00685.html">RestFrames::DecayRecoFrame</a></div><div class="ttdef"><b>Definition:</b> <a href="a00299_source.html#l00043">DecayRecoFrame.hh:43</a></div></div>
+<div class="ttc" id="aa00685_html_a87823dc5b5fe17fd2440175bbe259f92"><div class="ttname"><a href="a00685.html#a87823dc5b5fe17fd2440175bbe259f92">RestFrames::DecayRecoFrame::IsSelfAssemblingFrame</a></div><div class="ttdeci">bool IsSelfAssemblingFrame() const</div><div class="ttdoc">Is current RestFrame a self assembling frame type? (true/false)</div><div class="ttdef"><b>Definition:</b> <a href="a00458_source.html#l00050">DecayRecoFrame.cc:50</a></div></div>
 <!-- HTML footer for doxygen 1.8.9.1-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 15 2020 18:01:00 for RestFrames by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 28 2020 16:00:34 for RestFrames by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.19
 </small></address>

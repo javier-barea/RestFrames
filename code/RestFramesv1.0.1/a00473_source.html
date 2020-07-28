@@ -132,7 +132,7 @@ $(function() {
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  HistPlotVar::HistPlotVar() : RFBase() </div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  {</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    m_Log.SetSource(<span class="stringliteral">&quot;HistPlotVar &quot;</span>+<a class="code" href="a00785.html#a393add2ce5a03e97238ac2c90f545f0e">GetName</a>());</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    m_Log.<a class="code" href="a00825.html#ab0c48bffdb0e7e1c645a104a0a89faaa">SetSource</a>(<span class="stringliteral">&quot;HistPlotVar &quot;</span>+<a class="code" href="a00797.html#a393add2ce5a03e97238ac2c90f545f0e">GetName</a>());</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  }</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  </div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  HistPlotVar::HistPlotVar(<span class="keyword">const</span> std::string&amp; name, </div>
@@ -142,7 +142,7 @@ $(function() {
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    : RFBase(name, title, HistPlotVar::m_class_key++),</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;      m_Min(minval), m_Max(maxval), m_Unit(unit), m_Val(0.) </div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  {</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    m_Log.SetSource(<span class="stringliteral">&quot;HistPlotVar &quot;</span>+<a class="code" href="a00785.html#a393add2ce5a03e97238ac2c90f545f0e">GetName</a>());</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    m_Log.<a class="code" href="a00825.html#ab0c48bffdb0e7e1c645a104a0a89faaa">SetSource</a>(<span class="stringliteral">&quot;HistPlotVar &quot;</span>+<a class="code" href="a00797.html#a393add2ce5a03e97238ac2c90f545f0e">GetName</a>());</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  }</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  </div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  HistPlotVar::~HistPlotVar() {}</div>
@@ -195,12 +195,13 @@ $(function() {
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aa00785_html_a393add2ce5a03e97238ac2c90f545f0e"><div class="ttname"><a href="a00785.html#a393add2ce5a03e97238ac2c90f545f0e">RestFrames::RFBase::GetName</a></div><div class="ttdeci">std::string GetName() const</div><div class="ttdoc">Returns object name.</div><div class="ttdef"><b>Definition:</b> <a href="a00542_source.html#l00104">RFBase.cc:104</a></div></div>
+<div class="ttc" id="aa00825_html_ab0c48bffdb0e7e1c645a104a0a89faaa"><div class="ttname"><a href="a00825.html#ab0c48bffdb0e7e1c645a104a0a89faaa">RestFrames::RFLog::SetSource</a></div><div class="ttdeci">void SetSource(const std::string &amp;source)</div><div class="ttdoc">Sets source of ...</div><div class="ttdef"><b>Definition:</b> <a href="a00554_source.html#l00182">RFLog.cc:182</a></div></div>
 <div class="ttc" id="aa00314_html"><div class="ttname"><a href="a00314.html">HistPlotVar.hh</a></div></div>
+<div class="ttc" id="aa00797_html_a393add2ce5a03e97238ac2c90f545f0e"><div class="ttname"><a href="a00797.html#a393add2ce5a03e97238ac2c90f545f0e">RestFrames::RFBase::GetName</a></div><div class="ttdeci">std::string GetName() const</div><div class="ttdoc">Returns object name.</div><div class="ttdef"><b>Definition:</b> <a href="a00542_source.html#l00104">RFBase.cc:104</a></div></div>
 <!-- HTML footer for doxygen 1.8.9.1-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 15 2020 18:01:00 for RestFrames by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 28 2020 16:00:35 for RestFrames by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.19
 </small></address>
