@@ -143,14 +143,14 @@ $(function() {
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  </div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  MaxProbBreitWignerCombJigsaw::~MaxProbBreitWignerCombJigsaw() {}</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keywordtype">void</span> MaxProbBreitWignerCombJigsaw::SetPoleMass(<span class="keywordtype">double</span> mass, <span class="keywordtype">int</span> i){</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="a00749.html#a17bc2c8464425c3757b05d4b71c0e88e">   49</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="a00749.html#a17bc2c8464425c3757b05d4b71c0e88e">MaxProbBreitWignerCombJigsaw::SetPoleMass</a>(<span class="keywordtype">double</span> mass, <span class="keywordtype">int</span> i){</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordflow">if</span>(i &lt; 0 || i &gt;= m_Nobj)</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;      <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    m_Mass[i] = std::max(mass, 0.);</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  }</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keywordtype">void</span> MaxProbBreitWignerCombJigsaw::SetWidth(<span class="keywordtype">double</span> width, <span class="keywordtype">int</span> i){</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="a00749.html#a1a680af49a03cb28a32b8f0f1b19a9da">   56</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="a00749.html#a1a680af49a03cb28a32b8f0f1b19a9da">MaxProbBreitWignerCombJigsaw::SetWidth</a>(<span class="keywordtype">double</span> width, <span class="keywordtype">int</span> i){</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordflow">if</span>(i &lt; 0 || i &gt;= m_Nobj)</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;      <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordflow">if</span>(width &lt;= 0.)</div>
@@ -196,13 +196,15 @@ $(function() {
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aa00380_html"><div class="ttname"><a href="a00380.html">RestFrame.hh</a></div></div>
+<div class="ttc" id="aa00749_html_a17bc2c8464425c3757b05d4b71c0e88e"><div class="ttname"><a href="a00749.html#a17bc2c8464425c3757b05d4b71c0e88e">RestFrames::MaxProbBreitWignerCombJigsaw::SetPoleMass</a></div><div class="ttdeci">virtual void SetPoleMass(double mass, int i=0)</div><div class="ttdoc">Sets pole mass of a frame.</div><div class="ttdef"><b>Definition:</b> <a href="a00506_source.html#l00049">MaxProbBreitWignerCombJigsaw.cc:49</a></div></div>
+<div class="ttc" id="aa00749_html_a1a680af49a03cb28a32b8f0f1b19a9da"><div class="ttname"><a href="a00749.html#a1a680af49a03cb28a32b8f0f1b19a9da">RestFrames::MaxProbBreitWignerCombJigsaw::SetWidth</a></div><div class="ttdeci">virtual void SetWidth(double width, int i=0)</div><div class="ttdoc">Sets width of a frame.</div><div class="ttdef"><b>Definition:</b> <a href="a00506_source.html#l00056">MaxProbBreitWignerCombJigsaw.cc:56</a></div></div>
 <div class="ttc" id="aa00661_html"><div class="ttname"><a href="a00661.html">RestFrames::CombinatoricJigsaw</a></div><div class="ttdef"><b>Definition:</b> <a href="a00281_source.html#l00040">CombinatoricJigsaw.hh:40</a></div></div>
 <div class="ttc" id="aa00749_html_af1d62f045e8dc660f4dc2dca07012b9b"><div class="ttname"><a href="a00749.html#af1d62f045e8dc660f4dc2dca07012b9b">RestFrames::MaxProbBreitWignerCombJigsaw::MaxProbBreitWignerCombJigsaw</a></div><div class="ttdeci">MaxProbBreitWignerCombJigsaw(const std::string &amp;sname, const std::string &amp;stitle, int N_comb, int N_object)</div><div class="ttdoc">Standard constructor.</div><div class="ttdef"><b>Definition:</b> <a href="a00506_source.html#l00035">MaxProbBreitWignerCombJigsaw.cc:35</a></div></div>
 <div class="ttc" id="aa00347_html"><div class="ttname"><a href="a00347.html">MaxProbBreitWignerCombJigsaw.hh</a></div></div>
 <!-- HTML footer for doxygen 1.8.9.1-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 28 2020 17:11:07 for RestFrames by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 11 2020 10:25:06 for RestFrames by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.19
 </small></address>

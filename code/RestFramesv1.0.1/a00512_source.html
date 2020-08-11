@@ -129,10 +129,10 @@ $(function() {
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">namespace </span>RestFrames {</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  MinMassChi2CombJigsaw::MinMassChi2CombJigsaw(<span class="keyword">const</span> std::string&amp; sname, </div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="a00757.html#a729a64c26005d63120ad7d0eaa62cf01">   35</a></span>&#160;  <a class="code" href="a00757.html#a729a64c26005d63120ad7d0eaa62cf01">MinMassChi2CombJigsaw::MinMassChi2CombJigsaw</a>(<span class="keyword">const</span> std::string&amp; sname, </div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                           <span class="keyword">const</span> std::string&amp; stitle,</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                           <span class="keywordtype">int</span> N_comb, <span class="keywordtype">int</span> N_mass) </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    : CombinatoricJigsaw(sname, stitle, N_comb, N_mass),</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    : <a class="code" href="a00661.html">CombinatoricJigsaw</a>(sname, stitle, N_comb, N_mass),</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;      m_Ncomb(N_comb), m_Nmass(N_mass)</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  {</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; m_Nmass; i++){</div>
@@ -143,7 +143,7 @@ $(function() {
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  </div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  MinMassChi2CombJigsaw::~MinMassChi2CombJigsaw() {}</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keywordtype">void</span> MinMassChi2CombJigsaw::SetMass(<span class="keywordtype">double</span> mass, <span class="keywordtype">int</span> i){</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="a00757.html#aabc97870d88ce65531be97ca30b05ded">   49</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="a00757.html#aabc97870d88ce65531be97ca30b05ded">MinMassChi2CombJigsaw::SetMass</a>(<span class="keywordtype">double</span> mass, <span class="keywordtype">int</span> i){</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordflow">if</span>(i &lt; 0 || i &gt;= m_Nmass)</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;      <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
@@ -175,12 +175,15 @@ $(function() {
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;}</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
 </div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aa00757_html_a729a64c26005d63120ad7d0eaa62cf01"><div class="ttname"><a href="a00757.html#a729a64c26005d63120ad7d0eaa62cf01">RestFrames::MinMassChi2CombJigsaw::MinMassChi2CombJigsaw</a></div><div class="ttdeci">MinMassChi2CombJigsaw(const std::string &amp;sname, const std::string &amp;stitle, int N_comb, int N_mass)</div><div class="ttdoc">Standard constructor.</div><div class="ttdef"><b>Definition:</b> <a href="a00512_source.html#l00035">MinMassChi2CombJigsaw.cc:35</a></div></div>
 <div class="ttc" id="aa00380_html"><div class="ttname"><a href="a00380.html">RestFrame.hh</a></div></div>
+<div class="ttc" id="aa00661_html"><div class="ttname"><a href="a00661.html">RestFrames::CombinatoricJigsaw</a></div><div class="ttdef"><b>Definition:</b> <a href="a00281_source.html#l00040">CombinatoricJigsaw.hh:40</a></div></div>
+<div class="ttc" id="aa00757_html_aabc97870d88ce65531be97ca30b05ded"><div class="ttname"><a href="a00757.html#aabc97870d88ce65531be97ca30b05ded">RestFrames::MinMassChi2CombJigsaw::SetMass</a></div><div class="ttdeci">virtual void SetMass(double mass, int i=0)</div><div class="ttdoc">Sets mass of a frame.</div><div class="ttdef"><b>Definition:</b> <a href="a00512_source.html#l00049">MinMassChi2CombJigsaw.cc:49</a></div></div>
 <div class="ttc" id="aa00353_html"><div class="ttname"><a href="a00353.html">MinMassChi2CombJigsaw.hh</a></div></div>
 <!-- HTML footer for doxygen 1.8.9.1-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 28 2020 17:11:08 for RestFrames by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 11 2020 10:25:06 for RestFrames by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.19
 </small></address>

@@ -130,10 +130,10 @@ $(function() {
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">namespace </span>RestFrames {</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  MaxProbBreitWignerInvJigsaw::MaxProbBreitWignerInvJigsaw(<span class="keyword">const</span> std::string&amp; sname, </div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="a00753.html#a51e323eca6b2ae009e8b78618f1c3ac2">   36</a></span>&#160;  <a class="code" href="a00753.html#a51e323eca6b2ae009e8b78618f1c3ac2">MaxProbBreitWignerInvJigsaw::MaxProbBreitWignerInvJigsaw</a>(<span class="keyword">const</span> std::string&amp; sname, </div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                               <span class="keyword">const</span> std::string&amp; stitle,</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                               <span class="keywordtype">int</span> N_vis_inv_pair) : </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    InvisibleJigsaw(sname, stitle, N_vis_inv_pair, N_vis_inv_pair), </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <a class="code" href="a00721.html">InvisibleJigsaw</a>(sname, stitle, N_vis_inv_pair, N_vis_inv_pair), </div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    m_Npair(N_vis_inv_pair)</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  {</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    m_minimizer = ROOT::Math::Factory::CreateMinimizer(<span class="stringliteral">&quot;Minuit2&quot;</span>, <span class="stringliteral">&quot;Combined&quot;</span>);</div>
@@ -160,14 +160,14 @@ $(function() {
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keyword">delete</span> m_functor;</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  }</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keywordtype">double</span> MaxProbBreitWignerInvJigsaw::GetMinimumMass()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="a00753.html#aac1e6251c7d6e89948b181bb5626c57c">   66</a></span>&#160;  <span class="keywordtype">double</span> <a class="code" href="a00753.html#aac1e6251c7d6e89948b181bb5626c57c">MaxProbBreitWignerInvJigsaw::GetMinimumMass</a>()<span class="keyword"> const </span>{</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordflow">if</span>(!IsSoundMind())</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;      <span class="keywordflow">return</span> 0.;</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordflow">if</span>(m_Npair &lt;= 0) </div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;      <span class="keywordflow">return</span> 0.;</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordflow">if</span>(m_Npair == 1) </div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;      <span class="keywordflow">return</span> std::max(0.,GetChildState(0).GetMinimumMass());</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;      <span class="keywordflow">return</span> std::max(0.,GetChildState(0).<a class="code" href="a00753.html#aac1e6251c7d6e89948b181bb5626c57c">GetMinimumMass</a>());</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    </div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    TLorentzVector PvisTOT(0.,0.,0.,0.);</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    m_Pvis.clear();</div>
@@ -181,14 +181,14 @@ $(function() {
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    TVector3 Boost = PvisTOT.BoostVector();</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; m_Npair; i++){</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;      m_Pvis[i].Boost(-Boost);</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;      Minv = std::max(0.,GetChildState(i).GetMinimumMass());</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;      Minv = std::max(0.,GetChildState(i).<a class="code" href="a00753.html#aac1e6251c7d6e89948b181bb5626c57c">GetMinimumMass</a>());</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;      ECM += sqrt(m_Pvis[i].P()*m_Pvis[i].P() + Minv*Minv);</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    }</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordflow">return</span> ECM;</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  }</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <span class="keywordtype">bool</span> MaxProbBreitWignerInvJigsaw::AnalyzeEvent(){</div>
+<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="a00753.html#a26f28772b44f5a7eb400058bf6c45294">   94</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="a00753.html#a26f28772b44f5a7eb400058bf6c45294">MaxProbBreitWignerInvJigsaw::AnalyzeEvent</a>(){</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordflow">if</span>(!IsSoundMind())</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;      <span class="keywordflow">return</span> SetSpirit(<span class="keyword">false</span>);</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
@@ -217,7 +217,7 @@ $(function() {
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    m_Pinv.clear();</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    m_Minv.clear();</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; m_Npair; i++){</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;      m_Minv.push_back(std::max(0.,GetChildState(i).GetMinimumMass()));</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;      m_Minv.push_back(std::max(0.,GetChildState(i).<a class="code" href="a00753.html#aac1e6251c7d6e89948b181bb5626c57c">GetMinimumMass</a>()));</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;      m_Pinv.push_back(m_Pvis[i]);</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;      m_Pinv[i].Boost(-BoostVIS);</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;      m_Pinv[i].SetVectM(m_Pinv[i].Vect(), m_Minv[i]);</div>
@@ -395,14 +395,14 @@ $(function() {
 <div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    <span class="keywordflow">return</span> 1./prob;</div>
 <div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;  }</div>
 <div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160; </div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;  <span class="keywordtype">void</span> MaxProbBreitWignerInvJigsaw::SetPoleMass(<span class="keywordtype">double</span> mass, <span class="keywordtype">int</span> i){</div>
+<div class="line"><a name="l00301"></a><span class="lineno"><a class="line" href="a00753.html#a7461d3a13c1be0e335f4b3578742f467">  301</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="a00753.html#a7461d3a13c1be0e335f4b3578742f467">MaxProbBreitWignerInvJigsaw::SetPoleMass</a>(<span class="keywordtype">double</span> mass, <span class="keywordtype">int</span> i){</div>
 <div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;    <span class="keywordflow">if</span>(i &lt; 0 || i &gt;= m_Npair)</div>
 <div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;      <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160; </div>
 <div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;    m_Mass[i] = std::max(mass, 0.);</div>
 <div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;  }</div>
 <div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160; </div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;  <span class="keywordtype">void</span> MaxProbBreitWignerInvJigsaw::SetWidth(<span class="keywordtype">double</span> width, <span class="keywordtype">int</span> i){</div>
+<div class="line"><a name="l00308"></a><span class="lineno"><a class="line" href="a00753.html#a09d7275c65cfde37a4b73ddbb51f4a2b">  308</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="a00753.html#a09d7275c65cfde37a4b73ddbb51f4a2b">MaxProbBreitWignerInvJigsaw::SetWidth</a>(<span class="keywordtype">double</span> width, <span class="keywordtype">int</span> i){</div>
 <div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;    <span class="keywordflow">if</span>(i &lt; 0 || i &gt;= m_Npair)</div>
 <div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;      <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    <span class="keywordflow">if</span>(width &lt;= 0.)</div>
@@ -414,12 +414,18 @@ $(function() {
 <div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aa00849_html_ad94f9ab87499da559a6bf96b5f2d9d2d"><div class="ttname"><a href="a00849.html#ad94f9ab87499da559a6bf96b5f2d9d2d">RestFrames::State::SetFourVector</a></div><div class="ttdeci">virtual void SetFourVector(const TLorentzVector &amp;V)</div><div class="ttdoc">Sets four-vector of this frame.</div><div class="ttdef"><b>Definition:</b> <a href="a00569_source.html#l00155">State.cc:155</a></div></div>
+<div class="ttc" id="aa00753_html_a7461d3a13c1be0e335f4b3578742f467"><div class="ttname"><a href="a00753.html#a7461d3a13c1be0e335f4b3578742f467">RestFrames::MaxProbBreitWignerInvJigsaw::SetPoleMass</a></div><div class="ttdeci">virtual void SetPoleMass(double mass, int i=0)</div><div class="ttdoc">Sets pole mass of a frame.</div><div class="ttdef"><b>Definition:</b> <a href="a00509_source.html#l00301">MaxProbBreitWignerInvJigsaw.cc:301</a></div></div>
+<div class="ttc" id="aa00753_html_aac1e6251c7d6e89948b181bb5626c57c"><div class="ttname"><a href="a00753.html#aac1e6251c7d6e89948b181bb5626c57c">RestFrames::MaxProbBreitWignerInvJigsaw::GetMinimumMass</a></div><div class="ttdeci">virtual double GetMinimumMass() const</div><div class="ttdoc">Returns minimum Lorentz invariant mass.</div><div class="ttdef"><b>Definition:</b> <a href="a00509_source.html#l00066">MaxProbBreitWignerInvJigsaw.cc:66</a></div></div>
 <div class="ttc" id="aa00849_html_a538d28484b82b7bb2560f482879907f3"><div class="ttname"><a href="a00849.html#a538d28484b82b7bb2560f482879907f3">RestFrames::State::GetFourVector</a></div><div class="ttdeci">virtual TLorentzVector GetFourVector() const</div><div class="ttdoc">Returns four vector of this frame.</div><div class="ttdef"><b>Definition:</b> <a href="a00569_source.html#l00159">State.cc:159</a></div></div>
 <div class="ttc" id="aa00350_html"><div class="ttname"><a href="a00350.html">MaxProbBreitWignerInvJigsaw.hh</a></div></div>
+<div class="ttc" id="aa00753_html_a09d7275c65cfde37a4b73ddbb51f4a2b"><div class="ttname"><a href="a00753.html#a09d7275c65cfde37a4b73ddbb51f4a2b">RestFrames::MaxProbBreitWignerInvJigsaw::SetWidth</a></div><div class="ttdeci">virtual void SetWidth(double width, int i=0)</div><div class="ttdoc">Sets width of a frame.</div><div class="ttdef"><b>Definition:</b> <a href="a00509_source.html#l00308">MaxProbBreitWignerInvJigsaw.cc:308</a></div></div>
+<div class="ttc" id="aa00753_html_a51e323eca6b2ae009e8b78618f1c3ac2"><div class="ttname"><a href="a00753.html#a51e323eca6b2ae009e8b78618f1c3ac2">RestFrames::MaxProbBreitWignerInvJigsaw::MaxProbBreitWignerInvJigsaw</a></div><div class="ttdeci">MaxProbBreitWignerInvJigsaw(const std::string &amp;sname, const std::string &amp;stitle, int N_vis_inv_pair)</div><div class="ttdoc">Standard constructor.</div><div class="ttdef"><b>Definition:</b> <a href="a00509_source.html#l00036">MaxProbBreitWignerInvJigsaw.cc:36</a></div></div>
+<div class="ttc" id="aa00753_html_a26f28772b44f5a7eb400058bf6c45294"><div class="ttname"><a href="a00753.html#a26f28772b44f5a7eb400058bf6c45294">RestFrames::MaxProbBreitWignerInvJigsaw::AnalyzeEvent</a></div><div class="ttdeci">virtual bool AnalyzeEvent()</div><div class="ttdoc">Analyzes event for this jigsaw.</div><div class="ttdef"><b>Definition:</b> <a href="a00509_source.html#l00094">MaxProbBreitWignerInvJigsaw.cc:94</a></div></div>
+<div class="ttc" id="aa00721_html"><div class="ttname"><a href="a00721.html">RestFrames::InvisibleJigsaw</a></div><div class="ttdef"><b>Definition:</b> <a href="a00326_source.html#l00039">InvisibleJigsaw.hh:39</a></div></div>
 <!-- HTML footer for doxygen 1.8.9.1-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 28 2020 17:11:08 for RestFrames by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 11 2020 10:25:06 for RestFrames by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.19
 </small></address>

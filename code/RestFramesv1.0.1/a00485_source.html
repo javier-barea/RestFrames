@@ -132,10 +132,10 @@ $(function() {
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="comment">// InvisibleJigsaw class</span></div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  InvisibleJigsaw::InvisibleJigsaw(<span class="keyword">const</span> std::string&amp; sname, </div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="a00721.html#ac34606aaa0d5a74218add2e93c7c5576">   40</a></span>&#160;  <a class="code" href="a00721.html#acf16bd4a99e9cdf757563ab874f3fa78">InvisibleJigsaw::InvisibleJigsaw</a>(<span class="keyword">const</span> std::string&amp; sname, </div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                   <span class="keyword">const</span> std::string&amp; stitle, </div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                   <span class="keywordtype">int</span> Ninvisible, <span class="keywordtype">int</span> Nvisible) : </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    Jigsaw(sname, stitle, Ninvisible, 2*Nvisible),</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <a class="code" href="a00733.html">Jigsaw</a>(sname, stitle, Ninvisible, 2*Nvisible),</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    m_Ninv(Ninvisible), m_Nvis(Nvisible)</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  {</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    m_Type = kInvisibleJigsaw;</div>
@@ -145,8 +145,8 @@ $(function() {
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    }</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  }</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  InvisibleJigsaw::InvisibleJigsaw() </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    : Jigsaw(), m_Ninv(0), m_Nvis(0) {}</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="a00721.html#acf16bd4a99e9cdf757563ab874f3fa78">   53</a></span>&#160;  <a class="code" href="a00721.html#acf16bd4a99e9cdf757563ab874f3fa78">InvisibleJigsaw::InvisibleJigsaw</a>() </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    : <a class="code" href="a00733.html">Jigsaw</a>(), m_Ninv(0), m_Nvis(0) {}</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  InvisibleJigsaw::~InvisibleJigsaw() {}</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
@@ -191,70 +191,70 @@ $(function() {
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>InvisibleState&amp;<span class="keyword">&gt;</span>(Jigsaw::GetChildState(i));</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  }</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <span class="keywordtype">void</span> InvisibleJigsaw::AddVisibleFrame(<span class="keyword">const</span> RestFrame&amp; frame, <span class="keywordtype">int</span> i){</div>
+<div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="a00721.html#a829292c60706c211a25733266f86d3b7">   99</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="a00721.html#a829292c60706c211a25733266f86d3b7">InvisibleJigsaw::AddVisibleFrame</a>(<span class="keyword">const</span> <a class="code" href="a00793.html">RestFrame</a>&amp; frame, <span class="keywordtype">int</span> i){</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordflow">if</span>(!frame) <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordflow">if</span>(i &lt; 0 || i &gt;= m_Nvis) <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    ConstRestFrameList frames = frame.GetListVisibleFrames();</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <a class="code" href="a00809.html">ConstRestFrameList</a> frames = frame.<a class="code" href="a00793.html#a06678871d2e63872f514482d7ace0bda">GetListVisibleFrames</a>();</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keywordtype">int</span> N = frames.GetN();</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> f = 0; f &lt; N; f++)</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;      AddDependancyFrame(frames[f], i);</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  }</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  <span class="keywordtype">void</span> InvisibleJigsaw::AddVisibleFrames(<span class="keyword">const</span> ConstRestFrameList&amp; frames, <span class="keywordtype">int</span> i){</div>
+<div class="line"><a name="l00109"></a><span class="lineno"><a class="line" href="a00721.html#a4edd190299b7bbf42972de29ab829a00">  109</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="a00721.html#a4edd190299b7bbf42972de29ab829a00">InvisibleJigsaw::AddVisibleFrames</a>(<span class="keyword">const</span> <a class="code" href="a00809.html">ConstRestFrameList</a>&amp; frames, <span class="keywordtype">int</span> i){</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keywordtype">int</span> N = frames.GetN();</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> f = 0; f &lt; N; f++)</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;      AddVisibleFrame(frames[f], i);</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;      <a class="code" href="a00721.html#a829292c60706c211a25733266f86d3b7">AddVisibleFrame</a>(frames[f], i);</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  }</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  <span class="keywordtype">void</span> InvisibleJigsaw::AddMassFrame(<span class="keyword">const</span> RestFrame&amp; frame, <span class="keywordtype">int</span> i){</div>
+<div class="line"><a name="l00115"></a><span class="lineno"><a class="line" href="a00721.html#aef5a9d4948d91e5e26fb85659d5eee32">  115</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="a00721.html#aef5a9d4948d91e5e26fb85659d5eee32">InvisibleJigsaw::AddMassFrame</a>(<span class="keyword">const</span> <a class="code" href="a00793.html">RestFrame</a>&amp; frame, <span class="keywordtype">int</span> i){</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keywordflow">if</span>(!frame) <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keywordflow">if</span>(i &lt; 0 || i &gt;= m_Nvis) <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;   </div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    ConstRestFrameList frames = frame.GetListVisibleFrames();</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <a class="code" href="a00809.html">ConstRestFrameList</a> frames = frame.<a class="code" href="a00793.html#a06678871d2e63872f514482d7ace0bda">GetListVisibleFrames</a>();</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keywordtype">int</span> N = frames.GetN();</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> f = 0; f &lt; N; f++)</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;      AddDependancyFrame(frames[f], m_Nvis + i);</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;  }</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160; </div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;  <span class="keywordtype">void</span> InvisibleJigsaw::AddMassFrames(<span class="keyword">const</span> ConstRestFrameList&amp; frames, <span class="keywordtype">int</span> i){</div>
+<div class="line"><a name="l00125"></a><span class="lineno"><a class="line" href="a00721.html#aa09a1a07070b2824918d587a2599af54">  125</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="a00721.html#aa09a1a07070b2824918d587a2599af54">InvisibleJigsaw::AddMassFrames</a>(<span class="keyword">const</span> <a class="code" href="a00809.html">ConstRestFrameList</a>&amp; frames, <span class="keywordtype">int</span> i){</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="keywordtype">int</span> N = frames.GetN();</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> f = 0; f &lt; N; f++)</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;      AddMassFrame(frames[f], i);</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;      <a class="code" href="a00721.html#aef5a9d4948d91e5e26fb85659d5eee32">AddMassFrame</a>(frames[f], i);</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  }</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160; </div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;  <span class="keywordtype">void</span> InvisibleJigsaw::AddInvisibleFrame(<span class="keyword">const</span> RestFrame&amp; frame, <span class="keywordtype">int</span> i){</div>
+<div class="line"><a name="l00131"></a><span class="lineno"><a class="line" href="a00721.html#a790f1c5b2335c94ff43f5d479aeab1d5">  131</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="a00721.html#a790f1c5b2335c94ff43f5d479aeab1d5">InvisibleJigsaw::AddInvisibleFrame</a>(<span class="keyword">const</span> <a class="code" href="a00793.html">RestFrame</a>&amp; frame, <span class="keywordtype">int</span> i){</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <span class="keywordflow">if</span>(!frame) <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <span class="keywordflow">if</span>(i &lt; 0 || i &gt;= m_Ninv) <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;   </div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    ConstRestFrameList frames = frame.GetListInvisibleFrames();</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    <a class="code" href="a00809.html">ConstRestFrameList</a> frames = frame.<a class="code" href="a00793.html#a32c98dac7d2e6b7ad4e5581f41cc6666">GetListInvisibleFrames</a>();</div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    <span class="keywordtype">int</span> N = frames.GetN();</div>
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> f = 0; f &lt; N; f++)</div>
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;      AddChildFrame(frames[f], i);</div>
 <div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;  }</div>
 <div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160; </div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;  <span class="keywordtype">void</span> InvisibleJigsaw::AddInvisibleFrames(<span class="keyword">const</span> ConstRestFrameList&amp; frames, <span class="keywordtype">int</span> i){</div>
+<div class="line"><a name="l00141"></a><span class="lineno"><a class="line" href="a00721.html#a1e5e0e5bab71b8074dccd93a0fafd0ce">  141</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="a00721.html#a1e5e0e5bab71b8074dccd93a0fafd0ce">InvisibleJigsaw::AddInvisibleFrames</a>(<span class="keyword">const</span> <a class="code" href="a00809.html">ConstRestFrameList</a>&amp; frames, <span class="keywordtype">int</span> i){</div>
 <div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    <span class="keywordtype">int</span> N = frames.GetN();</div>
 <div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> f = 0; f &lt; N; f++)</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;      AddInvisibleFrame(frames[f], i);</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;      <a class="code" href="a00721.html#a790f1c5b2335c94ff43f5d479aeab1d5">AddInvisibleFrame</a>(frames[f], i);</div>
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;  }</div>
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160; </div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;  InvisibleState&amp; InvisibleJigsaw::GetNewChildState(){</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;  <a class="code" href="a00729.html">InvisibleState</a>&amp; InvisibleJigsaw::GetNewChildState(){</div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    <span class="keywordtype">char</span> strn[10];</div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    sprintf(strn,<span class="stringliteral">&quot;%d&quot;</span>,GetNChildren());</div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    std::string name = <a class="code" href="a00797.html#a393add2ce5a03e97238ac2c90f545f0e">GetName</a>()+<span class="stringliteral">&quot;_&quot;</span>+std::string(strn);</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    InvisibleState* statePtr = <span class="keyword">new</span> InvisibleState(name, name);</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    <a class="code" href="a00729.html">InvisibleState</a>* statePtr = <span class="keyword">new</span> <a class="code" href="a00729.html">InvisibleState</a>(name, name);</div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    <a class="code" href="a00797.html#ab3a3c5a2066cb8dcc438c60911f31817">AddDependent</a>(statePtr);</div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    <span class="keywordflow">return</span> *statePtr;</div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;  }</div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160; </div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;  <span class="keywordtype">double</span> InvisibleJigsaw::GetMinimumMass()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00156"></a><span class="lineno"><a class="line" href="a00721.html#a24eb9d313bc93a1950301132ce18e0ea">  156</a></span>&#160;  <span class="keywordtype">double</span> <a class="code" href="a00721.html#a24eb9d313bc93a1950301132ce18e0ea">InvisibleJigsaw::GetMinimumMass</a>()<span class="keyword"> const </span>{</div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    <span class="keywordflow">if</span>(!IsSoundMind()) <span class="keywordflow">return</span> 0.;</div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160; </div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    <span class="keywordtype">int</span> N = GetNChildren();</div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    <span class="keywordtype">double</span> M = 0.;</div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; N; i++)</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;      M += std::max(0., GetChildState(i).GetMinimumMass());</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;      M += std::max(0., GetChildState(i).<a class="code" href="a00721.html#a24eb9d313bc93a1950301132ce18e0ea">GetMinimumMass</a>());</div>
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    <span class="keywordflow">return</span> M;</div>
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;  }</div>
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160; </div>
@@ -264,7 +264,7 @@ $(function() {
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160; </div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> v = 0; v &lt; m_Nvis; v++)</div>
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;      <span class="keywordflow">if</span>(<a class="code" href="a00733.html#a6aacb0c34d34d1036918b3c6a85a87fb">GetDependancyFrames</a>(m_Nvis + v).GetN() == 0)</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    AddMassFrames(<a class="code" href="a00733.html#a6aacb0c34d34d1036918b3c6a85a87fb">GetDependancyFrames</a>(v), v);</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    <a class="code" href="a00721.html#aa09a1a07070b2824918d587a2599af54">AddMassFrames</a>(<a class="code" href="a00733.html#a6aacb0c34d34d1036918b3c6a85a87fb">GetDependancyFrames</a>(v), v);</div>
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160; </div>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    SetMind(<span class="keyword">true</span>);</div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    <span class="keywordflow">return</span> Jigsaw::InitializeAnalysis();</div>
@@ -281,7 +281,7 @@ $(function() {
 <div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;      }</div>
 <div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    }</div>
 <div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; m_Ninv; i++)</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;      <span class="keyword">static_cast&lt;</span><span class="keyword">const </span>InvisibleJigsaw&amp;<span class="keyword">&gt;</span>(GetChildState(i).GetChildJigsaw()).</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;      <span class="keyword">static_cast&lt;</span><span class="keyword">const </span><a class="code" href="a00721.html#acf16bd4a99e9cdf757563ab874f3fa78">InvisibleJigsaw</a>&amp;<span class="keyword">&gt;</span>(GetChildState(i).GetChildJigsaw()).</div>
 <div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    FillInvisibleMassJigsawDependancies(jigsaws);</div>
 <div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;  }</div>
 <div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160; </div>
@@ -367,26 +367,40 @@ $(function() {
 <div class="ttc" id="aa00733_html_a28f1e89dd78e8a877f5ba07f0241182c"><div class="ttname"><a href="a00733.html#a28f1e89dd78e8a877f5ba07f0241182c">RestFrames::Jigsaw::Jigsaw</a></div><div class="ttdeci">Jigsaw()</div><div class="ttdoc">Empty constructor.</div><div class="ttdef"><b>Definition:</b> <a href="a00494_source.html#l00061">Jigsaw.cc:61</a></div></div>
 <div class="ttc" id="aa00849_html"><div class="ttname"><a href="a00849.html">RestFrames::State</a></div><div class="ttdoc">Abstract base class for all State objects.</div><div class="ttdef"><b>Definition:</b> <a href="a00413_source.html#l00044">State.hh:44</a></div></div>
 <div class="ttc" id="aa00849_html_a67f8817206b8f0d7e4c891e40aabd926"><div class="ttname"><a href="a00849.html#a67f8817206b8f0d7e4c891e40aabd926">RestFrames::State::IsInvisibleState</a></div><div class="ttdeci">bool IsInvisibleState() const</div><div class="ttdoc">Is this an InvisibleState? (true/false)</div><div class="ttdef"><b>Definition:</b> <a href="a00569_source.html#l00087">State.cc:87</a></div></div>
+<div class="ttc" id="aa00721_html_a24eb9d313bc93a1950301132ce18e0ea"><div class="ttname"><a href="a00721.html#a24eb9d313bc93a1950301132ce18e0ea">RestFrames::InvisibleJigsaw::GetMinimumMass</a></div><div class="ttdeci">virtual double GetMinimumMass() const</div><div class="ttdoc">Returns minimum Lorentz invariant mass.</div><div class="ttdef"><b>Definition:</b> <a href="a00485_source.html#l00156">InvisibleJigsaw.cc:156</a></div></div>
 <div class="ttc" id="aa00380_html"><div class="ttname"><a href="a00380.html">RestFrame.hh</a></div></div>
+<div class="ttc" id="aa00729_html"><div class="ttname"><a href="a00729.html">RestFrames::InvisibleState</a></div><div class="ttdef"><b>Definition:</b> <a href="a00332_source.html#l00040">InvisibleState.hh:40</a></div></div>
 <div class="ttc" id="aa00717_html"><div class="ttname"><a href="a00717.html">RestFrames::InvisibleGroup</a></div><div class="ttdef"><b>Definition:</b> <a href="a00323_source.html#l00040">InvisibleGroup.hh:40</a></div></div>
+<div class="ttc" id="aa00721_html_acf16bd4a99e9cdf757563ab874f3fa78"><div class="ttname"><a href="a00721.html#acf16bd4a99e9cdf757563ab874f3fa78">RestFrames::InvisibleJigsaw::InvisibleJigsaw</a></div><div class="ttdeci">InvisibleJigsaw()</div><div class="ttdoc">Empty constructor.</div><div class="ttdef"><b>Definition:</b> <a href="a00485_source.html#l00053">InvisibleJigsaw.cc:53</a></div></div>
 <div class="ttc" id="aa00797_html_ab3a3c5a2066cb8dcc438c60911f31817"><div class="ttname"><a href="a00797.html#ab3a3c5a2066cb8dcc438c60911f31817">RestFrames::RFBase::AddDependent</a></div><div class="ttdeci">void AddDependent(RFBase *dep)</div><div class="ttdoc">pointer to RFBase object owned by this one</div><div class="ttdef"><b>Definition:</b> <a href="a00542_source.html#l00088">RFBase.cc:88</a></div></div>
-<div class="ttc" id="aa00733_html_a6aacb0c34d34d1036918b3c6a85a87fb"><div class="ttname"><a href="a00733.html#a6aacb0c34d34d1036918b3c6a85a87fb">RestFrames::Jigsaw::GetDependancyFrames</a></div><div class="ttdeci">virtual ConstRestFrameList const  &amp; GetDependancyFrames(int i) const</div><div class="ttdoc">Returns list of frames in which jigsaw depend on.</div><div class="ttdef"><b>Definition:</b> <a href="a00494_source.html#l00214">Jigsaw.cc:214</a></div></div>
+<div class="ttc" id="aa00733_html"><div class="ttname"><a href="a00733.html">RestFrames::Jigsaw</a></div><div class="ttdoc">abstract base class for all Jigsaw objects</div><div class="ttdef"><b>Definition:</b> <a href="a00335_source.html#l00044">Jigsaw.hh:44</a></div></div>
+<div class="ttc" id="aa00721_html_a790f1c5b2335c94ff43f5d479aeab1d5"><div class="ttname"><a href="a00721.html#a790f1c5b2335c94ff43f5d479aeab1d5">RestFrames::InvisibleJigsaw::AddInvisibleFrame</a></div><div class="ttdeci">void AddInvisibleFrame(const RestFrame &amp;frame, int i=0)</div><div class="ttdoc">Adds InvisibleFrame to current jigsaw.</div><div class="ttdef"><b>Definition:</b> <a href="a00485_source.html#l00131">InvisibleJigsaw.cc:131</a></div></div>
+<div class="ttc" id="aa00809_html"><div class="ttname"><a href="a00809.html">RestFrames::RFList&lt; const RestFrame &gt;</a></div></div>
+<div class="ttc" id="aa00721_html_aef5a9d4948d91e5e26fb85659d5eee32"><div class="ttname"><a href="a00721.html#aef5a9d4948d91e5e26fb85659d5eee32">RestFrames::InvisibleJigsaw::AddMassFrame</a></div><div class="ttdeci">void AddMassFrame(const RestFrame &amp;frame, int i=0)</div><div class="ttdoc">Adds a visible frame to current jigsaw.</div><div class="ttdef"><b>Definition:</b> <a href="a00485_source.html#l00115">InvisibleJigsaw.cc:115</a></div></div>
+<div class="ttc" id="aa00721_html_aa09a1a07070b2824918d587a2599af54"><div class="ttname"><a href="a00721.html#aa09a1a07070b2824918d587a2599af54">RestFrames::InvisibleJigsaw::AddMassFrames</a></div><div class="ttdeci">void AddMassFrames(const ConstRestFrameList &amp;frames, int i=0)</div><div class="ttdoc">Adds a list visible frame to current jigsaw.</div><div class="ttdef"><b>Definition:</b> <a href="a00485_source.html#l00125">InvisibleJigsaw.cc:125</a></div></div>
+<div class="ttc" id="aa00733_html_a6aacb0c34d34d1036918b3c6a85a87fb"><div class="ttname"><a href="a00733.html#a6aacb0c34d34d1036918b3c6a85a87fb">RestFrames::Jigsaw::GetDependancyFrames</a></div><div class="ttdeci">virtual ConstRestFrameList const  &amp; GetDependancyFrames(int i) const</div><div class="ttdoc">Returns list of frames in which this jigsaw depends on.</div><div class="ttdef"><b>Definition:</b> <a href="a00494_source.html#l00214">Jigsaw.cc:214</a></div></div>
+<div class="ttc" id="aa00721_html_a1e5e0e5bab71b8074dccd93a0fafd0ce"><div class="ttname"><a href="a00721.html#a1e5e0e5bab71b8074dccd93a0fafd0ce">RestFrames::InvisibleJigsaw::AddInvisibleFrames</a></div><div class="ttdeci">void AddInvisibleFrames(const ConstRestFrameList &amp;frames, int i=0)</div><div class="ttdoc">Adds list of invisible frames to current jigsaw.</div><div class="ttdef"><b>Definition:</b> <a href="a00485_source.html#l00141">InvisibleJigsaw.cc:141</a></div></div>
 <div class="ttc" id="aa00733_html_ab589506051ca6eb74bc00efdabb5bc79"><div class="ttname"><a href="a00733.html#ab589506051ca6eb74bc00efdabb5bc79">RestFrames::Jigsaw::GetGroup</a></div><div class="ttdeci">virtual Group &amp; GetGroup() const</div><div class="ttdoc">Returns group (Group) associated with this jigsaw.</div><div class="ttdef"><b>Definition:</b> <a href="a00494_source.html#l00130">Jigsaw.cc:130</a></div></div>
 <div class="ttc" id="aa00733_html_aaf96ebe502954e246a94b0318d4e9a65"><div class="ttname"><a href="a00733.html#aaf96ebe502954e246a94b0318d4e9a65">RestFrames::Jigsaw::Clear</a></div><div class="ttdeci">virtual void Clear()</div><div class="ttdoc">Clears Jigsaw of all connections to other objects.</div><div class="ttdef"><b>Definition:</b> <a href="a00494_source.html#l00074">Jigsaw.cc:74</a></div></div>
 <div class="ttc" id="aa00326_html"><div class="ttname"><a href="a00326.html">InvisibleJigsaw.hh</a></div></div>
 <div class="ttc" id="aa00721_html_ac0155a5be17ff81fd4f92b45802b6cf9"><div class="ttname"><a href="a00721.html#ac0155a5be17ff81fd4f92b45802b6cf9">RestFrames::InvisibleJigsaw::SetGroup</a></div><div class="ttdeci">void SetGroup(Group &amp;group=Group::Empty())</div><div class="ttdoc">Sets group (Group) to current jigsaw.</div><div class="ttdef"><b>Definition:</b> <a href="a00485_source.html#l00066">InvisibleJigsaw.cc:66</a></div></div>
 <div class="ttc" id="aa00721_html_ac36840d14ed30e9fb1d69e19aa1f557d"><div class="ttname"><a href="a00721.html#ac36840d14ed30e9fb1d69e19aa1f557d">RestFrames::InvisibleJigsaw::GetGroup</a></div><div class="ttdeci">InvisibleGroup &amp; GetGroup() const</div><div class="ttdoc">Returns group (Group) associated with this jigsaw.</div><div class="ttdef"><b>Definition:</b> <a href="a00485_source.html#l00072">InvisibleJigsaw.cc:72</a></div></div>
+<div class="ttc" id="aa00793_html_a06678871d2e63872f514482d7ace0bda"><div class="ttname"><a href="a00793.html#a06678871d2e63872f514482d7ace0bda">RestFrames::RestFrame::GetListVisibleFrames</a></div><div class="ttdeci">virtual RestFrameList GetListVisibleFrames() const</div><div class="ttdoc">Returns a list of VisibleFrame s inheriting from this.</div><div class="ttdef"><b>Definition:</b> <a href="a00539_source.html#l00342">RestFrame.cc:342</a></div></div>
 <div class="ttc" id="aa00733_html_aa3a386b5eace1c4ca7ed4f6af06b8de7"><div class="ttname"><a href="a00733.html#aa3a386b5eace1c4ca7ed4f6af06b8de7">RestFrames::Jigsaw::SetGroup</a></div><div class="ttdeci">virtual void SetGroup(Group &amp;group=Group::Empty())</div><div class="ttdoc">Sets group (Group) to current jigsaw.</div><div class="ttdef"><b>Definition:</b> <a href="a00494_source.html#l00109">Jigsaw.cc:109</a></div></div>
+<div class="ttc" id="aa00793_html"><div class="ttname"><a href="a00793.html">RestFrames::RestFrame</a></div><div class="ttdoc">abstract base class for all Frame objects</div><div class="ttdef"><b>Definition:</b> <a href="a00380_source.html#l00045">RestFrame.hh:45</a></div></div>
 <div class="ttc" id="aa00693_html"><div class="ttname"><a href="a00693.html">RestFrames::Group</a></div><div class="ttdoc">abstract base class for all Group objects</div><div class="ttdef"><b>Definition:</b> <a href="a00305_source.html#l00046">Group.hh:46</a></div></div>
+<div class="ttc" id="aa00793_html_a32c98dac7d2e6b7ad4e5581f41cc6666"><div class="ttname"><a href="a00793.html#a32c98dac7d2e6b7ad4e5581f41cc6666">RestFrames::RestFrame::GetListInvisibleFrames</a></div><div class="ttdeci">virtual RestFrameList GetListInvisibleFrames() const</div><div class="ttdoc">Returns a list of InvisibleFrame s inheriting from this.</div><div class="ttdef"><b>Definition:</b> <a href="a00539_source.html#l00346">RestFrame.cc:346</a></div></div>
+<div class="ttc" id="aa00721_html_a829292c60706c211a25733266f86d3b7"><div class="ttname"><a href="a00721.html#a829292c60706c211a25733266f86d3b7">RestFrames::InvisibleJigsaw::AddVisibleFrame</a></div><div class="ttdeci">void AddVisibleFrame(const RestFrame &amp;frame, int i=0)</div><div class="ttdoc">Adds a VisibleFrame to current jigsaw.</div><div class="ttdef"><b>Definition:</b> <a href="a00485_source.html#l00099">InvisibleJigsaw.cc:99</a></div></div>
 <div class="ttc" id="aa00693_html_aab1add614fddfd206c04b83ea67ee410"><div class="ttname"><a href="a00693.html#aab1add614fddfd206c04b83ea67ee410">RestFrames::Group::IsInvisibleGroup</a></div><div class="ttdeci">bool IsInvisibleGroup() const</div><div class="ttdoc">Is this an InvisibleGroup? (true/false)</div><div class="ttdef"><b>Definition:</b> <a href="a00464_source.html#l00075">Group.cc:75</a></div></div>
 <div class="ttc" id="aa00407_html"><div class="ttname"><a href="a00407.html">SetMassInvJigsaw.hh</a></div></div>
 <div class="ttc" id="aa00797_html_a393add2ce5a03e97238ac2c90f545f0e"><div class="ttname"><a href="a00797.html#a393add2ce5a03e97238ac2c90f545f0e">RestFrames::RFBase::GetName</a></div><div class="ttdeci">std::string GetName() const</div><div class="ttdoc">Returns object name.</div><div class="ttdef"><b>Definition:</b> <a href="a00542_source.html#l00104">RFBase.cc:104</a></div></div>
 <div class="ttc" id="aa00721_html"><div class="ttname"><a href="a00721.html">RestFrames::InvisibleJigsaw</a></div><div class="ttdef"><b>Definition:</b> <a href="a00326_source.html#l00039">InvisibleJigsaw.hh:39</a></div></div>
-<div class="ttc" id="aa00721_html_afd557bb9a0a2abedfe4a042d6f5b49c7"><div class="ttname"><a href="a00721.html#afd557bb9a0a2abedfe4a042d6f5b49c7">RestFrames::InvisibleJigsaw::Clear</a></div><div class="ttdeci">virtual void Clear()</div><div class="ttdoc">Clears Jigsaw of all connections to other objects.</div><div class="ttdef"><b>Definition:</b> <a href="a00485_source.html#l00058">InvisibleJigsaw.cc:58</a></div></div>
+<div class="ttc" id="aa00721_html_afd557bb9a0a2abedfe4a042d6f5b49c7"><div class="ttname"><a href="a00721.html#afd557bb9a0a2abedfe4a042d6f5b49c7">RestFrames::InvisibleJigsaw::Clear</a></div><div class="ttdeci">virtual void Clear()</div><div class="ttdoc">Clears InvisibleJigsaw of all connections to other objects</div><div class="ttdef"><b>Definition:</b> <a href="a00485_source.html#l00058">InvisibleJigsaw.cc:58</a></div></div>
+<div class="ttc" id="aa00721_html_a4edd190299b7bbf42972de29ab829a00"><div class="ttname"><a href="a00721.html#a4edd190299b7bbf42972de29ab829a00">RestFrames::InvisibleJigsaw::AddVisibleFrames</a></div><div class="ttdeci">void AddVisibleFrames(const ConstRestFrameList &amp;frames, int i=0)</div><div class="ttdoc">Adds list of visible frames to current jigsaw.</div><div class="ttdef"><b>Definition:</b> <a href="a00485_source.html#l00109">InvisibleJigsaw.cc:109</a></div></div>
 <!-- HTML footer for doxygen 1.8.9.1-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 28 2020 17:11:07 for RestFrames by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 11 2020 10:25:06 for RestFrames by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.19
 </small></address>

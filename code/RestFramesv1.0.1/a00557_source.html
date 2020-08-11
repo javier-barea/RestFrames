@@ -132,17 +132,17 @@ $(function() {
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">namespace </span>RestFrames {</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  </div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  RFPlot::RFPlot(<span class="keyword">const</span> std::string&amp; sname, </div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="a00833.html#ab44b55c8fff26b064f10c838d2615139">   38</a></span>&#160;  <a class="code" href="a00833.html#ab44b55c8fff26b064f10c838d2615139">RFPlot::RFPlot</a>(<span class="keyword">const</span> std::string&amp; sname, </div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;         <span class="keyword">const</span> std::string&amp; stitle)</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    : RFBase(sname, stitle, -1){</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    m_Log.SetSource(<span class="stringliteral">&quot;RFPlot &quot;</span>+GetName());</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    : <a class="code" href="a00797.html">RFBase</a>(sname, stitle, -1){</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    m_Log.<a class="code" href="a00825.html#ab0c48bffdb0e7e1c645a104a0a89faaa">SetSource</a>(<span class="stringliteral">&quot;RFPlot &quot;</span>+<a class="code" href="a00797.html#a393add2ce5a03e97238ac2c90f545f0e">GetName</a>());</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  }</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  </div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  RFPlot::~RFPlot(){</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    Clear();</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="a00833.html#a4da0d574ebaca343a85231a34e0ba376">Clear</a>();</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  }</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="a00833.html#a4da0d574ebaca343a85231a34e0ba376">   48</a></span>&#160;  <span class="keywordtype">void</span> RFPlot::Clear(){</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="a00833.html#a4da0d574ebaca343a85231a34e0ba376">   48</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="a00833.html#a4da0d574ebaca343a85231a34e0ba376">RFPlot::Clear</a>(){</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">int</span> Ncan = m_Canvases.size();</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; Ncan; i++)</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;      <span class="keyword">delete</span> m_Canvases[i];</div>
@@ -158,8 +158,8 @@ $(function() {
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordflow">if</span>(N &lt;= 0) <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    TFile* file = <span class="keyword">new</span> TFile(filename.c_str(),<span class="stringliteral">&quot;UPDATE&quot;</span>);</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    file-&gt;mkdir(GetName().c_str());</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    file-&gt;cd(GetName().c_str());</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    file-&gt;mkdir(<a class="code" href="a00797.html#a393add2ce5a03e97238ac2c90f545f0e">GetName</a>().c_str());</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    file-&gt;cd(<a class="code" href="a00797.html#a393add2ce5a03e97238ac2c90f545f0e">GetName</a>().c_str());</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; N; i++)</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;      m_Canvases[i]-&gt;Write(<span class="stringliteral">&quot;&quot;</span>,TObject::kOverwrite);</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    file-&gt;Close();</div>
@@ -354,10 +354,15 @@ $(function() {
 <div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aa00401_html"><div class="ttname"><a href="a00401.html">RFPlot.hh</a></div></div>
+<div class="ttc" id="aa00833_html_a4da0d574ebaca343a85231a34e0ba376"><div class="ttname"><a href="a00833.html#a4da0d574ebaca343a85231a34e0ba376">RestFrames::RFPlot::Clear</a></div><div class="ttdeci">virtual void Clear()</div><div class="ttdoc">Clears RFPlot from all connections to other objects.</div><div class="ttdef"><b>Definition:</b> <a href="a00557_source.html#l00048">RFPlot.cc:48</a></div></div>
+<div class="ttc" id="aa00833_html_ab44b55c8fff26b064f10c838d2615139"><div class="ttname"><a href="a00833.html#ab44b55c8fff26b064f10c838d2615139">RestFrames::RFPlot::RFPlot</a></div><div class="ttdeci">RFPlot(const std::string &amp;sname, const std::string &amp;stitle)</div><div class="ttdoc">Standard constructor.</div><div class="ttdef"><b>Definition:</b> <a href="a00557_source.html#l00038">RFPlot.cc:38</a></div></div>
+<div class="ttc" id="aa00825_html_ab0c48bffdb0e7e1c645a104a0a89faaa"><div class="ttname"><a href="a00825.html#ab0c48bffdb0e7e1c645a104a0a89faaa">RestFrames::RFLog::SetSource</a></div><div class="ttdeci">void SetSource(const std::string &amp;source)</div><div class="ttdoc">Sets name of instance that is associated with.</div><div class="ttdef"><b>Definition:</b> <a href="a00554_source.html#l00182">RFLog.cc:182</a></div></div>
+<div class="ttc" id="aa00797_html"><div class="ttname"><a href="a00797.html">RestFrames::RFBase</a></div><div class="ttdoc">Base class for all RestFrame package objects.</div><div class="ttdef"><b>Definition:</b> <a href="a00386_source.html#l00053">RFBase.hh:53</a></div></div>
+<div class="ttc" id="aa00797_html_a393add2ce5a03e97238ac2c90f545f0e"><div class="ttname"><a href="a00797.html#a393add2ce5a03e97238ac2c90f545f0e">RestFrames::RFBase::GetName</a></div><div class="ttdeci">std::string GetName() const</div><div class="ttdoc">Returns object name.</div><div class="ttdef"><b>Definition:</b> <a href="a00542_source.html#l00104">RFBase.cc:104</a></div></div>
 <!-- HTML footer for doxygen 1.8.9.1-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 28 2020 17:11:09 for RestFrames by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 11 2020 10:25:07 for RestFrames by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.19
 </small></address>

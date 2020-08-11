@@ -146,29 +146,29 @@ $(function() {
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="a00789.html#a4d2255835df7d4c1bf7f6a620d1b29ce">SetWidth</a>(<span class="keywordtype">double</span> w);</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="a00789.html#a2a67d0bc611d267f0ba10efa484d4cf3">SetVariableMass</a>(<span class="keywordtype">bool</span> varymass = <span class="keyword">true</span>);</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">double</span> <a class="code" href="a00789.html#af5a87271cfdb2472402d4ff0385765b0">GetPoleMass</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">double</span> <a class="code" href="a00789.html#a09837743e8b76e72981d5efd6e111931">GetWidth</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;   </div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">double</span> <a class="code" href="a00789.html#ae0c7f56e30a31f94763d65a88823ade6">GetProbMCMC</a>(<span class="keywordtype">double</span> mass = -1.) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> GenerateMassMCMC(<span class="keywordtype">double</span>&amp; mass, <span class="keywordtype">double</span>&amp; prob, </div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                  <span class="keywordtype">double</span> max = -1.) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keyword">static</span> <a class="code" href="a00789.html">ResonanceGenFrame</a>&amp; Empty();</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordtype">double</span> m_PoleMass;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordtype">double</span> m_Width;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keyword">static</span> <a class="code" href="a00789.html">ResonanceGenFrame</a> m_Empty;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  };</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="a00789.html#a2a67d0bc611d267f0ba10efa484d4cf3">SetVariableMass</a>(<span class="keywordtype">bool</span> varymass = <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">double</span> <a class="code" href="a00789.html#af5a87271cfdb2472402d4ff0385765b0">GetPoleMass</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">double</span> <a class="code" href="a00789.html#a09837743e8b76e72981d5efd6e111931">GetWidth</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;   </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">double</span> <a class="code" href="a00789.html#ae0c7f56e30a31f94763d65a88823ade6">GetProbMCMC</a>(<span class="keywordtype">double</span> mass = -1.) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> GenerateMassMCMC(<span class="keywordtype">double</span>&amp; mass, <span class="keywordtype">double</span>&amp; prob, </div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                  <span class="keywordtype">double</span> max = -1.) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keyword">static</span> <a class="code" href="a00789.html">ResonanceGenFrame</a>&amp; Empty();</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordtype">double</span> m_PoleMass;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordtype">double</span> m_Width;</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;}</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keyword">static</span> <a class="code" href="a00789.html">ResonanceGenFrame</a> m_Empty;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  };</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;}</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aa00789_html_a2a67d0bc611d267f0ba10efa484d4cf3"><div class="ttname"><a href="a00789.html#a2a67d0bc611d267f0ba10efa484d4cf3">RestFrames::ResonanceGenFrame::SetVariableMass</a></div><div class="ttdeci">virtual void SetVariableMass(bool varymass=true)</div><div class="ttdoc">Sets variable mass...</div><div class="ttdef"><b>Definition:</b> <a href="a00536_source.html#l00089">ResonanceGenFrame.cc:89</a></div></div>
+<div class="ttc" id="aa00789_html_a2a67d0bc611d267f0ba10efa484d4cf3"><div class="ttname"><a href="a00789.html#a2a67d0bc611d267f0ba10efa484d4cf3">RestFrames::ResonanceGenFrame::SetVariableMass</a></div><div class="ttdeci">virtual void SetVariableMass(bool varymass=true)</div><div class="ttdoc">Determines who sets mass of current frame.</div><div class="ttdef"><b>Definition:</b> <a href="a00536_source.html#l00089">ResonanceGenFrame.cc:89</a></div></div>
 <div class="ttc" id="aa00789_html_a742def5984535a46695af041472d9029"><div class="ttname"><a href="a00789.html#a742def5984535a46695af041472d9029">RestFrames::ResonanceGenFrame::SetMass</a></div><div class="ttdeci">virtual void SetMass(double mass)</div><div class="ttdoc">Sets mass of current frame.</div><div class="ttdef"><b>Definition:</b> <a href="a00536_source.html#l00059">ResonanceGenFrame.cc:59</a></div></div>
 <div class="ttc" id="aa00789_html_acf79b06ef3faca3dc4f90bb1169f56f5"><div class="ttname"><a href="a00789.html#acf79b06ef3faca3dc4f90bb1169f56f5">RestFrames::ResonanceGenFrame::ResonanceGenFrame</a></div><div class="ttdeci">ResonanceGenFrame()</div><div class="ttdoc">Empty constructor.</div><div class="ttdef"><b>Definition:</b> <a href="a00536_source.html#l00047">ResonanceGenFrame.cc:47</a></div></div>
 <div class="ttc" id="aa00296_html"><div class="ttname"><a href="a00296.html">DecayGenFrame.hh</a></div></div>
@@ -181,7 +181,7 @@ $(function() {
 <!-- HTML footer for doxygen 1.8.9.1-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 28 2020 17:11:03 for RestFrames by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 11 2020 10:25:03 for RestFrames by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.19
 </small></address>

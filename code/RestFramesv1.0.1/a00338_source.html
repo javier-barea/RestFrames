@@ -144,34 +144,39 @@ $(function() {
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a00737.html#a35966f9447014a091a33d052abc628d7">SetChildFrame</a>(<a class="code" href="a00793.html">RestFrame</a>&amp; frame);</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> InitializeTree();</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> InitializeAnalysis() = 0;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> ClearEvent() = 0;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> AnalyzeEvent() = 0;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="comment">// Analysis functions</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    TVector3 <a class="code" href="a00737.html#aaccbcd60c55bd0c1b94b61cca16807de">GetInvisibleMomentum</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> IsSoundBody() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  };</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;}</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="a00737.html#aaf976613c8962e1ef2c4f4a23c806838">InitializeTree</a>();</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    </div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="a00737.html#a6492a32cec4c7742dc576a8fa1ba659c">   69</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="a00737.html#a6492a32cec4c7742dc576a8fa1ba659c">InitializeAnalysis</a>() = 0;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="a00737.html#a92eb9e7bedfa340634b4830f9e4aead6">   76</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="a00737.html#a92eb9e7bedfa340634b4830f9e4aead6">ClearEvent</a>() = 0;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="a00737.html#abbaf378f4436b25da6831e0224ab7cd8">   83</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="a00737.html#abbaf378f4436b25da6831e0224ab7cd8">AnalyzeEvent</a>() = 0;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    TVector3 <a class="code" href="a00737.html#aaccbcd60c55bd0c1b94b61cca16807de">GetInvisibleMomentum</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> IsSoundBody() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  };</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;}</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aa00737_html_aaccbcd60c55bd0c1b94b61cca16807de"><div class="ttname"><a href="a00737.html#aaccbcd60c55bd0c1b94b61cca16807de">RestFrames::LabFrame::GetInvisibleMomentum</a></div><div class="ttdeci">TVector3 GetInvisibleMomentum() const</div><div class="ttdoc">Returns invisible momentum vector of this RestFrame.</div><div class="ttdef"><b>Definition:</b> <a href="a00497_source.html#l00109">LabFrame.cc:109</a></div></div>
+<div class="ttc" id="aa00737_html_a6492a32cec4c7742dc576a8fa1ba659c"><div class="ttname"><a href="a00737.html#a6492a32cec4c7742dc576a8fa1ba659c">RestFrames::LabFrame::InitializeAnalysis</a></div><div class="ttdeci">virtual bool InitializeAnalysis()=0</div><div class="ttdoc">Virtual method for intialzing analysis capabilities of a tree corresponding to a LabFrame.</div></div>
 <div class="ttc" id="aa00737_html"><div class="ttname"><a href="a00737.html">RestFrames::LabFrame</a></div><div class="ttdef"><b>Definition:</b> <a href="a00338_source.html#l00041">LabFrame.hh:41</a></div></div>
 <div class="ttc" id="aa00380_html"><div class="ttname"><a href="a00380.html">RestFrame.hh</a></div></div>
 <div class="ttc" id="aa00737_html_a6c164149acd82253a30b9ad4772a9fc2"><div class="ttname"><a href="a00737.html#a6c164149acd82253a30b9ad4772a9fc2">RestFrames::LabFrame::LabFrame</a></div><div class="ttdeci">LabFrame()</div><div class="ttdoc">\Empty constructor</div><div class="ttdef"><b>Definition:</b> <a href="a00497_source.html#l00048">LabFrame.cc:48</a></div></div>
+<div class="ttc" id="aa00737_html_abbaf378f4436b25da6831e0224ab7cd8"><div class="ttname"><a href="a00737.html#abbaf378f4436b25da6831e0224ab7cd8">RestFrames::LabFrame::AnalyzeEvent</a></div><div class="ttdeci">virtual bool AnalyzeEvent()=0</div><div class="ttdoc">Virtual method to analyze event.</div></div>
 <div class="ttc" id="aa00737_html_a35966f9447014a091a33d052abc628d7"><div class="ttname"><a href="a00737.html#a35966f9447014a091a33d052abc628d7">RestFrames::LabFrame::SetChildFrame</a></div><div class="ttdeci">void SetChildFrame(RestFrame &amp;frame)</div><div class="ttdoc">Sets child frame.</div><div class="ttdef"><b>Definition:</b> <a href="a00497_source.html#l00076">LabFrame.cc:76</a></div></div>
+<div class="ttc" id="aa00737_html_aaf976613c8962e1ef2c4f4a23c806838"><div class="ttname"><a href="a00737.html#aaf976613c8962e1ef2c4f4a23c806838">RestFrames::LabFrame::InitializeTree</a></div><div class="ttdeci">virtual bool InitializeTree()</div><div class="ttdoc">Method to initialize tree.</div><div class="ttdef"><b>Definition:</b> <a href="a00497_source.html#l00081">LabFrame.cc:81</a></div></div>
 <div class="ttc" id="aa00793_html"><div class="ttname"><a href="a00793.html">RestFrames::RestFrame</a></div><div class="ttdoc">abstract base class for all Frame objects</div><div class="ttdef"><b>Definition:</b> <a href="a00380_source.html#l00045">RestFrame.hh:45</a></div></div>
+<div class="ttc" id="aa00737_html_a92eb9e7bedfa340634b4830f9e4aead6"><div class="ttname"><a href="a00737.html#a92eb9e7bedfa340634b4830f9e4aead6">RestFrames::LabFrame::ClearEvent</a></div><div class="ttdeci">virtual bool ClearEvent()=0</div><div class="ttdoc">Virtual method to clear event.</div></div>
 <!-- HTML footer for doxygen 1.8.9.1-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 28 2020 17:11:02 for RestFrames by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 11 2020 10:25:03 for RestFrames by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.19
 </small></address>

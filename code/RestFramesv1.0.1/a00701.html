@@ -125,9 +125,13 @@ Inheritance diagram for RestFrames::HistPlotCategory:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a9941bf9c62b6dd360939596721cc4c21"><td class="memItemLeft" align="right" valign="top"><a id="a9941bf9c62b6dd360939596721cc4c21"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>HistPlotCategory</b> (const std::string &amp;name, const std::string &amp;title)</td></tr>
+<tr class="memitem:a9941bf9c62b6dd360939596721cc4c21"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00701.html#a9941bf9c62b6dd360939596721cc4c21">HistPlotCategory</a> (const std::string &amp;name, const std::string &amp;title)</td></tr>
+<tr class="memdesc:a9941bf9c62b6dd360939596721cc4c21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Standard constructor.  <a href="a00701.html#a9941bf9c62b6dd360939596721cc4c21">More...</a><br /></td></tr>
 <tr class="separator:a9941bf9c62b6dd360939596721cc4c21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a928695c6683191544d60b3f59c8c3c04"><td class="memItemLeft" align="right" valign="top"><a id="a928695c6683191544d60b3f59c8c3c04"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00701.html#a928695c6683191544d60b3f59c8c3c04">HistPlotCategory</a> ()</td></tr>
+<tr class="memdesc:a928695c6683191544d60b3f59c8c3c04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Empty constructors. <br /></td></tr>
+<tr class="separator:a928695c6683191544d60b3f59c8c3c04"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a25d32e2b43cc0f88832bea47cfa5ba2d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00809.html">RestFrames::RFList</a>&lt; const <a class="el" href="a00701.html">HistPlotCategory</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00701.html#a25d32e2b43cc0f88832bea47cfa5ba2d">operator+</a> (const <a class="el" href="a00701.html">HistPlotCategory</a> &amp;cat) const</td></tr>
 <tr class="memdesc:a25d32e2b43cc0f88832bea47cfa5ba2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Combines <a class="el" href="a00701.html">HistPlotCategory</a> into list.  <a href="a00701.html#a25d32e2b43cc0f88832bea47cfa5ba2d">More...</a><br /></td></tr>
 <tr class="separator:a25d32e2b43cc0f88832bea47cfa5ba2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -262,6 +266,46 @@ static const TVector3&#160;</td><td class="memItemRight" valign="bottom"><b>m_Em
 static const TLorentzVector&#160;</td><td class="memItemRight" valign="bottom"><b>m_Empty4Vector</b></td></tr>
 <tr class="separator:ae8f40ba52124b43c36a7787cf8ddda6f inherit pro_static_attribs_a00797"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a9941bf9c62b6dd360939596721cc4c21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9941bf9c62b6dd360939596721cc4c21">&#9670;&nbsp;</a></span>HistPlotCategory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RestFrames::HistPlotCategory::HistPlotCategory </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>title</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Standard constructor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sname</td><td>Class instance name used for log statements </td></tr>
+    <tr><td class="paramname">stitle</td><td>Class instance title used in figures </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="a00470_source.html#l00041">41</a> of file <a class="el" href="a00470_source.html">HistPlotCategory.cc</a>.</p>
+
+</div>
+</div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a25d32e2b43cc0f88832bea47cfa5ba2d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a25d32e2b43cc0f88832bea47cfa5ba2d">&#9670;&nbsp;</a></span>operator+() <span class="overload">[1/2]</span></h2>
@@ -282,11 +326,11 @@ static const TLorentzVector&#160;</td><td class="memItemRight" valign="bottom"><
 <p>Combines <a class="el" href="a00701.html">HistPlotCategory</a> into list. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">cat</td><td>additional category to add in list</td></tr>
+    <tr><td class="paramname">cat</td><td>Additional category to add in list</td></tr>
   </table>
   </dd>
 </dl>
-<p>Returns a list of <a class="el" href="a00701.html">HistPlotCategory</a> containing <b>cat</b> and this </p>
+<dl class="section return"><dt>Returns</dt><dd>List of <a class="el" href="a00701.html">HistPlotCategory</a> containing <b>cat</b> and this </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="a00470_source.html#l00051">51</a> of file <a class="el" href="a00470_source.html">HistPlotCategory.cc</a>.</p>
 
@@ -315,7 +359,7 @@ static const TLorentzVector&#160;</td><td class="memItemRight" valign="bottom"><
   </table>
   </dd>
 </dl>
-<p>Returns a list of <a class="el" href="a00793.html" title="abstract base class for all Frame objects">RestFrame</a> s containing <b>cats</b> and this </p>
+<dl class="section return"><dt>Returns</dt><dd>List of <a class="el" href="a00793.html" title="abstract base class for all Frame objects">RestFrame</a> s containing <b>cats</b> and this </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="a00470_source.html#l00059">59</a> of file <a class="el" href="a00470_source.html">HistPlotCategory.cc</a>.</p>
 
@@ -339,7 +383,7 @@ Collaboration diagram for RestFrames::HistPlotCategory:</div>
 <!-- HTML footer for doxygen 1.8.9.1-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 28 2020 17:11:31 for RestFrames by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 11 2020 10:25:21 for RestFrames by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.19
 </small></address>

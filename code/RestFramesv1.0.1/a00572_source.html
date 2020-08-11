@@ -219,7 +219,7 @@ $(function() {
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="keywordflow">return</span> can;</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;  }</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;  </div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;  <span class="keywordtype">void</span> TreePlot::Draw(<span class="keyword">const</span> std::string&amp; name, <span class="keyword">const</span> std::string&amp; title,</div>
+<div class="line"><a name="l00127"></a><span class="lineno"><a class="line" href="a00853.html#a24f23483eaaf52d59b6114c13f9a1ef6">  127</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="a00853.html#a24f23483eaaf52d59b6114c13f9a1ef6">TreePlot::Draw</a>(<span class="keyword">const</span> std::string&amp; name, <span class="keyword">const</span> std::string&amp; title,</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;              <span class="keywordtype">bool</span> invert_bkg_color,</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;              <span class="keywordtype">bool</span> invert_node_color){</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <span class="keywordflow">if</span>(m_Type == kVanillaTree) </div>
@@ -252,7 +252,7 @@ $(function() {
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    AddCanvas(m_CanvasPtr);</div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;  }</div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160; </div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;  <span class="keywordtype">void</span> TreePlot::SetTree(<span class="keyword">const</span> RestFrame&amp; frame){</div>
+<div class="line"><a name="l00160"></a><span class="lineno"><a class="line" href="a00853.html#a79bd00d06ba46ed1c6914bbf4eee624c">  160</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="a00853.html#a79bd00d06ba46ed1c6914bbf4eee624c">TreePlot::SetTree</a>(<span class="keyword">const</span> <a class="code" href="a00793.html">RestFrame</a>&amp; frame){</div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    <span class="keywordflow">if</span>(!frame) <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    ClearTree();</div>
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    m_Type = kFrameTree;</div>
@@ -262,14 +262,14 @@ $(function() {
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    ConvertNodeCoordinates(m_TreeNodes);</div>
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;  }</div>
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160; </div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;  <span class="keywordtype">void</span> TreePlot::AddJigsaw(<span class="keyword">const</span> Jigsaw&amp; jigsaw){</div>
+<div class="line"><a name="l00170"></a><span class="lineno"><a class="line" href="a00853.html#af1fdebc703d5fb627ba990912118fe0a">  170</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="a00853.html#af1fdebc703d5fb627ba990912118fe0a">TreePlot::AddJigsaw</a>(<span class="keyword">const</span> <a class="code" href="a00733.html">Jigsaw</a>&amp; jigsaw){</div>
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    <span class="keywordflow">if</span>(m_Type != kFrameTree) </div>
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;      <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    <span class="keywordflow">if</span>(!jigsaw) </div>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;      <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    <span class="keywordflow">if</span>(m_Jigsaws.Contains(jigsaw))</div>
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;      <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    <span class="keywordflow">if</span>(!m_Frames.Contains(jigsaw.GetParentFrames()))</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    <span class="keywordflow">if</span>(!m_Frames.Contains(jigsaw.<a class="code" href="a00733.html#af56b7375e952f3428c64182253744b44">GetParentFrames</a>()))</div>
 <div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;      <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    </div>
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    FillJigsawLink(jigsaw);</div>
@@ -277,7 +277,7 @@ $(function() {
 <div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    m_Jigsaws.Add(jigsaw);</div>
 <div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;  }</div>
 <div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160; </div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;  <span class="keywordtype">void</span> TreePlot::SetTree(<span class="keyword">const</span> Group&amp; group){</div>
+<div class="line"><a name="l00185"></a><span class="lineno"><a class="line" href="a00853.html#a525327b52045a8eaa1d32d92391e5457">  185</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="a00853.html#a79bd00d06ba46ed1c6914bbf4eee624c">TreePlot::SetTree</a>(<span class="keyword">const</span> <a class="code" href="a00693.html">Group</a>&amp; group){</div>
 <div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    <span class="keywordflow">if</span>(!group) <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    <span class="keywordflow">if</span>(!group.IsSoundMind()) <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    ClearTree();</div>
@@ -289,11 +289,11 @@ $(function() {
 <div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    ConvertNodeCoordinates(m_TreeNodes);</div>
 <div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;  }</div>
 <div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160; </div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;  <span class="keywordtype">void</span> TreePlot::SetTree(<span class="keyword">const</span> Jigsaw&amp; jigsaw){</div>
+<div class="line"><a name="l00197"></a><span class="lineno"><a class="line" href="a00853.html#aeaa0c6d4e2ec22c0bbb2b6795801bf5a">  197</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="a00853.html#a79bd00d06ba46ed1c6914bbf4eee624c">TreePlot::SetTree</a>(<span class="keyword">const</span> <a class="code" href="a00733.html">Jigsaw</a>&amp; jigsaw){</div>
 <div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    <span class="keywordflow">if</span>(!jigsaw) <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    <span class="keywordflow">if</span>(!jigsaw.IsSoundMind()) <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    ClearTree();</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    m_GroupPtr = &amp;jigsaw.GetGroup();</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    m_GroupPtr = &amp;jigsaw.<a class="code" href="a00733.html#ab589506051ca6eb74bc00efdabb5bc79">GetGroup</a>();</div>
 <div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    m_Type = kGroupTree;</div>
 <div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160; </div>
 <div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    FillJigsawTree(jigsaw);</div>
@@ -955,24 +955,32 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aa00416_html"><div class="ttname"><a href="a00416.html">TreePlot.hh</a></div></div>
 <div class="ttc" id="aa00299_html"><div class="ttname"><a href="a00299.html">DecayRecoFrame.hh</a></div></div>
-<div class="ttc" id="aa00833_html_a4da0d574ebaca343a85231a34e0ba376"><div class="ttname"><a href="a00833.html#a4da0d574ebaca343a85231a34e0ba376">RestFrames::RFPlot::Clear</a></div><div class="ttdeci">virtual void Clear()</div><div class="ttdoc">Clears RFBase of all connections to other objects.</div><div class="ttdef"><b>Definition:</b> <a href="a00557_source.html#l00048">RFPlot.cc:48</a></div></div>
+<div class="ttc" id="aa00833_html_a4da0d574ebaca343a85231a34e0ba376"><div class="ttname"><a href="a00833.html#a4da0d574ebaca343a85231a34e0ba376">RestFrames::RFPlot::Clear</a></div><div class="ttdeci">virtual void Clear()</div><div class="ttdoc">Clears RFPlot from all connections to other objects.</div><div class="ttdef"><b>Definition:</b> <a href="a00557_source.html#l00048">RFPlot.cc:48</a></div></div>
 <div class="ttc" id="aa00422_html"><div class="ttname"><a href="a00422.html">TreePlotNode.hh</a></div></div>
 <div class="ttc" id="aa00329_html"><div class="ttname"><a href="a00329.html">InvisibleRecoFrame.hh</a></div></div>
+<div class="ttc" id="aa00853_html_a24f23483eaaf52d59b6114c13f9a1ef6"><div class="ttname"><a href="a00853.html#a24f23483eaaf52d59b6114c13f9a1ef6">RestFrames::TreePlot::Draw</a></div><div class="ttdeci">void Draw(const std::string &amp;name=&quot;&quot;, const std::string &amp;title=&quot;&quot;, bool invert_colors=false, bool invert_node_colors=false)</div><div class="ttdoc">Draws tree.</div><div class="ttdef"><b>Definition:</b> <a href="a00572_source.html#l00127">TreePlot.cc:127</a></div></div>
 <div class="ttc" id="aa00833_html"><div class="ttname"><a href="a00833.html">RestFrames::RFPlot</a></div><div class="ttdef"><b>Definition:</b> <a href="a00401_source.html#l00041">RFPlot.hh:41</a></div></div>
+<div class="ttc" id="aa00733_html"><div class="ttname"><a href="a00733.html">RestFrames::Jigsaw</a></div><div class="ttdoc">abstract base class for all Jigsaw objects</div><div class="ttdef"><b>Definition:</b> <a href="a00335_source.html#l00044">Jigsaw.hh:44</a></div></div>
 <div class="ttc" id="aa00431_html"><div class="ttname"><a href="a00431.html">VisibleRecoFrame.hh</a></div></div>
 <div class="ttc" id="aa00413_html"><div class="ttname"><a href="a00413.html">State.hh</a></div></div>
-<div class="ttc" id="aa00825_html_ab0c48bffdb0e7e1c645a104a0a89faaa"><div class="ttname"><a href="a00825.html#ab0c48bffdb0e7e1c645a104a0a89faaa">RestFrames::RFLog::SetSource</a></div><div class="ttdeci">void SetSource(const std::string &amp;source)</div><div class="ttdoc">Sets source of ...</div><div class="ttdef"><b>Definition:</b> <a href="a00554_source.html#l00182">RFLog.cc:182</a></div></div>
+<div class="ttc" id="aa00733_html_af56b7375e952f3428c64182253744b44"><div class="ttname"><a href="a00733.html#af56b7375e952f3428c64182253744b44">RestFrames::Jigsaw::GetParentFrames</a></div><div class="ttdeci">virtual ConstRestFrameList GetParentFrames() const</div><div class="ttdoc">Returns list of parent frames associated with this jigsaw.</div><div class="ttdef"><b>Definition:</b> <a href="a00494_source.html#l00201">Jigsaw.cc:201</a></div></div>
+<div class="ttc" id="aa00733_html_ab589506051ca6eb74bc00efdabb5bc79"><div class="ttname"><a href="a00733.html#ab589506051ca6eb74bc00efdabb5bc79">RestFrames::Jigsaw::GetGroup</a></div><div class="ttdeci">virtual Group &amp; GetGroup() const</div><div class="ttdoc">Returns group (Group) associated with this jigsaw.</div><div class="ttdef"><b>Definition:</b> <a href="a00494_source.html#l00130">Jigsaw.cc:130</a></div></div>
+<div class="ttc" id="aa00825_html_ab0c48bffdb0e7e1c645a104a0a89faaa"><div class="ttname"><a href="a00825.html#ab0c48bffdb0e7e1c645a104a0a89faaa">RestFrames::RFLog::SetSource</a></div><div class="ttdeci">void SetSource(const std::string &amp;source)</div><div class="ttdoc">Sets name of instance that is associated with.</div><div class="ttdef"><b>Definition:</b> <a href="a00554_source.html#l00182">RFLog.cc:182</a></div></div>
+<div class="ttc" id="aa00853_html_a79bd00d06ba46ed1c6914bbf4eee624c"><div class="ttname"><a href="a00853.html#a79bd00d06ba46ed1c6914bbf4eee624c">RestFrames::TreePlot::SetTree</a></div><div class="ttdeci">void SetTree(const RestFrame &amp;frame)</div><div class="ttdoc">Sets a tree that shows how a frame is connected to its children.</div><div class="ttdef"><b>Definition:</b> <a href="a00572_source.html#l00160">TreePlot.cc:160</a></div></div>
 <div class="ttc" id="aa00797_html_a259119e7402734e6f27ce840d4cd9abe"><div class="ttname"><a href="a00797.html#a259119e7402734e6f27ce840d4cd9abe">RestFrames::RFBase::GetTitle</a></div><div class="ttdeci">std::string GetTitle() const</div><div class="ttdoc">Returns object title.</div><div class="ttdef"><b>Definition:</b> <a href="a00542_source.html#l00108">RFBase.cc:108</a></div></div>
 <div class="ttc" id="aa00419_html"><div class="ttname"><a href="a00419.html">TreePlotLink.hh</a></div></div>
 <div class="ttc" id="aa00853_html_a9079b706ac6e20a7fe41671ea3c240a3"><div class="ttname"><a href="a00853.html#a9079b706ac6e20a7fe41671ea3c240a3">RestFrames::TreePlot::TreePlot</a></div><div class="ttdeci">TreePlot(const std::string &amp;sname, const std::string &amp;stitle)</div><div class="ttdoc">Standard constructor.</div><div class="ttdef"><b>Definition:</b> <a href="a00572_source.html#l00058">TreePlot.cc:58</a></div></div>
 <div class="ttc" id="aa00853_html_ac9ce7bf6c54034b28f5550d45f13807b"><div class="ttname"><a href="a00853.html#ac9ce7bf6c54034b28f5550d45f13807b">RestFrames::TreePlot::Clear</a></div><div class="ttdeci">virtual void Clear()</div><div class="ttdoc">Clears TreePlot from all connections to other objects.</div><div class="ttdef"><b>Definition:</b> <a href="a00572_source.html#l00071">TreePlot.cc:71</a></div></div>
 <div class="ttc" id="aa00335_html"><div class="ttname"><a href="a00335.html">Jigsaw.hh</a></div></div>
+<div class="ttc" id="aa00793_html"><div class="ttname"><a href="a00793.html">RestFrames::RestFrame</a></div><div class="ttdoc">abstract base class for all Frame objects</div><div class="ttdef"><b>Definition:</b> <a href="a00380_source.html#l00045">RestFrame.hh:45</a></div></div>
+<div class="ttc" id="aa00693_html"><div class="ttname"><a href="a00693.html">RestFrames::Group</a></div><div class="ttdoc">abstract base class for all Group objects</div><div class="ttdef"><b>Definition:</b> <a href="a00305_source.html#l00046">Group.hh:46</a></div></div>
+<div class="ttc" id="aa00853_html_af1fdebc703d5fb627ba990912118fe0a"><div class="ttname"><a href="a00853.html#af1fdebc703d5fb627ba990912118fe0a">RestFrames::TreePlot::AddJigsaw</a></div><div class="ttdeci">void AddJigsaw(const Jigsaw &amp;jigsaw)</div><div class="ttdoc">Adds a jigsaw to a frame tree and shows how jigsaw could affect the tree.</div><div class="ttdef"><b>Definition:</b> <a href="a00572_source.html#l00170">TreePlot.cc:170</a></div></div>
 <div class="ttc" id="aa00278_html"><div class="ttname"><a href="a00278.html">CombinatoricGroup.hh</a></div></div>
 <div class="ttc" id="aa00797_html_a393add2ce5a03e97238ac2c90f545f0e"><div class="ttname"><a href="a00797.html#a393add2ce5a03e97238ac2c90f545f0e">RestFrames::RFBase::GetName</a></div><div class="ttdeci">std::string GetName() const</div><div class="ttdoc">Returns object name.</div><div class="ttdef"><b>Definition:</b> <a href="a00542_source.html#l00104">RFBase.cc:104</a></div></div>
 <!-- HTML footer for doxygen 1.8.9.1-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 28 2020 17:11:10 for RestFrames by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 11 2020 10:25:08 for RestFrames by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.19
 </small></address>

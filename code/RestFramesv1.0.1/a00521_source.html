@@ -130,11 +130,11 @@ $(function() {
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">namespace </span>RestFrames {</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="comment">// MinMassesCombJigsaw class methods</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment"></span>  MinMassesCombJigsaw::MinMassesCombJigsaw(<span class="keyword">const</span> std::string&amp; sname, </div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="a00769.html#aa1b4733105affe8592f5951a121f802a">   38</a></span>&#160;<span class="comment"></span>  <a class="code" href="a00769.html#adfad339ac12798c61e4c96d142fb334b">MinMassesCombJigsaw::MinMassesCombJigsaw</a>(<span class="keyword">const</span> std::string&amp; sname, </div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                       <span class="keyword">const</span> std::string&amp; stitle) : </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    CombinatoricJigsaw(sname, stitle, 2, 2) {}</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="code" href="a00661.html">CombinatoricJigsaw</a>(sname, stitle, 2, 2) {}</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  MinMassesCombJigsaw::MinMassesCombJigsaw() : CombinatoricJigsaw() {}</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="a00769.html#adfad339ac12798c61e4c96d142fb334b">   42</a></span>&#160;  <a class="code" href="a00769.html#adfad339ac12798c61e4c96d142fb334b">MinMassesCombJigsaw::MinMassesCombJigsaw</a>() : <a class="code" href="a00661.html">CombinatoricJigsaw</a>() {}</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  </div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  MinMassesCombJigsaw::~MinMassesCombJigsaw() {}</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
@@ -142,13 +142,13 @@ $(function() {
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordflow">return</span> MinMassesCombJigsaw::m_Empty;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  }</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keywordtype">void</span> MinMassesCombJigsaw::AddFrame(<span class="keyword">const</span> RestFrame&amp; frame, <span class="keywordtype">int</span> i){</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="a00769.html#a9e937709f2d1368472726366f401f200">   50</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="a00769.html#a9e937709f2d1368472726366f401f200">MinMassesCombJigsaw::AddFrame</a>(<span class="keyword">const</span> <a class="code" href="a00793.html">RestFrame</a>&amp; frame, <span class="keywordtype">int</span> i){</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordflow">if</span>(!frame) <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordflow">if</span>(!<a class="code" href="a00661.html#aeeeeb3641e412841a1140305c5b3731a">GetGroup</a>()) <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    ConstRestFrameList frames = </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;      frame.GetListVisibleFrames()+</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;      frame.GetListInvisibleFrames();</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <a class="code" href="a00809.html">ConstRestFrameList</a> frames = </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;      frame.<a class="code" href="a00793.html#a06678871d2e63872f514482d7ace0bda">GetListVisibleFrames</a>()+</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;      frame.<a class="code" href="a00793.html#a32c98dac7d2e6b7ad4e5581f41cc6666">GetListInvisibleFrames</a>();</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">int</span> N = frames.GetN();</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> f = 0; f &lt; N; f++){</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;      <span class="keywordflow">if</span>(<a class="code" href="a00661.html#aeeeeb3641e412841a1140305c5b3731a">GetGroup</a>().ContainsFrame(frames[f]))</div>
@@ -157,10 +157,10 @@ $(function() {
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    }</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  }</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keywordtype">void</span> MinMassesCombJigsaw::AddFrames(<span class="keyword">const</span> ConstRestFrameList&amp; frames, <span class="keywordtype">int</span> i){</div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="a00769.html#ab84a19ee8334443a54a4d7fe3c554478">   65</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="a00769.html#ab84a19ee8334443a54a4d7fe3c554478">MinMassesCombJigsaw::AddFrames</a>(<span class="keyword">const</span> <a class="code" href="a00809.html">ConstRestFrameList</a>&amp; frames, <span class="keywordtype">int</span> i){</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordtype">int</span> N = frames.GetN();</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> f = 0; f &lt; N; f++)</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;      AddFrame(frames[f],i);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;      <a class="code" href="a00769.html#a9e937709f2d1368472726366f401f200">AddFrame</a>(frames[f],i);</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  }</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keywordtype">bool</span> MinMassesCombJigsaw::AnalyzeEvent(){</div>
@@ -302,14 +302,22 @@ $(function() {
 <div class="ttc" id="aa00380_html"><div class="ttname"><a href="a00380.html">RestFrame.hh</a></div></div>
 <div class="ttc" id="aa00665_html_a6ecb20b0d1592078ff3abc0807cd5b6d"><div class="ttname"><a href="a00665.html#a6ecb20b0d1592078ff3abc0807cd5b6d">RestFrames::CombinatoricState::AddElements</a></div><div class="ttdeci">void AddElements(const VisibleStateList &amp;states)</div><div class="ttdoc">Adds elements to this state.</div><div class="ttdef"><b>Definition:</b> <a href="a00443_source.html#l00092">CombinatoricState.cc:92</a></div></div>
 <div class="ttc" id="aa00665_html_acbf152f7695b691fabbc36464d829efe"><div class="ttname"><a href="a00665.html#acbf152f7695b691fabbc36464d829efe">RestFrames::CombinatoricState::ClearElements</a></div><div class="ttdeci">void ClearElements()</div><div class="ttdoc">Clears all elements associated with this state.</div><div class="ttdef"><b>Definition:</b> <a href="a00443_source.html#l00083">CombinatoricState.cc:83</a></div></div>
-<div class="ttc" id="aa00733_html_a6aacb0c34d34d1036918b3c6a85a87fb"><div class="ttname"><a href="a00733.html#a6aacb0c34d34d1036918b3c6a85a87fb">RestFrames::Jigsaw::GetDependancyFrames</a></div><div class="ttdeci">virtual ConstRestFrameList const  &amp; GetDependancyFrames(int i) const</div><div class="ttdoc">Returns list of frames in which jigsaw depend on.</div><div class="ttdef"><b>Definition:</b> <a href="a00494_source.html#l00214">Jigsaw.cc:214</a></div></div>
+<div class="ttc" id="aa00809_html"><div class="ttname"><a href="a00809.html">RestFrames::RFList&lt; const RestFrame &gt;</a></div></div>
+<div class="ttc" id="aa00769_html_adfad339ac12798c61e4c96d142fb334b"><div class="ttname"><a href="a00769.html#adfad339ac12798c61e4c96d142fb334b">RestFrames::MinMassesCombJigsaw::MinMassesCombJigsaw</a></div><div class="ttdeci">MinMassesCombJigsaw()</div><div class="ttdoc">Empty constructor.</div><div class="ttdef"><b>Definition:</b> <a href="a00521_source.html#l00042">MinMassesCombJigsaw.cc:42</a></div></div>
+<div class="ttc" id="aa00733_html_a6aacb0c34d34d1036918b3c6a85a87fb"><div class="ttname"><a href="a00733.html#a6aacb0c34d34d1036918b3c6a85a87fb">RestFrames::Jigsaw::GetDependancyFrames</a></div><div class="ttdeci">virtual ConstRestFrameList const  &amp; GetDependancyFrames(int i) const</div><div class="ttdoc">Returns list of frames in which this jigsaw depends on.</div><div class="ttdef"><b>Definition:</b> <a href="a00494_source.html#l00214">Jigsaw.cc:214</a></div></div>
+<div class="ttc" id="aa00661_html"><div class="ttname"><a href="a00661.html">RestFrames::CombinatoricJigsaw</a></div><div class="ttdef"><b>Definition:</b> <a href="a00281_source.html#l00040">CombinatoricJigsaw.hh:40</a></div></div>
+<div class="ttc" id="aa00769_html_a9e937709f2d1368472726366f401f200"><div class="ttname"><a href="a00769.html#a9e937709f2d1368472726366f401f200">RestFrames::MinMassesCombJigsaw::AddFrame</a></div><div class="ttdeci">virtual void AddFrame(const RestFrame &amp;frame, int i=0)</div><div class="ttdoc">Adds frame to current jigsaw.</div><div class="ttdef"><b>Definition:</b> <a href="a00521_source.html#l00050">MinMassesCombJigsaw.cc:50</a></div></div>
 <div class="ttc" id="aa00733_html_af04bb76eb4efba69d2e1ce5c80716788"><div class="ttname"><a href="a00733.html#af04bb76eb4efba69d2e1ce5c80716788">RestFrames::Jigsaw::GetChildFrames</a></div><div class="ttdeci">virtual ConstRestFrameList const  &amp; GetChildFrames(int i) const</div><div class="ttdoc">Returns list of child frames associated with this jigsaw.</div><div class="ttdef"><b>Definition:</b> <a href="a00494_source.html#l00208">Jigsaw.cc:208</a></div></div>
+<div class="ttc" id="aa00793_html_a06678871d2e63872f514482d7ace0bda"><div class="ttname"><a href="a00793.html#a06678871d2e63872f514482d7ace0bda">RestFrames::RestFrame::GetListVisibleFrames</a></div><div class="ttdeci">virtual RestFrameList GetListVisibleFrames() const</div><div class="ttdoc">Returns a list of VisibleFrame s inheriting from this.</div><div class="ttdef"><b>Definition:</b> <a href="a00539_source.html#l00342">RestFrame.cc:342</a></div></div>
 <div class="ttc" id="aa00362_html"><div class="ttname"><a href="a00362.html">MinMassesCombJigsaw.hh</a></div></div>
+<div class="ttc" id="aa00793_html"><div class="ttname"><a href="a00793.html">RestFrames::RestFrame</a></div><div class="ttdoc">abstract base class for all Frame objects</div><div class="ttdef"><b>Definition:</b> <a href="a00380_source.html#l00045">RestFrame.hh:45</a></div></div>
+<div class="ttc" id="aa00793_html_a32c98dac7d2e6b7ad4e5581f41cc6666"><div class="ttname"><a href="a00793.html#a32c98dac7d2e6b7ad4e5581f41cc6666">RestFrames::RestFrame::GetListInvisibleFrames</a></div><div class="ttdeci">virtual RestFrameList GetListInvisibleFrames() const</div><div class="ttdoc">Returns a list of InvisibleFrame s inheriting from this.</div><div class="ttdef"><b>Definition:</b> <a href="a00539_source.html#l00346">RestFrame.cc:346</a></div></div>
+<div class="ttc" id="aa00769_html_ab84a19ee8334443a54a4d7fe3c554478"><div class="ttname"><a href="a00769.html#ab84a19ee8334443a54a4d7fe3c554478">RestFrames::MinMassesCombJigsaw::AddFrames</a></div><div class="ttdeci">virtual void AddFrames(const ConstRestFrameList &amp;frames, int i=0)</div><div class="ttdoc">Adds a list of frames to current jigsaw.</div><div class="ttdef"><b>Definition:</b> <a href="a00521_source.html#l00065">MinMassesCombJigsaw.cc:65</a></div></div>
 <div class="ttc" id="aa00661_html_aeeeeb3641e412841a1140305c5b3731a"><div class="ttname"><a href="a00661.html#aeeeeb3641e412841a1140305c5b3731a">RestFrames::CombinatoricJigsaw::GetGroup</a></div><div class="ttdeci">virtual CombinatoricGroup &amp; GetGroup() const</div><div class="ttdoc">Returns group (Group) associated with this jigsaw.</div><div class="ttdef"><b>Definition:</b> <a href="a00440_source.html#l00066">CombinatoricJigsaw.cc:66</a></div></div>
 <!-- HTML footer for doxygen 1.8.9.1-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 28 2020 17:11:08 for RestFrames by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 11 2020 10:25:06 for RestFrames by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.19
 </small></address>

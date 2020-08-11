@@ -153,14 +153,14 @@ $(function() {
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordflow">if</span>(!T::IsSoundBody()){</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;      <span class="keywordflow">return</span> T::SetBody(<span class="keyword">false</span>);</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    }</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">int</span> Nchild = T::GetNChildren();</div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="a00737.html#aaf976613c8962e1ef2c4f4a23c806838">   61</a></span>&#160;    <span class="keywordtype">int</span> Nchild = T::GetNChildren();</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordflow">if</span>(Nchild != 1){</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;      T::m_Log &lt;&lt; LogWarning &lt;&lt; <span class="stringliteral">&quot;Number of LabFrame children != 1: &quot;</span>;</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;      T::m_Log &lt;&lt; Nchild &lt;&lt; LogEnd;</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;      <span class="keywordflow">return</span> T::SetBody(<span class="keyword">false</span>);</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    }</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordflow">if</span>(!T::GetParentFrame().IsEmpty()){</div>
-<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="a00737.html#aaccbcd60c55bd0c1b94b61cca16807de">   68</a></span>&#160;      T::m_Log &lt;&lt; LogWarning &lt;&lt; <span class="stringliteral">&quot;Parent frame of LabFrame is not empty: &quot;</span>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;      T::m_Log &lt;&lt; LogWarning &lt;&lt; <span class="stringliteral">&quot;Parent frame of LabFrame is not empty: &quot;</span>;</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;      T::m_Log &lt;&lt; Log(T::GetParentFrame()) &lt;&lt; LogEnd;</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;      <span class="keywordflow">return</span> T::SetBody(<span class="keyword">false</span>);</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    }</div>
@@ -173,14 +173,14 @@ $(function() {
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  }</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt; </div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="a00737.html">LabFrame&lt;T&gt;::InitializeTree</a>() {</div>
+<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="a00737.html#aaf976613c8962e1ef2c4f4a23c806838">   81</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="a00737.html#aaf976613c8962e1ef2c4f4a23c806838">LabFrame&lt;T&gt;::InitializeTree</a>() {</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    T::m_Log &lt;&lt; LogVerbose;</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    T::m_Log &lt;&lt; <span class="stringliteral">&quot;Initializing tree skeleton...&quot;</span>;</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    T::m_Log &lt;&lt; LogEnd;</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    std::vector&lt;RFKey&gt; keys;</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordflow">if</span>(T::IsCircularTree(keys)){</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;      T::m_Log &lt;&lt; LogWarning;</div>
+<div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="a00737.html#aaccbcd60c55bd0c1b94b61cca16807de">   88</a></span>&#160;      T::m_Log &lt;&lt; LogWarning;</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;      T::m_Log &lt;&lt; <span class="stringliteral">&quot;   Tree is circular in construction&quot;</span>;</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;      T::m_Log &lt;&lt; LogEnd;</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
@@ -216,11 +216,12 @@ $(function() {
 <div class="ttc" id="aa00737_html_a6c164149acd82253a30b9ad4772a9fc2"><div class="ttname"><a href="a00737.html#a6c164149acd82253a30b9ad4772a9fc2">RestFrames::LabFrame::LabFrame</a></div><div class="ttdeci">LabFrame()</div><div class="ttdoc">\Empty constructor</div><div class="ttdef"><b>Definition:</b> <a href="a00497_source.html#l00048">LabFrame.cc:48</a></div></div>
 <div class="ttc" id="aa00338_html"><div class="ttname"><a href="a00338.html">LabFrame.hh</a></div></div>
 <div class="ttc" id="aa00737_html_a35966f9447014a091a33d052abc628d7"><div class="ttname"><a href="a00737.html#a35966f9447014a091a33d052abc628d7">RestFrames::LabFrame::SetChildFrame</a></div><div class="ttdeci">void SetChildFrame(RestFrame &amp;frame)</div><div class="ttdoc">Sets child frame.</div><div class="ttdef"><b>Definition:</b> <a href="a00497_source.html#l00076">LabFrame.cc:76</a></div></div>
+<div class="ttc" id="aa00737_html_aaf976613c8962e1ef2c4f4a23c806838"><div class="ttname"><a href="a00737.html#aaf976613c8962e1ef2c4f4a23c806838">RestFrames::LabFrame::InitializeTree</a></div><div class="ttdeci">virtual bool InitializeTree()</div><div class="ttdoc">Method to initialize tree.</div><div class="ttdef"><b>Definition:</b> <a href="a00497_source.html#l00081">LabFrame.cc:81</a></div></div>
 <div class="ttc" id="aa00793_html"><div class="ttname"><a href="a00793.html">RestFrames::RestFrame</a></div><div class="ttdoc">abstract base class for all Frame objects</div><div class="ttdef"><b>Definition:</b> <a href="a00380_source.html#l00045">RestFrame.hh:45</a></div></div>
 <!-- HTML footer for doxygen 1.8.9.1-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 28 2020 17:11:07 for RestFrames by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 11 2020 10:25:06 for RestFrames by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.19
 </small></address>

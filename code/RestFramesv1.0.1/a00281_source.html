@@ -152,82 +152,91 @@ $(function() {
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="a00657.html">CombinatoricGroup</a>&amp; <a class="code" href="a00661.html#aeeeeb3641e412841a1140305c5b3731a">GetGroup</a>() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="a00661.html#a19062e51352df5b6d231d6b722e8c3a1">AddCombFrame</a>(<span class="keyword">const</span> <a class="code" href="a00793.html">RestFrame</a>&amp; frame, <span class="keywordtype">int</span> i = 0);</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a00661.html#a6d9165f984ddd8dd7f41bcaa4ac5fff7">AddCombFrames</a>(<span class="keyword">const</span> <a class="code" href="a00809.html">ConstRestFrameList</a>&amp; frames, <span class="keywordtype">int</span> i = 0);</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    </div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> AddObjectFrame(<span class="keyword">const</span> <a class="code" href="a00793.html">RestFrame</a>&amp; frame, <span class="keywordtype">int</span> i = 0);</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordtype">void</span> AddObjectFrames(<span class="keyword">const</span> <a class="code" href="a00809.html">ConstRestFrameList</a>&amp; frames, <span class="keywordtype">int</span> i = 0);</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordtype">void</span> SetCombCharge(<span class="keyword">const</span> <a class="code" href="a00801.html">RFCharge</a>&amp; charge, <span class="keywordtype">int</span> i);</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keywordtype">void</span> SetCombCharge(<span class="keywordtype">int</span> charge, <span class="keywordtype">int</span> i);</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keywordtype">void</span> SetCombCharge(<span class="keywordtype">int</span> charge_num, <span class="keywordtype">int</span> charge_den, <span class="keywordtype">int</span> i);</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keywordtype">void</span> UnsetCombCharge(<span class="keywordtype">int</span> i);</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keywordtype">void</span> SetObjectCharge(<span class="keyword">const</span> <a class="code" href="a00801.html">RFCharge</a>&amp; charge, <span class="keywordtype">int</span> i);</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordtype">void</span> SetObjectCharge(<span class="keywordtype">int</span> charge, <span class="keywordtype">int</span> i);</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keywordtype">void</span> SetObjectCharge(<span class="keywordtype">int</span> charge_num, <span class="keywordtype">int</span> charge_den, <span class="keywordtype">int</span> i);</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keywordtype">void</span> UnsetObjectCharge(<span class="keywordtype">int</span> i);</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> IsSoundBody() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <a class="code" href="a00665.html">CombinatoricState</a>&amp; GetNewChildState();</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    </div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> InitializeAnalysis();</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> InitializeCombinatoric();</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> LoopCombinatoric();</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160; </div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> EvaluateMetric(<span class="keywordtype">double</span>&amp; metric) <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> AnalyzeEvent();</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    </div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <span class="keywordtype">int</span> GetNInputStates() <span class="keyword">const</span>; </div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <a class="code" href="a00877.html">VisibleState</a>&amp; GetInputState(<span class="keywordtype">int</span> i = 0) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="a00661.html#a19062e51352df5b6d231d6b722e8c3a1">AddCombFrame</a>(<span class="keyword">const</span> <a class="code" href="a00793.html">RestFrame</a>&amp; frame, <span class="keywordtype">int</span> i = 0);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a00661.html#a6d9165f984ddd8dd7f41bcaa4ac5fff7">AddCombFrames</a>(<span class="keyword">const</span> <a class="code" href="a00809.html">ConstRestFrameList</a>&amp; frames, <span class="keywordtype">int</span> i = 0);</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="a00661.html#aee20292d4601d618a8d45d27b1281f82">AddObjectFrame</a>(<span class="keyword">const</span> <a class="code" href="a00793.html">RestFrame</a>&amp; frame, <span class="keywordtype">int</span> i = 0);</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a00661.html#a5cca7895496629827705cc9edc7fe82c">AddObjectFrames</a>(<span class="keyword">const</span> <a class="code" href="a00809.html">ConstRestFrameList</a>&amp; frames, <span class="keywordtype">int</span> i = 0);</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160; </div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <span class="keywordtype">int</span> GetNinputForChild(<span class="keywordtype">int</span> i = 0) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <span class="keywordtype">bool</span> IsNinputExclForChild(<span class="keywordtype">int</span> i = 0) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160; </div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <span class="keywordtype">bool</span> IsChargeSetForChild(<span class="keywordtype">int</span> i = 0) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <a class="code" href="a00801.html">RFCharge</a> GetChargeForChild(<span class="keywordtype">int</span> i = 0) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <span class="keywordtype">bool</span> IsChargeSetForObject(<span class="keywordtype">int</span> i = 0) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <a class="code" href="a00801.html">RFCharge</a> GetChargeForObject(<span class="keywordtype">int</span> i = 0) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160; </div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    <span class="keywordtype">void</span> SetParentState(<a class="code" href="a00849.html">State</a>&amp; state = State::Empty());</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    <a class="code" href="a00665.html">CombinatoricState</a> <span class="keyword">const</span>&amp; GetParentState() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    </div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    <a class="code" href="a00665.html">CombinatoricState</a>&amp; GetChildState(<span class="keywordtype">int</span> i) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160; </div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    <span class="keywordtype">bool</span> InitializeJigsawExecutionList(<a class="code" href="a00809.html">JigsawList</a>&amp; exec_jigsaws);</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160; </div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    <a class="code" href="a00809.html">JigsawList</a> m_ExecuteJigsaws;</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    <span class="keywordtype">bool</span> ExecuteDependancyJigsaws();</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a00661.html#adcaf308a80c38a2f1d5b900e24796fde">SetCombCharge</a>(<span class="keyword">const</span> <a class="code" href="a00801.html">RFCharge</a>&amp; charge, <span class="keywordtype">int</span> i);</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160; </div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a00661.html#adcaf308a80c38a2f1d5b900e24796fde">SetCombCharge</a>(<span class="keywordtype">int</span> charge, <span class="keywordtype">int</span> i);</div>
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160; </div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;  <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> m_Ncomb;</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> m_Nobj;</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160; </div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    <a class="code" href="a00809.html">VisibleStateList</a> m_InputStates;</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160; </div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    <span class="keywordtype">int</span> m_NinputTOT;</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    <span class="keywordtype">bool</span> m_NExclusiveTOT;</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    std::vector&lt;int&gt; m_NForChild;</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    std::vector&lt;int&gt; m_NExclusive;</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <span class="keyword">mutable</span> std::map&lt;int, RFCharge&gt; m_ChargeForChild;</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    <span class="keyword">mutable</span> std::map&lt;int, RFCharge&gt; m_ChargeForObject;</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;  };</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160; </div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;}</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160; </div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a00661.html#adcaf308a80c38a2f1d5b900e24796fde">SetCombCharge</a>(<span class="keywordtype">int</span> charge_num, <span class="keywordtype">int</span> charge_den, <span class="keywordtype">int</span> i);</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160; </div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a00661.html#a7469a690dc35be455eced6164468bbca">UnsetCombCharge</a>(<span class="keywordtype">int</span> i);</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160; </div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a00661.html#af60619ab90b7a4aaf9bdd461f5181092">SetObjectCharge</a>(<span class="keyword">const</span> <a class="code" href="a00801.html">RFCharge</a>&amp; charge, <span class="keywordtype">int</span> i);</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160; </div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a00661.html#af60619ab90b7a4aaf9bdd461f5181092">SetObjectCharge</a>(<span class="keywordtype">int</span> charge, <span class="keywordtype">int</span> i);</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160; </div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a00661.html#af60619ab90b7a4aaf9bdd461f5181092">SetObjectCharge</a>(<span class="keywordtype">int</span> charge_num, <span class="keywordtype">int</span> charge_den, <span class="keywordtype">int</span> i);</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    </div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a00661.html#aee21613a83ff39a2b837a89106bae1db">UnsetObjectCharge</a>(<span class="keywordtype">int</span> i);</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160; </div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;  <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> IsSoundBody() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    <a class="code" href="a00665.html">CombinatoricState</a>&amp; GetNewChildState();</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    </div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> InitializeAnalysis();</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160; </div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> InitializeCombinatoric();</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> LoopCombinatoric();</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160; </div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> EvaluateMetric(<span class="keywordtype">double</span>&amp; metric) <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160; </div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> AnalyzeEvent();</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    </div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    <span class="keywordtype">int</span> GetNInputStates() <span class="keyword">const</span>; </div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    <a class="code" href="a00877.html">VisibleState</a>&amp; GetInputState(<span class="keywordtype">int</span> i = 0) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160; </div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    <span class="keywordtype">int</span> GetNinputForChild(<span class="keywordtype">int</span> i = 0) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    <span class="keywordtype">bool</span> IsNinputExclForChild(<span class="keywordtype">int</span> i = 0) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160; </div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;    <span class="keywordtype">bool</span> IsChargeSetForChild(<span class="keywordtype">int</span> i = 0) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    <a class="code" href="a00801.html">RFCharge</a> GetChargeForChild(<span class="keywordtype">int</span> i = 0) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;    <span class="keywordtype">bool</span> IsChargeSetForObject(<span class="keywordtype">int</span> i = 0) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;    <a class="code" href="a00801.html">RFCharge</a> GetChargeForObject(<span class="keywordtype">int</span> i = 0) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160; </div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    <span class="keywordtype">void</span> SetParentState(<a class="code" href="a00849.html">State</a>&amp; state = State::Empty());</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    <a class="code" href="a00665.html">CombinatoricState</a> <span class="keyword">const</span>&amp; GetParentState() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    </div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;    <a class="code" href="a00665.html">CombinatoricState</a>&amp; GetChildState(<span class="keywordtype">int</span> i) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160; </div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;    <span class="keywordtype">bool</span> InitializeJigsawExecutionList(<a class="code" href="a00809.html">JigsawList</a>&amp; exec_jigsaws);</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160; </div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;    <a class="code" href="a00809.html">JigsawList</a> m_ExecuteJigsaws;</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    <span class="keywordtype">bool</span> ExecuteDependancyJigsaws();</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160; </div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;  <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> m_Ncomb;</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> m_Nobj;</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160; </div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    <a class="code" href="a00809.html">VisibleStateList</a> m_InputStates;</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160; </div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    <span class="keywordtype">int</span> m_NinputTOT;</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;    <span class="keywordtype">bool</span> m_NExclusiveTOT;</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;    std::vector&lt;int&gt; m_NForChild;</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;    std::vector&lt;int&gt; m_NExclusive;</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    <span class="keyword">mutable</span> std::map&lt;int, RFCharge&gt; m_ChargeForChild;</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    <span class="keyword">mutable</span> std::map&lt;int, RFCharge&gt; m_ChargeForObject;</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;  };</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160; </div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;}</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160; </div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aa00801_html"><div class="ttname"><a href="a00801.html">RestFrames::RFCharge</a></div><div class="ttdef"><b>Definition:</b> <a href="a00389_source.html#l00040">RFCharge.hh:40</a></div></div>
+<div class="ttc" id="aa00661_html_a7469a690dc35be455eced6164468bbca"><div class="ttname"><a href="a00661.html#a7469a690dc35be455eced6164468bbca">RestFrames::CombinatoricJigsaw::UnsetCombCharge</a></div><div class="ttdeci">void UnsetCombCharge(int i)</div><div class="ttdoc">Unsets charge of the ith combinatoric frame.</div><div class="ttdef"><b>Definition:</b> <a href="a00440_source.html#l00141">CombinatoricJigsaw.cc:141</a></div></div>
 <div class="ttc" id="aa00849_html"><div class="ttname"><a href="a00849.html">RestFrames::State</a></div><div class="ttdoc">Abstract base class for all State objects.</div><div class="ttdef"><b>Definition:</b> <a href="a00413_source.html#l00044">State.hh:44</a></div></div>
+<div class="ttc" id="aa00661_html_aee21613a83ff39a2b837a89106bae1db"><div class="ttname"><a href="a00661.html#aee21613a83ff39a2b837a89106bae1db">RestFrames::CombinatoricJigsaw::UnsetObjectCharge</a></div><div class="ttdeci">void UnsetObjectCharge(int i)</div><div class="ttdoc">Unsets charge of the ith object frame.</div><div class="ttdef"><b>Definition:</b> <a href="a00440_source.html#l00161">CombinatoricJigsaw.cc:161</a></div></div>
 <div class="ttc" id="aa00380_html"><div class="ttname"><a href="a00380.html">RestFrame.hh</a></div></div>
 <div class="ttc" id="aa00661_html_a404b0164c7ff7784a660ca855a5036b2"><div class="ttname"><a href="a00661.html#a404b0164c7ff7784a660ca855a5036b2">RestFrames::CombinatoricJigsaw::CombinatoricJigsaw</a></div><div class="ttdeci">CombinatoricJigsaw()</div><div class="ttdoc">Empty constructor.</div><div class="ttdef"><b>Definition:</b> <a href="a00440_source.html#l00047">CombinatoricJigsaw.cc:47</a></div></div>
 <div class="ttc" id="aa00733_html"><div class="ttname"><a href="a00733.html">RestFrames::Jigsaw</a></div><div class="ttdoc">abstract base class for all Jigsaw objects</div><div class="ttdef"><b>Definition:</b> <a href="a00335_source.html#l00044">Jigsaw.hh:44</a></div></div>
 <div class="ttc" id="aa00809_html"><div class="ttname"><a href="a00809.html">RestFrames::RFList&lt; const RestFrame &gt;</a></div></div>
+<div class="ttc" id="aa00661_html_aee20292d4601d618a8d45d27b1281f82"><div class="ttname"><a href="a00661.html#aee20292d4601d618a8d45d27b1281f82">RestFrames::CombinatoricJigsaw::AddObjectFrame</a></div><div class="ttdeci">virtual void AddObjectFrame(const RestFrame &amp;frame, int i=0)</div><div class="ttdoc">Adds a frame to this jigsaw.</div><div class="ttdef"><b>Definition:</b> <a href="a00440_source.html#l00109">CombinatoricJigsaw.cc:109</a></div></div>
 <div class="ttc" id="aa00661_html"><div class="ttname"><a href="a00661.html">RestFrames::CombinatoricJigsaw</a></div><div class="ttdef"><b>Definition:</b> <a href="a00281_source.html#l00040">CombinatoricJigsaw.hh:40</a></div></div>
 <div class="ttc" id="aa00284_html"><div class="ttname"><a href="a00284.html">CombinatoricState.hh</a></div></div>
 <div class="ttc" id="aa00661_html_a6d9165f984ddd8dd7f41bcaa4ac5fff7"><div class="ttname"><a href="a00661.html#a6d9165f984ddd8dd7f41bcaa4ac5fff7">RestFrames::CombinatoricJigsaw::AddCombFrames</a></div><div class="ttdeci">void AddCombFrames(const ConstRestFrameList &amp;frames, int i=0)</div><div class="ttdoc">Adds a list of frames (RestFrame) to this jigsaw.</div><div class="ttdef"><b>Definition:</b> <a href="a00440_source.html#l00103">CombinatoricJigsaw.cc:103</a></div></div>
@@ -235,17 +244,20 @@ $(function() {
 <div class="ttc" id="aa00335_html"><div class="ttname"><a href="a00335.html">Jigsaw.hh</a></div></div>
 <div class="ttc" id="aa00877_html"><div class="ttname"><a href="a00877.html">RestFrames::VisibleState</a></div><div class="ttdef"><b>Definition:</b> <a href="a00434_source.html#l00039">VisibleState.hh:39</a></div></div>
 <div class="ttc" id="aa00661_html_ace572ae893937b1cc6a837f712c8f53b"><div class="ttname"><a href="a00661.html#ace572ae893937b1cc6a837f712c8f53b">RestFrames::CombinatoricJigsaw::SetGroup</a></div><div class="ttdeci">virtual void SetGroup(Group &amp;group=Group::Empty())</div><div class="ttdoc">Sets group (Group) to current jigsaw.</div><div class="ttdef"><b>Definition:</b> <a href="a00440_source.html#l00060">CombinatoricJigsaw.cc:60</a></div></div>
+<div class="ttc" id="aa00661_html_a5cca7895496629827705cc9edc7fe82c"><div class="ttname"><a href="a00661.html#a5cca7895496629827705cc9edc7fe82c">RestFrames::CombinatoricJigsaw::AddObjectFrames</a></div><div class="ttdeci">void AddObjectFrames(const ConstRestFrameList &amp;frames, int i=0)</div><div class="ttdoc">Adds a frame to this jigsaw.</div><div class="ttdef"><b>Definition:</b> <a href="a00440_source.html#l00120">CombinatoricJigsaw.cc:120</a></div></div>
 <div class="ttc" id="aa00793_html"><div class="ttname"><a href="a00793.html">RestFrames::RestFrame</a></div><div class="ttdoc">abstract base class for all Frame objects</div><div class="ttdef"><b>Definition:</b> <a href="a00380_source.html#l00045">RestFrame.hh:45</a></div></div>
 <div class="ttc" id="aa00693_html"><div class="ttname"><a href="a00693.html">RestFrames::Group</a></div><div class="ttdoc">abstract base class for all Group objects</div><div class="ttdef"><b>Definition:</b> <a href="a00305_source.html#l00046">Group.hh:46</a></div></div>
 <div class="ttc" id="aa00657_html"><div class="ttname"><a href="a00657.html">RestFrames::CombinatoricGroup</a></div><div class="ttdef"><b>Definition:</b> <a href="a00278_source.html#l00039">CombinatoricGroup.hh:39</a></div></div>
 <div class="ttc" id="aa00661_html_aeeeeb3641e412841a1140305c5b3731a"><div class="ttname"><a href="a00661.html#aeeeeb3641e412841a1140305c5b3731a">RestFrames::CombinatoricJigsaw::GetGroup</a></div><div class="ttdeci">virtual CombinatoricGroup &amp; GetGroup() const</div><div class="ttdoc">Returns group (Group) associated with this jigsaw.</div><div class="ttdef"><b>Definition:</b> <a href="a00440_source.html#l00066">CombinatoricJigsaw.cc:66</a></div></div>
 <div class="ttc" id="aa00278_html"><div class="ttname"><a href="a00278.html">CombinatoricGroup.hh</a></div></div>
+<div class="ttc" id="aa00661_html_af60619ab90b7a4aaf9bdd461f5181092"><div class="ttname"><a href="a00661.html#af60619ab90b7a4aaf9bdd461f5181092">RestFrames::CombinatoricJigsaw::SetObjectCharge</a></div><div class="ttdeci">void SetObjectCharge(const RFCharge &amp;charge, int i)</div><div class="ttdoc">Sets charge of ith object frame.</div><div class="ttdef"><b>Definition:</b> <a href="a00440_source.html#l00146">CombinatoricJigsaw.cc:146</a></div></div>
 <div class="ttc" id="aa00665_html"><div class="ttname"><a href="a00665.html">RestFrames::CombinatoricState</a></div><div class="ttdef"><b>Definition:</b> <a href="a00284_source.html#l00043">CombinatoricState.hh:43</a></div></div>
 <div class="ttc" id="aa00661_html_af2eda684cb4d1026ab06b915a84c0195"><div class="ttname"><a href="a00661.html#af2eda684cb4d1026ab06b915a84c0195">RestFrames::CombinatoricJigsaw::Clear</a></div><div class="ttdeci">virtual void Clear()</div><div class="ttdoc">Clears CombinatoricJigsaw from all connections to other objects.</div><div class="ttdef"><b>Definition:</b> <a href="a00440_source.html#l00052">CombinatoricJigsaw.cc:52</a></div></div>
+<div class="ttc" id="aa00661_html_adcaf308a80c38a2f1d5b900e24796fde"><div class="ttname"><a href="a00661.html#adcaf308a80c38a2f1d5b900e24796fde">RestFrames::CombinatoricJigsaw::SetCombCharge</a></div><div class="ttdeci">void SetCombCharge(const RFCharge &amp;charge, int i)</div><div class="ttdoc">Sets charge of ith combinatoric frame.</div><div class="ttdef"><b>Definition:</b> <a href="a00440_source.html#l00126">CombinatoricJigsaw.cc:126</a></div></div>
 <!-- HTML footer for doxygen 1.8.9.1-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 28 2020 17:11:01 for RestFrames by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 11 2020 10:25:02 for RestFrames by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.19
 </small></address>

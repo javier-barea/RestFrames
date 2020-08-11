@@ -133,35 +133,41 @@ $(function() {
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
 <div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="a00673.html">   37</a></span>&#160;  <span class="keyword">class </span><a class="code" href="a00673.html">ContraBoostInvJigsaw</a> : <span class="keyword">public</span> <a class="code" href="a00721.html">InvisibleJigsaw</a> {</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <a class="code" href="a00673.html">ContraBoostInvJigsaw</a>(<span class="keyword">const</span> std::string&amp; sname, </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;             <span class="keyword">const</span> std::string&amp; stitle);</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="code" href="a00673.html">ContraBoostInvJigsaw</a>();</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    ~<a class="code" href="a00673.html">ContraBoostInvJigsaw</a>();</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keyword">virtual</span> std::string GetLabel()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;Contra-boost Invariant&quot;</span>; }</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">double</span> GetMinimumMass() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> AnalyzeEvent();</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keyword">static</span> <a class="code" href="a00673.html">ContraBoostInvJigsaw</a>&amp; Empty();</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keyword">static</span> <a class="code" href="a00673.html">ContraBoostInvJigsaw</a> m_Empty;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  };</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;}</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="a00673.html#a8b8e29423513a9f859f81604888bdf88">ContraBoostInvJigsaw</a>(<span class="keyword">const</span> std::string&amp; sname, </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;             <span class="keyword">const</span> std::string&amp; stitle);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <a class="code" href="a00673.html#a8b8e29423513a9f859f81604888bdf88">ContraBoostInvJigsaw</a>();</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    ~<a class="code" href="a00673.html">ContraBoostInvJigsaw</a>();</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="a00673.html#a569fb941883b4eb37a7b29bc12485976">   54</a></span>&#160;    <span class="keyword">virtual</span> std::string <a class="code" href="a00673.html#a569fb941883b4eb37a7b29bc12485976">GetLabel</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;Contra-boost Invariant&quot;</span>; }</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">double</span> <a class="code" href="a00673.html#a02085275c58a5986da0652a61b4e03d7">GetMinimumMass</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="a00673.html#ac22ef3b49630870f4aa00cab7a093241">AnalyzeEvent</a>();</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keyword">static</span> <a class="code" href="a00673.html">ContraBoostInvJigsaw</a>&amp; Empty();</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keyword">static</span> <a class="code" href="a00673.html">ContraBoostInvJigsaw</a> m_Empty;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  };</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;}</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aa00673_html_ac22ef3b49630870f4aa00cab7a093241"><div class="ttname"><a href="a00673.html#ac22ef3b49630870f4aa00cab7a093241">RestFrames::ContraBoostInvJigsaw::AnalyzeEvent</a></div><div class="ttdeci">virtual bool AnalyzeEvent()</div><div class="ttdoc">Analyzes event for this jigsaw.</div><div class="ttdef"><b>Definition:</b> <a href="a00449_source.html#l00085">ContraBoostInvJigsaw.cc:85</a></div></div>
+<div class="ttc" id="aa00673_html_a02085275c58a5986da0652a61b4e03d7"><div class="ttname"><a href="a00673.html#a02085275c58a5986da0652a61b4e03d7">RestFrames::ContraBoostInvJigsaw::GetMinimumMass</a></div><div class="ttdeci">virtual double GetMinimumMass() const</div><div class="ttdoc">Returns minimum Lorentz invariant mass.</div><div class="ttdef"><b>Definition:</b> <a href="a00449_source.html#l00049">ContraBoostInvJigsaw.cc:49</a></div></div>
 <div class="ttc" id="aa00326_html"><div class="ttname"><a href="a00326.html">InvisibleJigsaw.hh</a></div></div>
+<div class="ttc" id="aa00673_html_a8b8e29423513a9f859f81604888bdf88"><div class="ttname"><a href="a00673.html#a8b8e29423513a9f859f81604888bdf88">RestFrames::ContraBoostInvJigsaw::ContraBoostInvJigsaw</a></div><div class="ttdeci">ContraBoostInvJigsaw()</div><div class="ttdoc">Empty constructor.</div><div class="ttdef"><b>Definition:</b> <a href="a00449_source.html#l00041">ContraBoostInvJigsaw.cc:41</a></div></div>
 <div class="ttc" id="aa00673_html"><div class="ttname"><a href="a00673.html">RestFrames::ContraBoostInvJigsaw</a></div><div class="ttdef"><b>Definition:</b> <a href="a00290_source.html#l00037">ContraBoostInvJigsaw.hh:37</a></div></div>
 <div class="ttc" id="aa00721_html"><div class="ttname"><a href="a00721.html">RestFrames::InvisibleJigsaw</a></div><div class="ttdef"><b>Definition:</b> <a href="a00326_source.html#l00039">InvisibleJigsaw.hh:39</a></div></div>
+<div class="ttc" id="aa00673_html_a569fb941883b4eb37a7b29bc12485976"><div class="ttname"><a href="a00673.html#a569fb941883b4eb37a7b29bc12485976">RestFrames::ContraBoostInvJigsaw::GetLabel</a></div><div class="ttdeci">virtual std::string GetLabel() const</div><div class="ttdoc">Returns name of this Jigsaw.</div><div class="ttdef"><b>Definition:</b> <a href="a00290_source.html#l00054">ContraBoostInvJigsaw.hh:54</a></div></div>
 <!-- HTML footer for doxygen 1.8.9.1-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 28 2020 17:11:01 for RestFrames by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 11 2020 10:25:02 for RestFrames by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.19
 </small></address>

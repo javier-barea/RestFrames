@@ -142,7 +142,7 @@ $(function() {
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="comment">// Number of events to generate</span></div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keywordtype">int</span> Ngen = 100000;</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  g_Log &lt;&lt; LogInfo &lt;&lt; <span class="stringliteral">&quot;Initializing generator frames and tree...&quot;</span> &lt;&lt; LogEnd;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <a class="code" href="a00398.html#a9d92dc59e679d37f684b2b804d44384c">g_Log</a> &lt;&lt; LogInfo &lt;&lt; <span class="stringliteral">&quot;Initializing generator frames and tree...&quot;</span> &lt;&lt; LogEnd;</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <a class="code" href="a00741.html">LabGenFrame</a>       LAB_Gen(<span class="stringliteral">&quot;LAB_Gen&quot;</span>,<span class="stringliteral">&quot;LAB&quot;</span>);</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <a class="code" href="a00789.html">ResonanceGenFrame</a> W_Gen(<span class="stringliteral">&quot;W_Gen&quot;</span>,<span class="stringliteral">&quot;W&quot;</span>);</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <a class="code" href="a00869.html">VisibleGenFrame</a>   L_Gen(<span class="stringliteral">&quot;L_Gen&quot;</span>,<span class="stringliteral">&quot;#it{l}&quot;</span>);</div>
@@ -155,9 +155,9 @@ $(function() {
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  W_Gen.AddChildFrame(NU_Gen);</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="keywordflow">if</span>(LAB_Gen.InitializeTree())</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    g_Log &lt;&lt; LogInfo &lt;&lt; <span class="stringliteral">&quot;...Successfully initialized generator tree&quot;</span> &lt;&lt; LogEnd;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <a class="code" href="a00398.html#a9d92dc59e679d37f684b2b804d44384c">g_Log</a> &lt;&lt; LogInfo &lt;&lt; <span class="stringliteral">&quot;...Successfully initialized generator tree&quot;</span> &lt;&lt; LogEnd;</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    g_Log &lt;&lt; LogError &lt;&lt; <span class="stringliteral">&quot;...Failed initializing generator tree&quot;</span> &lt;&lt; LogEnd;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <a class="code" href="a00398.html#a9d92dc59e679d37f684b2b804d44384c">g_Log</a> &lt;&lt; LogError &lt;&lt; <span class="stringliteral">&quot;...Failed initializing generator tree&quot;</span> &lt;&lt; LogEnd;</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="comment">//-//-//-//-//-//-//-//-//-//-//-//-//-//-//-//-//-//-//-//-//-//-//-//-//-//-//-//-//-//</span></div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                </div>
@@ -168,11 +168,11 @@ $(function() {
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  L_Gen.SetPtCut(20.);                 L_Gen.SetEtaCut(2.5);  </div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="keywordflow">if</span>(LAB_Gen.InitializeAnalysis())</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    g_Log &lt;&lt; LogInfo &lt;&lt; <span class="stringliteral">&quot;...Successfully initialized generator analysis&quot;</span> &lt;&lt; std::endl &lt;&lt; LogEnd;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <a class="code" href="a00398.html#a9d92dc59e679d37f684b2b804d44384c">g_Log</a> &lt;&lt; LogInfo &lt;&lt; <span class="stringliteral">&quot;...Successfully initialized generator analysis&quot;</span> &lt;&lt; std::endl &lt;&lt; LogEnd;</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    g_Log &lt;&lt; LogError &lt;&lt; <span class="stringliteral">&quot;...Failed initializing generator analysis&quot;</span> &lt;&lt; LogEnd;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <a class="code" href="a00398.html#a9d92dc59e679d37f684b2b804d44384c">g_Log</a> &lt;&lt; LogError &lt;&lt; <span class="stringliteral">&quot;...Failed initializing generator analysis&quot;</span> &lt;&lt; LogEnd;</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  g_Log &lt;&lt; LogInfo &lt;&lt; <span class="stringliteral">&quot;Initializing reconstruction frames and trees...&quot;</span> &lt;&lt; LogEnd;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <a class="code" href="a00398.html#a9d92dc59e679d37f684b2b804d44384c">g_Log</a> &lt;&lt; LogInfo &lt;&lt; <span class="stringliteral">&quot;Initializing reconstruction frames and trees...&quot;</span> &lt;&lt; LogEnd;</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <a class="code" href="a00745.html">LabRecoFrame</a>       LAB(<span class="stringliteral">&quot;LAB&quot;</span>,<span class="stringliteral">&quot;LAB&quot;</span>);</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <a class="code" href="a00685.html">DecayRecoFrame</a>     W(<span class="stringliteral">&quot;W&quot;</span>,<span class="stringliteral">&quot;W&quot;</span>);</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <a class="code" href="a00873.html">VisibleRecoFrame</a>   L(<span class="stringliteral">&quot;L&quot;</span>,<span class="stringliteral">&quot;#it{l}&quot;</span>);</div>
@@ -185,9 +185,9 @@ $(function() {
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  W.AddChildFrame(NU);</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <span class="keywordflow">if</span>(LAB.InitializeTree())</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    g_Log &lt;&lt; LogInfo &lt;&lt; <span class="stringliteral">&quot;...Successfully initialized reconstruction trees&quot;</span> &lt;&lt; LogEnd;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <a class="code" href="a00398.html#a9d92dc59e679d37f684b2b804d44384c">g_Log</a> &lt;&lt; LogInfo &lt;&lt; <span class="stringliteral">&quot;...Successfully initialized reconstruction trees&quot;</span> &lt;&lt; LogEnd;</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    g_Log &lt;&lt; LogError &lt;&lt; <span class="stringliteral">&quot;...Failed initializing reconstruction trees&quot;</span> &lt;&lt; LogEnd;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <a class="code" href="a00398.html#a9d92dc59e679d37f684b2b804d44384c">g_Log</a> &lt;&lt; LogError &lt;&lt; <span class="stringliteral">&quot;...Failed initializing reconstruction trees&quot;</span> &lt;&lt; LogEnd;</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  <span class="comment">//-//-//-//-//-//-//-//-//-//-//-//-//-//-//-//-//-//-//-//-//-//-//-//-//-//-//-//-//-//</span></div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
@@ -205,24 +205,24 @@ $(function() {
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  RapidityJigsaw.AddVisibleFrame(L);</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  <span class="keywordflow">if</span>(LAB.InitializeAnalysis())</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    g_Log &lt;&lt; LogInfo &lt;&lt; <span class="stringliteral">&quot;...Successfully initialized analyses&quot;</span> &lt;&lt; LogEnd;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    g_Log &lt;&lt; LogError &lt;&lt; <span class="stringliteral">&quot;...Failed initializing analyses&quot;</span> &lt;&lt; LogEnd;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <a class="code" href="a00398.html#a9d92dc59e679d37f684b2b804d44384c">g_Log</a> &lt;&lt; LogInfo &lt;&lt; <span class="stringliteral">&quot;...Successfully initialized analyses&quot;</span> &lt;&lt; LogEnd;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  <span class="keywordflow">else</span>    </div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <a class="code" href="a00398.html#a9d92dc59e679d37f684b2b804d44384c">g_Log</a> &lt;&lt; LogError &lt;&lt; <span class="stringliteral">&quot;...Failed initializing analyses&quot;</span> &lt;&lt; LogEnd;</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  </div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;  </div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;  <a class="code" href="a00853.html">TreePlot</a>* tree_plot = <span class="keyword">new</span> <a class="code" href="a00853.html">TreePlot</a>(<span class="stringliteral">&quot;TreePlot&quot;</span>,<span class="stringliteral">&quot;TreePlot&quot;</span>);</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160; </div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;  <span class="comment">// generator tree</span></div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;  tree_plot-&gt;SetTree(LAB_Gen);</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;  tree_plot-&gt;Draw(<span class="stringliteral">&quot;GenTree&quot;</span>, <span class="stringliteral">&quot;Generator Tree&quot;</span>, <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;  tree_plot-&gt;<a class="code" href="a00853.html#a79bd00d06ba46ed1c6914bbf4eee624c">SetTree</a>(LAB_Gen);</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;  tree_plot-&gt;<a class="code" href="a00853.html#a24f23483eaaf52d59b6114c13f9a1ef6">Draw</a>(<span class="stringliteral">&quot;GenTree&quot;</span>, <span class="stringliteral">&quot;Generator Tree&quot;</span>, <span class="keyword">true</span>);</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160; </div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  <span class="comment">// reconstruction tree</span></div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;  tree_plot-&gt;SetTree(LAB);</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;  tree_plot-&gt;Draw(<span class="stringliteral">&quot;RecoTree&quot;</span>, <span class="stringliteral">&quot;Reconstruction Tree&quot;</span>);</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;  tree_plot-&gt;<a class="code" href="a00853.html#a79bd00d06ba46ed1c6914bbf4eee624c">SetTree</a>(LAB);</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;  tree_plot-&gt;<a class="code" href="a00853.html#a24f23483eaaf52d59b6114c13f9a1ef6">Draw</a>(<span class="stringliteral">&quot;RecoTree&quot;</span>, <span class="stringliteral">&quot;Reconstruction Tree&quot;</span>);</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160; </div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;  <span class="comment">// Invisible Jigsaws tree </span></div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;  tree_plot-&gt;SetTree(INV);</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;  tree_plot-&gt;Draw(<span class="stringliteral">&quot;InvTree&quot;</span>, <span class="stringliteral">&quot;InvisibleJigsaws&quot;</span>, <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;  tree_plot-&gt;<a class="code" href="a00853.html#a79bd00d06ba46ed1c6914bbf4eee624c">SetTree</a>(INV);</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;  tree_plot-&gt;<a class="code" href="a00853.html#a24f23483eaaf52d59b6114c13f9a1ef6">Draw</a>(<span class="stringliteral">&quot;InvTree&quot;</span>, <span class="stringliteral">&quot;InvisibleJigsaws&quot;</span>, <span class="keyword">true</span>);</div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160; </div>
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;  <span class="comment">//-//-//-//-//-//-//-//-//-//-//-//-//-//-//-//-//-//-//-//-//-//-//-//-//-//-//-//-//-//</span></div>
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;  </div>
@@ -250,7 +250,7 @@ $(function() {
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160; </div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> igen = 0; igen &lt; Ngen; igen++){</div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    <span class="keywordflow">if</span>(igen%((std::max(Ngen,10))/10) == 0)</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;      g_Log &lt;&lt; LogInfo &lt;&lt; <span class="stringliteral">&quot;Generating event &quot;</span> &lt;&lt; igen &lt;&lt; <span class="stringliteral">&quot; of &quot;</span> &lt;&lt; Ngen &lt;&lt; LogEnd;</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;      <a class="code" href="a00398.html#a9d92dc59e679d37f684b2b804d44384c">g_Log</a> &lt;&lt; LogInfo &lt;&lt; <span class="stringliteral">&quot;Generating event &quot;</span> &lt;&lt; igen &lt;&lt; <span class="stringliteral">&quot; of &quot;</span> &lt;&lt; Ngen &lt;&lt; LogEnd;</div>
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160; </div>
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    <span class="comment">// generate event</span></div>
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    LAB_Gen.ClearEvent();                                <span class="comment">// clear the gen tree</span></div>
@@ -311,6 +311,8 @@ $(function() {
 <div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aa00701_html"><div class="ttname"><a href="a00701.html">RestFrames::HistPlotCategory</a></div><div class="ttdef"><b>Definition:</b> <a href="a00311_source.html#l00040">HistPlotCategory.hh:40</a></div></div>
+<div class="ttc" id="aa00398_html_a9d92dc59e679d37f684b2b804d44384c"><div class="ttname"><a href="a00398.html#a9d92dc59e679d37f684b2b804d44384c">RestFrames::g_Log</a></div><div class="ttdeci">RFLog g_Log</div><div class="ttdoc">Singleton, global instance of RFLog.</div></div>
+<div class="ttc" id="aa00853_html_a24f23483eaaf52d59b6114c13f9a1ef6"><div class="ttname"><a href="a00853.html#a24f23483eaaf52d59b6114c13f9a1ef6">RestFrames::TreePlot::Draw</a></div><div class="ttdeci">void Draw(const std::string &amp;name=&quot;&quot;, const std::string &amp;title=&quot;&quot;, bool invert_colors=false, bool invert_node_colors=false)</div><div class="ttdoc">Draws tree.</div><div class="ttdef"><b>Definition:</b> <a href="a00572_source.html#l00127">TreePlot.cc:127</a></div></div>
 <div class="ttc" id="aa00717_html"><div class="ttname"><a href="a00717.html">RestFrames::InvisibleGroup</a></div><div class="ttdef"><b>Definition:</b> <a href="a00323_source.html#l00040">InvisibleGroup.hh:40</a></div></div>
 <div class="ttc" id="aa00845_html"><div class="ttname"><a href="a00845.html">RestFrames::SetRapidityInvJigsaw</a></div><div class="ttdef"><b>Definition:</b> <a href="a00410_source.html#l00037">SetRapidityInvJigsaw.hh:37</a></div></div>
 <div class="ttc" id="aa00745_html"><div class="ttname"><a href="a00745.html">RestFrames::LabRecoFrame</a></div><div class="ttdef"><b>Definition:</b> <a href="a00344_source.html#l00044">LabRecoFrame.hh:44</a></div></div>
@@ -320,6 +322,7 @@ $(function() {
 <div class="ttc" id="aa00805_html"><div class="ttname"><a href="a00805.html">RestFrames::RFKey</a></div><div class="ttdef"><b>Definition:</b> <a href="a00392_source.html#l00038">RFKey.hh:38</a></div></div>
 <div class="ttc" id="aa00705_html"><div class="ttname"><a href="a00705.html">RestFrames::HistPlotVar</a></div><div class="ttdef"><b>Definition:</b> <a href="a00314_source.html#l00040">HistPlotVar.hh:40</a></div></div>
 <div class="ttc" id="aa00697_html"><div class="ttname"><a href="a00697.html">RestFrames::HistPlot</a></div><div class="ttdef"><b>Definition:</b> <a href="a00308_source.html#l00044">HistPlot.hh:44</a></div></div>
+<div class="ttc" id="aa00853_html_a79bd00d06ba46ed1c6914bbf4eee624c"><div class="ttname"><a href="a00853.html#a79bd00d06ba46ed1c6914bbf4eee624c">RestFrames::TreePlot::SetTree</a></div><div class="ttdeci">void SetTree(const RestFrame &amp;frame)</div><div class="ttdoc">Sets a tree that shows how a frame is connected to its children.</div><div class="ttdef"><b>Definition:</b> <a href="a00572_source.html#l00160">TreePlot.cc:160</a></div></div>
 <div class="ttc" id="aa00789_html"><div class="ttname"><a href="a00789.html">RestFrames::ResonanceGenFrame</a></div><div class="ttdef"><b>Definition:</b> <a href="a00377_source.html#l00040">ResonanceGenFrame.hh:40</a></div></div>
 <div class="ttc" id="aa00869_html"><div class="ttname"><a href="a00869.html">RestFrames::VisibleGenFrame</a></div><div class="ttdef"><b>Definition:</b> <a href="a00428_source.html#l00041">VisibleGenFrame.hh:41</a></div></div>
 <div class="ttc" id="aa00685_html"><div class="ttname"><a href="a00685.html">RestFrames::DecayRecoFrame</a></div><div class="ttdef"><b>Definition:</b> <a href="a00299_source.html#l00043">DecayRecoFrame.hh:43</a></div></div>
@@ -330,7 +333,7 @@ $(function() {
 <!-- HTML footer for doxygen 1.8.9.1-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 28 2020 17:11:00 for RestFrames by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 11 2020 10:25:02 for RestFrames by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.19
 </small></address>

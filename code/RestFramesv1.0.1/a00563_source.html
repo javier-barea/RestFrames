@@ -145,12 +145,12 @@ $(function() {
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordflow">return</span> SetMassInvJigsaw::m_Empty;</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  }</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keywordtype">bool</span> SetMassInvJigsaw::AnalyzeEvent(){</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="a00841.html#ad13104f5305373c3c22700ccd746819a">   53</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="a00841.html#ad13104f5305373c3c22700ccd746819a">SetMassInvJigsaw::AnalyzeEvent</a>(){</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordflow">if</span>(!IsSoundMind())</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;      <span class="keywordflow">return</span> SetSpirit(<span class="keyword">false</span>);</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    </div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    TLorentzVector inv_P = GetParentState().<a class="code" href="a00849.html#a538d28484b82b7bb2560f482879907f3">GetFourVector</a>();</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">double</span> M = std::max(0.,GetChildState(0).GetMinimumMass());</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">double</span> M = std::max(0.,GetChildState(0).<a class="code" href="a00721.html#a24eb9d313bc93a1950301132ce18e0ea">GetMinimumMass</a>());</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    </div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    inv_P.SetVectM(inv_P.Vect(),M);</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    GetChildState(0).<a class="code" href="a00849.html#ad94f9ab87499da559a6bf96b5f2d9d2d">SetFourVector</a>(inv_P);</div>
@@ -158,7 +158,7 @@ $(function() {
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordflow">return</span> SetSpirit(<span class="keyword">true</span>);</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  }</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keywordtype">void</span> SetMassInvJigsaw::FillStateJigsawDependancies(JigsawList&amp; jigsaws)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keywordtype">void</span> SetMassInvJigsaw::FillStateJigsawDependancies(<a class="code" href="a00809.html">JigsawList</a>&amp; jigsaws)<span class="keyword"> const </span>{</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    Jigsaw::FillStateJigsawDependancies(jigsaws);</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    FillInvisibleMassJigsawDependancies(jigsaws);</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  }</div>
@@ -167,18 +167,21 @@ $(function() {
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aa00841_html_ad13104f5305373c3c22700ccd746819a"><div class="ttname"><a href="a00841.html#ad13104f5305373c3c22700ccd746819a">RestFrames::SetMassInvJigsaw::AnalyzeEvent</a></div><div class="ttdeci">virtual bool AnalyzeEvent()</div><div class="ttdoc">Analyzes event for this jigsaw.</div><div class="ttdef"><b>Definition:</b> <a href="a00563_source.html#l00053">SetMassInvJigsaw.cc:53</a></div></div>
+<div class="ttc" id="aa00721_html_a24eb9d313bc93a1950301132ce18e0ea"><div class="ttname"><a href="a00721.html#a24eb9d313bc93a1950301132ce18e0ea">RestFrames::InvisibleJigsaw::GetMinimumMass</a></div><div class="ttdeci">virtual double GetMinimumMass() const</div><div class="ttdoc">Returns minimum Lorentz invariant mass.</div><div class="ttdef"><b>Definition:</b> <a href="a00485_source.html#l00156">InvisibleJigsaw.cc:156</a></div></div>
 <div class="ttc" id="aa00849_html_ad94f9ab87499da559a6bf96b5f2d9d2d"><div class="ttname"><a href="a00849.html#ad94f9ab87499da559a6bf96b5f2d9d2d">RestFrames::State::SetFourVector</a></div><div class="ttdeci">virtual void SetFourVector(const TLorentzVector &amp;V)</div><div class="ttdoc">Sets four-vector of this frame.</div><div class="ttdef"><b>Definition:</b> <a href="a00569_source.html#l00155">State.cc:155</a></div></div>
+<div class="ttc" id="aa00809_html"><div class="ttname"><a href="a00809.html">RestFrames::RFList&lt; Jigsaw &gt;</a></div></div>
 <div class="ttc" id="aa00841_html_a2ece5231e5baf14ab2472d4345da776b"><div class="ttname"><a href="a00841.html#a2ece5231e5baf14ab2472d4345da776b">RestFrames::SetMassInvJigsaw::SetMassInvJigsaw</a></div><div class="ttdeci">SetMassInvJigsaw()</div><div class="ttdoc">Empty constructor.</div><div class="ttdef"><b>Definition:</b> <a href="a00563_source.html#l00041">SetMassInvJigsaw.cc:41</a></div></div>
 <div class="ttc" id="aa00849_html_a538d28484b82b7bb2560f482879907f3"><div class="ttname"><a href="a00849.html#a538d28484b82b7bb2560f482879907f3">RestFrames::State::GetFourVector</a></div><div class="ttdeci">virtual TLorentzVector GetFourVector() const</div><div class="ttdoc">Returns four vector of this frame.</div><div class="ttdef"><b>Definition:</b> <a href="a00569_source.html#l00159">State.cc:159</a></div></div>
 <div class="ttc" id="aa00841_html_a54b3ec9ec095fdaccd52ffb07388d7d8"><div class="ttname"><a href="a00841.html#a54b3ec9ec095fdaccd52ffb07388d7d8">RestFrames::SetMassInvJigsaw::Clear</a></div><div class="ttdeci">virtual void Clear()</div><div class="ttdoc">Clears SetMassInvJigsaw from all connections to other objects.</div><div class="ttdef"><b>Definition:</b> <a href="a00563_source.html#l00045">SetMassInvJigsaw.cc:45</a></div></div>
 <div class="ttc" id="aa00841_html"><div class="ttname"><a href="a00841.html">RestFrames::SetMassInvJigsaw</a></div><div class="ttdef"><b>Definition:</b> <a href="a00407_source.html#l00037">SetMassInvJigsaw.hh:37</a></div></div>
 <div class="ttc" id="aa00407_html"><div class="ttname"><a href="a00407.html">SetMassInvJigsaw.hh</a></div></div>
 <div class="ttc" id="aa00721_html"><div class="ttname"><a href="a00721.html">RestFrames::InvisibleJigsaw</a></div><div class="ttdef"><b>Definition:</b> <a href="a00326_source.html#l00039">InvisibleJigsaw.hh:39</a></div></div>
-<div class="ttc" id="aa00721_html_afd557bb9a0a2abedfe4a042d6f5b49c7"><div class="ttname"><a href="a00721.html#afd557bb9a0a2abedfe4a042d6f5b49c7">RestFrames::InvisibleJigsaw::Clear</a></div><div class="ttdeci">virtual void Clear()</div><div class="ttdoc">Clears Jigsaw of all connections to other objects.</div><div class="ttdef"><b>Definition:</b> <a href="a00485_source.html#l00058">InvisibleJigsaw.cc:58</a></div></div>
+<div class="ttc" id="aa00721_html_afd557bb9a0a2abedfe4a042d6f5b49c7"><div class="ttname"><a href="a00721.html#afd557bb9a0a2abedfe4a042d6f5b49c7">RestFrames::InvisibleJigsaw::Clear</a></div><div class="ttdeci">virtual void Clear()</div><div class="ttdoc">Clears InvisibleJigsaw of all connections to other objects</div><div class="ttdef"><b>Definition:</b> <a href="a00485_source.html#l00058">InvisibleJigsaw.cc:58</a></div></div>
 <!-- HTML footer for doxygen 1.8.9.1-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 28 2020 17:11:10 for RestFrames by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 11 2020 10:25:07 for RestFrames by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.19
 </small></address>

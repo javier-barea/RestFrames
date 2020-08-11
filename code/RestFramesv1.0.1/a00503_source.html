@@ -170,7 +170,7 @@ $(function() {
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordflow">return</span> m_TreeStates;</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  }</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <span class="keywordtype">bool</span> LabRecoFrame::InitializeAnalysis(){</div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="a00745.html#a41fd2136aa8bbb5c89b6c37b23f8797a">   78</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="a00745.html#a41fd2136aa8bbb5c89b6c37b23f8797a">LabRecoFrame::InitializeAnalysis</a>(){</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    m_Log &lt;&lt; LogVerbose &lt;&lt; <span class="stringliteral">&quot;Initializing this tree for analysis...&quot;</span> &lt;&lt; LogEnd;</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    </div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordflow">if</span>(!IsSoundBody()){</div>
@@ -215,7 +215,7 @@ $(function() {
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160; </div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keywordtype">int</span> Ngroup = m_TreeGroups.GetN();</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; Ngroup; i++){</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;      <span class="keywordflow">if</span>(!m_TreeGroups[i].InitializeAnalysis()){</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;      <span class="keywordflow">if</span>(!m_TreeGroups[i].<a class="code" href="a00745.html#a41fd2136aa8bbb5c89b6c37b23f8797a">InitializeAnalysis</a>()){</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    m_Log &lt;&lt; LogWarning;</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    m_Log &lt;&lt; <span class="stringliteral">&quot;Unable to initialize analysis for Group &quot;</span>;</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    m_Log &lt;&lt; Log(m_TreeGroups[i]) &lt;&lt; LogEnd;</div>
@@ -283,7 +283,7 @@ $(function() {
 <div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;      JigsawList jigsaws = m_TreeGroups[g].GetListJigsaws();</div>
 <div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;      <span class="keywordtype">int</span> Nj = jigsaws.GetN();</div>
 <div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;      <span class="keywordflow">for</span>(<span class="keywordtype">int</span> j = 0; j &lt; Nj; j++)</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    <span class="keywordflow">if</span>(!jigsaws[j].InitializeAnalysis()){</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    <span class="keywordflow">if</span>(!jigsaws[j].<a class="code" href="a00745.html#a41fd2136aa8bbb5c89b6c37b23f8797a">InitializeAnalysis</a>()){</div>
 <div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;      m_Log &lt;&lt; LogWarning;</div>
 <div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;      m_Log &lt;&lt; <span class="stringliteral">&quot;Unable to initialize Jigsaw for analysis:&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;      m_Log &lt;&lt; Log(jigsaws[j]) &lt;&lt; LogEnd;</div>
@@ -324,7 +324,7 @@ $(function() {
 <div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;  }</div>
 <div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160; </div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;  <span class="keywordtype">bool</span> LabRecoFrame::ClearEvent(){</div>
+<div class="line"><a name="l00232"></a><span class="lineno"><a class="line" href="a00745.html#ab355109aede03b573b9be5aa396b7f80">  232</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="a00745.html#ab355109aede03b573b9be5aa396b7f80">LabRecoFrame::ClearEvent</a>(){</div>
 <div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    SetSpirit(<span class="keyword">false</span>);</div>
 <div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    <span class="keywordflow">if</span>(!IsSoundMind()){</div>
 <div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;      UnSoundMind(RF_FUNCTION);</div>
@@ -333,7 +333,7 @@ $(function() {
 <div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    </div>
 <div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    <span class="keywordtype">int</span> Ng = m_TreeGroups.GetN();</div>
 <div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; Ng; i++)</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;      <span class="keywordflow">if</span>(!m_TreeGroups[i].ClearEvent())</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;      <span class="keywordflow">if</span>(!m_TreeGroups[i].<a class="code" href="a00745.html#ab355109aede03b573b9be5aa396b7f80">ClearEvent</a>())</div>
 <div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;    <span class="keywordflow">return</span> SetMind(<span class="keyword">false</span>);</div>
 <div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;    </div>
 <div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    <span class="keywordflow">if</span>(!<a class="code" href="a00785.html#a0f3af232e39ddc6bfb608afc29672de9">ClearEventRecursive</a>())</div>
@@ -342,7 +342,7 @@ $(function() {
 <div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;    <span class="keywordflow">return</span> SetMind(<span class="keyword">true</span>);</div>
 <div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;  }</div>
 <div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160; </div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;  <span class="keywordtype">bool</span> LabRecoFrame::AnalyzeEvent(){</div>
+<div class="line"><a name="l00250"></a><span class="lineno"><a class="line" href="a00745.html#a2c15d128cbefcf5561194e1a8b03b79c">  250</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="a00745.html#a2c15d128cbefcf5561194e1a8b03b79c">LabRecoFrame::AnalyzeEvent</a>(){</div>
 <div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    <span class="keywordflow">if</span>(!IsSoundMind()){</div>
 <div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;      UnSoundMind(RF_FUNCTION);</div>
 <div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;      <span class="keywordflow">return</span> SetSpirit(<span class="keyword">false</span>);</div>
@@ -355,7 +355,7 @@ $(function() {
 <div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;      </div>
 <div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;    <span class="keywordtype">int</span> Ng = m_TreeGroups.GetN();</div>
 <div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; Ng; i++){</div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;      <span class="keywordflow">if</span>(!m_TreeGroups[i].AnalyzeEvent()){</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;      <span class="keywordflow">if</span>(!m_TreeGroups[i].<a class="code" href="a00745.html#a2c15d128cbefcf5561194e1a8b03b79c">AnalyzeEvent</a>()){</div>
 <div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    m_Log &lt;&lt; LogWarning;</div>
 <div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    m_Log &lt;&lt; <span class="stringliteral">&quot;Unable to analyze event for Group: &quot;</span>;</div>
 <div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    m_Log &lt;&lt; Log(m_TreeGroups[i]) &lt;&lt; LogEnd;</div>
@@ -364,7 +364,7 @@ $(function() {
 <div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    }</div>
 <div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    <span class="keywordtype">int</span> Nj = m_TreeJigsaws.GetN();</div>
 <div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; Nj; i++){</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;      <span class="keywordflow">if</span>(!m_TreeJigsaws[i].AnalyzeEvent()){</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;      <span class="keywordflow">if</span>(!m_TreeJigsaws[i].<a class="code" href="a00745.html#a2c15d128cbefcf5561194e1a8b03b79c">AnalyzeEvent</a>()){</div>
 <div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;    m_Log &lt;&lt; LogWarning;</div>
 <div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;    m_Log &lt;&lt; <span class="stringliteral">&quot;Unable to analyze event for Jigsaw: &quot;</span>;</div>
 <div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;    m_Log &lt;&lt; Log(m_TreeJigsaws[i]) &lt;&lt; LogEnd;</div>
@@ -379,13 +379,13 @@ $(function() {
 <div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;    <span class="keywordflow">return</span> SetSpirit(<span class="keyword">true</span>);</div>
 <div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;  }</div>
 <div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160; </div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;  VisibleState&amp; LabRecoFrame::GetNewVisibleState(){</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;  <a class="code" href="a00877.html">VisibleState</a>&amp; LabRecoFrame::GetNewVisibleState(){</div>
 <div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;    <span class="keywordflow">if</span>(m_TreeStates.GetN() &lt; m_InitStates.GetN())</div>
 <div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;      <span class="keywordflow">return</span> m_InitStates[m_TreeStates.GetN()];</div>
 <div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;    <span class="keywordtype">char</span> strn[10];</div>
 <div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;    sprintf(strn,<span class="stringliteral">&quot;%d&quot;</span>,m_TreeStates.GetN()+1);</div>
 <div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;    std::string name = <a class="code" href="a00797.html#a393add2ce5a03e97238ac2c90f545f0e">GetName</a>()+<span class="stringliteral">&quot;_&quot;</span>+std::string(strn);</div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;    VisibleState* statePtr = <span class="keyword">new</span> VisibleState(name, name);</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;    <a class="code" href="a00877.html">VisibleState</a>* statePtr = <span class="keyword">new</span> <a class="code" href="a00877.html">VisibleState</a>(name, name);</div>
 <div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;    <a class="code" href="a00797.html#ab3a3c5a2066cb8dcc438c60911f31817">AddDependent</a>(statePtr);</div>
 <div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    m_InitStates.Add(*statePtr);</div>
 <div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;    <span class="keywordflow">return</span> *statePtr;</div>
@@ -402,6 +402,7 @@ $(function() {
 <div class="ttc" id="aa00745_html_a235bad18b829d4d612b4cc1486582905"><div class="ttname"><a href="a00745.html#a235bad18b829d4d612b4cc1486582905">RestFrames::LabRecoFrame::RemoveTreeStates</a></div><div class="ttdeci">void RemoveTreeStates(const VisibleStateList &amp;states) const</div><div class="ttdoc">Removes states from &quot;VisibleStateList&quot; of this frame.</div><div class="ttdef"><b>Definition:</b> <a href="a00503_source.html#l00070">LabRecoFrame.cc:70</a></div></div>
 <div class="ttc" id="aa00785_html_ae8380e232fe89a70cc53c161bf12af61"><div class="ttname"><a href="a00785.html#ae8380e232fe89a70cc53c161bf12af61">RestFrames::ReconstructionFrame::InitializeAnalysisRecursive</a></div><div class="ttdeci">bool InitializeAnalysisRecursive()</div><div class="ttdoc">Recursively initialize this frame and its children for analysis.</div><div class="ttdef"><b>Definition:</b> <a href="a00533_source.html#l00218">ReconstructionFrame.cc:218</a></div></div>
 <div class="ttc" id="aa00797_html_ab3a3c5a2066cb8dcc438c60911f31817"><div class="ttname"><a href="a00797.html#ab3a3c5a2066cb8dcc438c60911f31817">RestFrames::RFBase::AddDependent</a></div><div class="ttdeci">void AddDependent(RFBase *dep)</div><div class="ttdoc">pointer to RFBase object owned by this one</div><div class="ttdef"><b>Definition:</b> <a href="a00542_source.html#l00088">RFBase.cc:88</a></div></div>
+<div class="ttc" id="aa00745_html_ab355109aede03b573b9be5aa396b7f80"><div class="ttname"><a href="a00745.html#ab355109aede03b573b9be5aa396b7f80">RestFrames::LabRecoFrame::ClearEvent</a></div><div class="ttdeci">virtual bool ClearEvent()</div><div class="ttdoc">Clears event.</div><div class="ttdef"><b>Definition:</b> <a href="a00503_source.html#l00232">LabRecoFrame.cc:232</a></div></div>
 <div class="ttc" id="aa00431_html"><div class="ttname"><a href="a00431.html">VisibleRecoFrame.hh</a></div></div>
 <div class="ttc" id="aa00809_html"><div class="ttname"><a href="a00809.html">RestFrames::RFList&lt; VisibleState &gt;</a></div></div>
 <div class="ttc" id="aa00745_html_a95518cf205159f2dc050a90c6d61cb54"><div class="ttname"><a href="a00745.html#a95518cf205159f2dc050a90c6d61cb54">RestFrames::LabRecoFrame::RemoveTreeState</a></div><div class="ttdeci">void RemoveTreeState(const VisibleState &amp;state) const</div><div class="ttdoc">Removes a state from &quot;VisibleStateList&quot; of this frame.</div><div class="ttdef"><b>Definition:</b> <a href="a00503_source.html#l00066">LabRecoFrame.cc:66</a></div></div>
@@ -412,17 +413,19 @@ $(function() {
 <div class="ttc" id="aa00434_html"><div class="ttname"><a href="a00434.html">VisibleState.hh</a></div></div>
 <div class="ttc" id="aa00335_html"><div class="ttname"><a href="a00335.html">Jigsaw.hh</a></div></div>
 <div class="ttc" id="aa00877_html"><div class="ttname"><a href="a00877.html">RestFrames::VisibleState</a></div><div class="ttdef"><b>Definition:</b> <a href="a00434_source.html#l00039">VisibleState.hh:39</a></div></div>
+<div class="ttc" id="aa00745_html_a41fd2136aa8bbb5c89b6c37b23f8797a"><div class="ttname"><a href="a00745.html#a41fd2136aa8bbb5c89b6c37b23f8797a">RestFrames::LabRecoFrame::InitializeAnalysis</a></div><div class="ttdeci">virtual bool InitializeAnalysis()</div><div class="ttdoc">Initialize analysis capability of a tree to reconstruct events.</div><div class="ttdef"><b>Definition:</b> <a href="a00503_source.html#l00078">LabRecoFrame.cc:78</a></div></div>
 <div class="ttc" id="aa00793_html_a06678871d2e63872f514482d7ace0bda"><div class="ttname"><a href="a00793.html#a06678871d2e63872f514482d7ace0bda">RestFrames::RestFrame::GetListVisibleFrames</a></div><div class="ttdeci">virtual RestFrameList GetListVisibleFrames() const</div><div class="ttdoc">Returns a list of VisibleFrame s inheriting from this.</div><div class="ttdef"><b>Definition:</b> <a href="a00539_source.html#l00342">RestFrame.cc:342</a></div></div>
 <div class="ttc" id="aa00785_html_a4509846d92a05a7327003668373846d5"><div class="ttname"><a href="a00785.html#a4509846d92a05a7327003668373846d5">RestFrames::ReconstructionFrame::AnalyzeEventRecursive</a></div><div class="ttdeci">bool AnalyzeEventRecursive()</div><div class="ttdoc">Recursively analyze event in this frame and its children.</div><div class="ttdef"><b>Definition:</b> <a href="a00533_source.html#l00293">ReconstructionFrame.cc:293</a></div></div>
-<div class="ttc" id="aa00785_html_ae80118d1ca284f34d40b954a27d72485"><div class="ttname"><a href="a00785.html#ae80118d1ca284f34d40b954a27d72485">RestFrames::ReconstructionFrame::GetListGroups</a></div><div class="ttdeci">GroupList GetListGroups() const</div><div class="ttdoc">Returns list of groups (GroupList) of this class.</div><div class="ttdef"><b>Definition:</b> <a href="a00533_source.html#l00149">ReconstructionFrame.cc:149</a></div></div>
+<div class="ttc" id="aa00785_html_ae80118d1ca284f34d40b954a27d72485"><div class="ttname"><a href="a00785.html#ae80118d1ca284f34d40b954a27d72485">RestFrames::ReconstructionFrame::GetListGroups</a></div><div class="ttdeci">GroupList GetListGroups() const</div><div class="ttdoc">Returns a list of groups (GroupList) of this class.</div><div class="ttdef"><b>Definition:</b> <a href="a00533_source.html#l00149">ReconstructionFrame.cc:149</a></div></div>
 <div class="ttc" id="aa00793_html_a32c98dac7d2e6b7ad4e5581f41cc6666"><div class="ttname"><a href="a00793.html#a32c98dac7d2e6b7ad4e5581f41cc6666">RestFrames::RestFrame::GetListInvisibleFrames</a></div><div class="ttdeci">virtual RestFrameList GetListInvisibleFrames() const</div><div class="ttdoc">Returns a list of InvisibleFrame s inheriting from this.</div><div class="ttdef"><b>Definition:</b> <a href="a00539_source.html#l00346">RestFrame.cc:346</a></div></div>
 <div class="ttc" id="aa00745_html_aafb4430451f07fbd3c50f7aa8445a6ab"><div class="ttname"><a href="a00745.html#aafb4430451f07fbd3c50f7aa8445a6ab">RestFrames::LabRecoFrame::Clear</a></div><div class="ttdeci">virtual void Clear()</div><div class="ttdoc">Clears LabRecoFrame from all connections to other objects.</div><div class="ttdef"><b>Definition:</b> <a href="a00503_source.html#l00051">LabRecoFrame.cc:51</a></div></div>
 <div class="ttc" id="aa00785_html"><div class="ttname"><a href="a00785.html">RestFrames::ReconstructionFrame</a></div><div class="ttdef"><b>Definition:</b> <a href="a00374_source.html#l00041">ReconstructionFrame.hh:41</a></div></div>
 <div class="ttc" id="aa00797_html_a393add2ce5a03e97238ac2c90f545f0e"><div class="ttname"><a href="a00797.html#a393add2ce5a03e97238ac2c90f545f0e">RestFrames::RFBase::GetName</a></div><div class="ttdeci">std::string GetName() const</div><div class="ttdoc">Returns object name.</div><div class="ttdef"><b>Definition:</b> <a href="a00542_source.html#l00104">RFBase.cc:104</a></div></div>
+<div class="ttc" id="aa00745_html_a2c15d128cbefcf5561194e1a8b03b79c"><div class="ttname"><a href="a00745.html#a2c15d128cbefcf5561194e1a8b03b79c">RestFrames::LabRecoFrame::AnalyzeEvent</a></div><div class="ttdeci">virtual bool AnalyzeEvent()</div><div class="ttdoc">Analyzes event.</div><div class="ttdef"><b>Definition:</b> <a href="a00503_source.html#l00250">LabRecoFrame.cc:250</a></div></div>
 <!-- HTML footer for doxygen 1.8.9.1-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 28 2020 17:11:07 for RestFrames by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 11 2020 10:25:06 for RestFrames by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.19
 </small></address>
