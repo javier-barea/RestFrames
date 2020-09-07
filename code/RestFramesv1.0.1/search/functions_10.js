@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['unsetcombcharge_832',['UnsetCombCharge',['../a00661.html#a7469a690dc35be455eced6164468bbca',1,'RestFrames::CombinatoricJigsaw']]],
-  ['unsetobjectcharge_833',['UnsetObjectCharge',['../a00661.html#aee21613a83ff39a2b837a89106bae1db',1,'RestFrames::CombinatoricJigsaw']]]
+  ['treeplot_935',['TreePlot',['../a00999.html#a9079b706ac6e20a7fe41671ea3c240a3',1,'RestFrames::TreePlot']]]
 ];

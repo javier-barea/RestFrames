@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.19"/>
-<title>RestFrames: src/SetRapidityInvJigsaw.cc Source File</title>
+<title>RestFrames: src/InvisibleFrame.cc Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -103,7 +103,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="headertitle">
-<div class="title">SetRapidityInvJigsaw.cc</div>  </div>
+<div class="title">InvisibleFrame.cc</div>  </div>
 </div><!--header-->
 <div class="contents">
 <a href="a00566.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//   RestFrames: particle physics event analysis library</span></div>
@@ -124,59 +124,55 @@ $(function() {
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">//   You should have received a copy of the GNU General Public License</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">//   along with RestFrames. If not, see &lt;http://www.gnu.org/licenses/&gt;.</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="a00410.html">RestFrames/SetRapidityInvJigsaw.hh</a>&quot;</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="a00380.html">RestFrames/RestFrame.hh</a>&quot;</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">namespace </span>RestFrames {</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="a00845.html#ab0b0d9e088842dd19cfedfe165186436">   35</a></span>&#160;  <a class="code" href="a00845.html#ae7642f3ddb01251414b2d03f4b0dcf02">SetRapidityInvJigsaw::SetRapidityInvJigsaw</a>(<span class="keyword">const</span> std::string&amp; sname, </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                         <span class="keyword">const</span> std::string&amp; stitle) : </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <a class="code" href="a00721.html">InvisibleJigsaw</a>(sname, stitle, 1, 1)</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  {</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    m_Axis = <a class="code" href="a00793.html#aba93365f3c525ab1d6f7681c7ca8a7e6">RestFrame::GetAxis</a>();</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  }</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="a00845.html#ae7642f3ddb01251414b2d03f4b0dcf02">   42</a></span>&#160;  <a class="code" href="a00845.html#ae7642f3ddb01251414b2d03f4b0dcf02">SetRapidityInvJigsaw::SetRapidityInvJigsaw</a>() : <a class="code" href="a00721.html">InvisibleJigsaw</a>() {}</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  SetRapidityInvJigsaw::~SetRapidityInvJigsaw() {}</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="a00845.html#ae6071be9335450e0d6f1fc9571fb7e0f">   46</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="a00845.html#ae6071be9335450e0d6f1fc9571fb7e0f">SetRapidityInvJigsaw::SetAxis</a>(<span class="keyword">const</span> TVector3&amp; axis){</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    m_Axis = axis;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  }</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="a00845.html#a140319afe35dd0a1d287cef8e905f1cc">   50</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="a00845.html#a140319afe35dd0a1d287cef8e905f1cc">SetRapidityInvJigsaw::AnalyzeEvent</a>(){</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordflow">if</span>(!IsSoundMind()) </div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;      <span class="keywordflow">return</span> SetSpirit(<span class="keyword">false</span>);</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    TLorentzVector inv_P = GetParentState().<a class="code" href="a00849.html#a538d28484b82b7bb2560f482879907f3">GetFourVector</a>();</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    TLorentzVector vis_P = GetDependancyStates(0).GetFourVector();</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    TVector3 boostZ = vis_P.BoostVector();</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    boostZ = boostZ.Dot(m_Axis.Unit())*m_Axis.Unit();</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    inv_P.SetZ(0.0);</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    inv_P.Boost(boostZ);</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    GetChildState(0).<a class="code" href="a00849.html#ad94f9ab87499da559a6bf96b5f2d9d2d">SetFourVector</a>(inv_P);</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    </div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordflow">return</span> SetSpirit(<span class="keyword">true</span>);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  }</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="a00374.html">RestFrames/InvisibleFrame.hh</a>&quot;</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="a00440.html">RestFrames/ReconstructionFrame.hh</a>&quot;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="a00359.html">RestFrames/GeneratorFrame.hh</a>&quot;</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">namespace </span>RestFrames {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="comment">// InvisibleFrame class</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment"></span>  <span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="a00823.html#a493abf06dc7ccf043c5e008a1f427d50">   40</a></span>&#160;  <a class="code" href="a00823.html#a493abf06dc7ccf043c5e008a1f427d50">InvisibleFrame&lt;T&gt;::InvisibleFrame</a>(<span class="keyword">const</span> std::string&amp; sname, </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                    <span class="keyword">const</span> std::string&amp; stitle)</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    : T(sname, stitle)</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  {</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    T::m_Type = kInvisibleFrame;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  }</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <a class="code" href="a00823.html">InvisibleFrame&lt;T&gt;::~InvisibleFrame</a>() {}</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  </div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="a00823.html#a493abf06dc7ccf043c5e008a1f427d50">   50</a></span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="a00823.html">InvisibleFrame&lt;T&gt;::IsSoundBody</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordflow">if</span>(RFBase::IsSoundBody()) </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordflow">if</span>(!RestFrame::IsSoundBody())</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;      <span class="keywordflow">return</span> T::SetBody(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">int</span> Nchild = T::GetNChildren();</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordflow">if</span>(Nchild &gt; 0 || T::GetParentFrame().IsEmpty()){</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;      T::m_Log &lt;&lt; LogWarning &lt;&lt; <span class="stringliteral">&quot;Problem with parent or child frames&quot;</span> &lt;&lt; LogEnd;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;      <span class="keywordflow">return</span> T::SetBody(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    }</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordflow">return</span> T::SetBody(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  }</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keyword">template</span> <span class="keyword">class </span><a class="code" href="a00823.html">InvisibleFrame&lt;ReconstructionFrame&gt;</a>;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keyword">template</span> <span class="keyword">class </span><a class="code" href="a00823.html">InvisibleFrame&lt;GeneratorFrame&gt;</a>;</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;}</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aa00410_html"><div class="ttname"><a href="a00410.html">SetRapidityInvJigsaw.hh</a></div></div>
-<div class="ttc" id="aa00849_html_ad94f9ab87499da559a6bf96b5f2d9d2d"><div class="ttname"><a href="a00849.html#ad94f9ab87499da559a6bf96b5f2d9d2d">RestFrames::State::SetFourVector</a></div><div class="ttdeci">virtual void SetFourVector(const TLorentzVector &amp;V)</div><div class="ttdoc">Sets four-vector of this frame.</div><div class="ttdef"><b>Definition:</b> <a href="a00569_source.html#l00155">State.cc:155</a></div></div>
-<div class="ttc" id="aa00380_html"><div class="ttname"><a href="a00380.html">RestFrame.hh</a></div></div>
-<div class="ttc" id="aa00845_html_ae6071be9335450e0d6f1fc9571fb7e0f"><div class="ttname"><a href="a00845.html#ae6071be9335450e0d6f1fc9571fb7e0f">RestFrames::SetRapidityInvJigsaw::SetAxis</a></div><div class="ttdeci">virtual void SetAxis(const TVector3 &amp;axis)</div><div class="ttdoc">Sets z-axis.</div><div class="ttdef"><b>Definition:</b> <a href="a00566_source.html#l00046">SetRapidityInvJigsaw.cc:46</a></div></div>
-<div class="ttc" id="aa00849_html_a538d28484b82b7bb2560f482879907f3"><div class="ttname"><a href="a00849.html#a538d28484b82b7bb2560f482879907f3">RestFrames::State::GetFourVector</a></div><div class="ttdeci">virtual TLorentzVector GetFourVector() const</div><div class="ttdoc">Returns four vector of this frame.</div><div class="ttdef"><b>Definition:</b> <a href="a00569_source.html#l00159">State.cc:159</a></div></div>
-<div class="ttc" id="aa00845_html_a140319afe35dd0a1d287cef8e905f1cc"><div class="ttname"><a href="a00845.html#a140319afe35dd0a1d287cef8e905f1cc">RestFrames::SetRapidityInvJigsaw::AnalyzeEvent</a></div><div class="ttdeci">virtual bool AnalyzeEvent()</div><div class="ttdoc">Analyzes event for this jigsaw.</div><div class="ttdef"><b>Definition:</b> <a href="a00566_source.html#l00050">SetRapidityInvJigsaw.cc:50</a></div></div>
-<div class="ttc" id="aa00793_html_aba93365f3c525ab1d6f7681c7ca8a7e6"><div class="ttname"><a href="a00793.html#aba93365f3c525ab1d6f7681c7ca8a7e6">RestFrames::RestFrame::GetAxis</a></div><div class="ttdeci">static TVector3 const  &amp; GetAxis()</div><div class="ttdoc">Retrieve axis which defines transverse plane.</div><div class="ttdef"><b>Definition:</b> <a href="a00539_source.html#l00074">RestFrame.cc:74</a></div></div>
-<div class="ttc" id="aa00845_html_ae7642f3ddb01251414b2d03f4b0dcf02"><div class="ttname"><a href="a00845.html#ae7642f3ddb01251414b2d03f4b0dcf02">RestFrames::SetRapidityInvJigsaw::SetRapidityInvJigsaw</a></div><div class="ttdeci">SetRapidityInvJigsaw()</div><div class="ttdoc">Empty constructor.</div><div class="ttdef"><b>Definition:</b> <a href="a00566_source.html#l00042">SetRapidityInvJigsaw.cc:42</a></div></div>
-<div class="ttc" id="aa00721_html"><div class="ttname"><a href="a00721.html">RestFrames::InvisibleJigsaw</a></div><div class="ttdef"><b>Definition:</b> <a href="a00326_source.html#l00039">InvisibleJigsaw.hh:39</a></div></div>
+<div class="ttc" id="aa00374_html"><div class="ttname"><a href="a00374.html">InvisibleFrame.hh</a></div></div>
+<div class="ttc" id="aa00359_html"><div class="ttname"><a href="a00359.html">GeneratorFrame.hh</a></div></div>
+<div class="ttc" id="aa00440_html"><div class="ttname"><a href="a00440.html">ReconstructionFrame.hh</a></div></div>
+<div class="ttc" id="aa00823_html_a493abf06dc7ccf043c5e008a1f427d50"><div class="ttname"><a href="a00823.html#a493abf06dc7ccf043c5e008a1f427d50">RestFrames::InvisibleFrame::InvisibleFrame</a></div><div class="ttdeci">InvisibleFrame(const std::string &amp;sname, const std::string &amp;stitle)</div><div class="ttdoc">Standard constructor.</div><div class="ttdef"><b>Definition:</b> <a href="a00566_source.html#l00040">InvisibleFrame.cc:40</a></div></div>
+<div class="ttc" id="aa00823_html"><div class="ttname"><a href="a00823.html">RestFrames::InvisibleFrame</a></div><div class="ttdef"><b>Definition:</b> <a href="a00374_source.html#l00043">InvisibleFrame.hh:43</a></div></div>
 <!-- HTML footer for doxygen 1.8.9.1-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Aug 11 2020 10:25:08 for RestFrames by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Sep 6 2020 20:01:37 for RestFrames by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.19
 </small></address>

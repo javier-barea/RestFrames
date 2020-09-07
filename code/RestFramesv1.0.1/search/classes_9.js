@@ -1,29 +1,5 @@
 var searchData=
 [
-  ['reconstructionframe_438',['ReconstructionFrame',['../a00785.html',1,'RestFrames']]],
-  ['resonancegenframe_439',['ResonanceGenFrame',['../a00789.html',1,'RestFrames']]],
-  ['restframe_440',['RestFrame',['../a00793.html',1,'RestFrames']]],
-  ['restframesexception_441',['RestFramesException',['../a00829.html',1,'RestFrames']]],
-  ['rfbase_442',['RFBase',['../a00797.html',1,'RestFrames']]],
-  ['rfcharge_443',['RFCharge',['../a00801.html',1,'RestFrames']]],
-  ['rfkey_444',['RFKey',['../a00805.html',1,'RestFrames']]],
-  ['rflist_445',['RFList',['../a00809.html',1,'RestFrames']]],
-  ['rflist_3c_20const_20jigsaw_20_3e_446',['RFList&lt; const Jigsaw &gt;',['../a00809.html',1,'RestFrames']]],
-  ['rflist_3c_20const_20restframe_20_3e_447',['RFList&lt; const RestFrame &gt;',['../a00809.html',1,'RestFrames']]],
-  ['rflist_3c_20group_20_3e_448',['RFList&lt; Group &gt;',['../a00809.html',1,'RestFrames']]],
-  ['rflist_3c_20histplotcategory_20_3e_449',['RFList&lt; HistPlotCategory &gt;',['../a00809.html',1,'RestFrames']]],
-  ['rflist_3c_20histplotvar_20_3e_450',['RFList&lt; HistPlotVar &gt;',['../a00809.html',1,'RestFrames']]],
-  ['rflist_3c_20jigsaw_20_3e_451',['RFList&lt; Jigsaw &gt;',['../a00809.html',1,'RestFrames']]],
-  ['rflist_3c_20restframe_20_3e_452',['RFList&lt; RestFrame &gt;',['../a00809.html',1,'RestFrames']]],
-  ['rflist_3c_20restframes_3a_3adecayrecoframe_20_3e_453',['RFList&lt; RestFrames::DecayRecoFrame &gt;',['../a00809.html',1,'RestFrames']]],
-  ['rflist_3c_20restframes_3a_3arestframe_20_3e_454',['RFList&lt; RestFrames::RestFrame &gt;',['../a00821.html',1,'RestFrames']]],
-  ['rflist_3c_20restframes_3a_3astate_20_3e_455',['RFList&lt; RestFrames::State &gt;',['../a00817.html',1,'RestFrames']]],
-  ['rflist_3c_20restframes_3a_3avisiblerecoframe_20_3e_456',['RFList&lt; RestFrames::VisibleRecoFrame &gt;',['../a00809.html',1,'RestFrames']]],
-  ['rflist_3c_20state_20_3e_457',['RFList&lt; State &gt;',['../a00809.html',1,'RestFrames']]],
-  ['rflist_3c_20visiblestate_20_3e_458',['RFList&lt; VisibleState &gt;',['../a00809.html',1,'RestFrames']]],
-  ['rflistbase_459',['RFListBase',['../a00813.html',1,'RestFrames']]],
-  ['rflistbase_3c_20restframe_2c_20rflist_3c_20restframes_3a_3arestframe_20_3e_20_3e_460',['RFListBase&lt; RestFrame, RFList&lt; RestFrames::RestFrame &gt; &gt;',['../a00813.html',1,'RestFrames']]],
-  ['rflistbase_3c_20state_2c_20rflist_3c_20restframes_3a_3astate_20_3e_20_3e_461',['RFListBase&lt; State, RFList&lt; RestFrames::State &gt; &gt;',['../a00813.html',1,'RestFrames']]],
-  ['rflog_462',['RFLog',['../a00825.html',1,'RestFrames']]],
-  ['rfplot_463',['RFPlot',['../a00833.html',1,'RestFrames']]]
+  ['pplabgenframe_493',['ppLabGenFrame',['../a00903.html',1,'RestFrames']]],
+  ['productpdf_494',['ProductPDF',['../a00907.html',1,'RestFrames']]]
 ];

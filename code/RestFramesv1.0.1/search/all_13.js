@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['_7eselfassemblingrecoframe_399',['~SelfAssemblingRecoFrame',['../a00837.html#ae4e19e72785487e2e0050d937cb65125',1,'RestFrames::SelfAssemblingRecoFrame']]]
+  ['writehist_448',['WriteHist',['../a00811.html#a6ad2038c5906222041a715577cfd69eb',1,'RestFrames::HistPlot']]],
+  ['writeoutput_449',['WriteOutput',['../a00975.html#a38396c11e848bfd7ddd62d3026436fc9',1,'RestFrames::RFPlot']]]
 ];

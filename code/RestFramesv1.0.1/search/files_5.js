@@ -1,15 +1,9 @@
 var searchData=
 [
-  ['invisibleframe_2ecc_515',['InvisibleFrame.cc',['../a00476.html',1,'']]],
-  ['invisibleframe_2ehh_516',['InvisibleFrame.hh',['../a00317.html',1,'']]],
-  ['invisiblegenframe_2ecc_517',['InvisibleGenFrame.cc',['../a00479.html',1,'']]],
-  ['invisiblegenframe_2ehh_518',['InvisibleGenFrame.hh',['../a00320.html',1,'']]],
-  ['invisiblegroup_2ecc_519',['InvisibleGroup.cc',['../a00482.html',1,'']]],
-  ['invisiblegroup_2ehh_520',['InvisibleGroup.hh',['../a00323.html',1,'']]],
-  ['invisiblejigsaw_2ecc_521',['InvisibleJigsaw.cc',['../a00485.html',1,'']]],
-  ['invisiblejigsaw_2ehh_522',['InvisibleJigsaw.hh',['../a00326.html',1,'']]],
-  ['invisiblerecoframe_2ecc_523',['InvisibleRecoFrame.cc',['../a00488.html',1,'']]],
-  ['invisiblerecoframe_2ehh_524',['InvisibleRecoFrame.hh',['../a00329.html',1,'']]],
-  ['invisiblestate_2ecc_525',['InvisibleState.cc',['../a00491.html',1,'']]],
-  ['invisiblestate_2ehh_526',['InvisibleState.hh',['../a00332.html',1,'']]]
+  ['histplot_2ecc_580',['HistPlot.cc',['../a00557.html',1,'']]],
+  ['histplot_2ehh_581',['HistPlot.hh',['../a00365.html',1,'']]],
+  ['histplotcategory_2ecc_582',['HistPlotCategory.cc',['../a00560.html',1,'']]],
+  ['histplotcategory_2ehh_583',['HistPlotCategory.hh',['../a00368.html',1,'']]],
+  ['histplotvar_2ecc_584',['HistPlotVar.cc',['../a00563.html',1,'']]],
+  ['histplotvar_2ehh_585',['HistPlotVar.hh',['../a00371.html',1,'']]]
 ];

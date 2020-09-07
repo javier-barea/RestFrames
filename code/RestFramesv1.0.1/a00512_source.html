@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.19"/>
-<title>RestFrames: src/MinMassChi2CombJigsaw.cc Source File</title>
+<title>RestFrames: inc/RestFrames/VisibleRecoFrame.hh Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -98,12 +98,12 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_bfccd401955b95cf8c75461437045ac0.html">inc</a></li><li class="navelem"><a class="el" href="dir_102c6b54c5ba6d0be037f4c993493f78.html">RestFrames</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="headertitle">
-<div class="title">MinMassChi2CombJigsaw.cc</div>  </div>
+<div class="title">VisibleRecoFrame.hh</div>  </div>
 </div><!--header-->
 <div class="contents">
 <a href="a00512.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//   RestFrames: particle physics event analysis library</span></div>
@@ -124,66 +124,44 @@ $(function() {
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">//   You should have received a copy of the GNU General Public License</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">//   along with RestFrames. If not, see &lt;http://www.gnu.org/licenses/&gt;.</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="a00380.html">RestFrames/RestFrame.hh</a>&quot;</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="a00353.html">RestFrames/MinMassChi2CombJigsaw.hh</a>&quot;</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#ifndef VisibleRecoFrame_HH</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#define VisibleRecoFrame_HH</span></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">namespace </span>RestFrames {</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="a00757.html#a729a64c26005d63120ad7d0eaa62cf01">   35</a></span>&#160;  <a class="code" href="a00757.html#a729a64c26005d63120ad7d0eaa62cf01">MinMassChi2CombJigsaw::MinMassChi2CombJigsaw</a>(<span class="keyword">const</span> std::string&amp; sname, </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                           <span class="keyword">const</span> std::string&amp; stitle,</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                           <span class="keywordtype">int</span> N_comb, <span class="keywordtype">int</span> N_mass) </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    : <a class="code" href="a00661.html">CombinatoricJigsaw</a>(sname, stitle, N_comb, N_mass),</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;      m_Ncomb(N_comb), m_Nmass(N_mass)</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  {</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; m_Nmass; i++){</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;      m_Mass.push_back(0.);</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;      m_Sigma.push_back(1.);</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    }</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  }</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  MinMassChi2CombJigsaw::~MinMassChi2CombJigsaw() {}</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="a00757.html#aabc97870d88ce65531be97ca30b05ded">   49</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="a00757.html#aabc97870d88ce65531be97ca30b05ded">MinMassChi2CombJigsaw::SetMass</a>(<span class="keywordtype">double</span> mass, <span class="keywordtype">int</span> i){</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordflow">if</span>(i &lt; 0 || i &gt;= m_Nmass)</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;      <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    m_Mass[i] = std::max(mass, 0.);</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  }</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keywordtype">void</span> MinMassChi2CombJigsaw::SetSigma(<span class="keywordtype">double</span> sigma, <span class="keywordtype">int</span> i){</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordflow">if</span>(i &lt; 0 || i &gt;= m_Nmass)</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;      <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordflow">if</span>(sigma &lt;= 0.)</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;      <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    m_Sigma[i] = sigma;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  }</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keywordtype">bool</span> MinMassChi2CombJigsaw::EvaluateMetric(<span class="keywordtype">double</span>&amp; metric)<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordtype">double</span> mass;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">double</span> chi2 = 0.;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; m_Nmass; i++){</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;      mass = GetDependancyStates(i).GetFourVector().M();</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;      chi2 += (mass-m_Mass[i])*(mass-m_Mass[i])/m_Sigma[i]/m_Sigma[i];</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    }</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    </div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    metric = chi2;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  }</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;}</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="a00440.html">RestFrames/ReconstructionFrame.hh</a>&quot;</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="a00506.html">RestFrames/VisibleFrame.hh</a>&quot;</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">namespace </span>RestFrames {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="comment">// VisibleRecoFrame class</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="a01019.html">   41</a></span>&#160;<span class="comment"></span>  <span class="keyword">class </span><a class="code" href="a01019.html">VisibleRecoFrame</a> : <span class="keyword">public</span> <a class="code" href="a01011.html">VisibleFrame</a>&lt;ReconstructionFrame&gt; {</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <a class="code" href="a01019.html#af5277def53ca08ad73752f9d0b4af998">VisibleRecoFrame</a>(<span class="keyword">const</span> std::string&amp; sname, <span class="keyword">const</span> std::string&amp; stitle);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <a class="code" href="a01019.html#af5277def53ca08ad73752f9d0b4af998">VisibleRecoFrame</a>();</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="a01019.html">VisibleRecoFrame</a>();</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keyword">static</span> <a class="code" href="a01019.html">VisibleRecoFrame</a>&amp; <a class="code" href="a01019.html#a3f3e609e45a93f337415b92406502cab">Empty</a>();</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keyword">static</span> <a class="code" href="a01019.html">VisibleRecoFrame</a> m_Empty;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;   </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  };</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;}</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aa00757_html_a729a64c26005d63120ad7d0eaa62cf01"><div class="ttname"><a href="a00757.html#a729a64c26005d63120ad7d0eaa62cf01">RestFrames::MinMassChi2CombJigsaw::MinMassChi2CombJigsaw</a></div><div class="ttdeci">MinMassChi2CombJigsaw(const std::string &amp;sname, const std::string &amp;stitle, int N_comb, int N_mass)</div><div class="ttdoc">Standard constructor.</div><div class="ttdef"><b>Definition:</b> <a href="a00512_source.html#l00035">MinMassChi2CombJigsaw.cc:35</a></div></div>
-<div class="ttc" id="aa00380_html"><div class="ttname"><a href="a00380.html">RestFrame.hh</a></div></div>
-<div class="ttc" id="aa00661_html"><div class="ttname"><a href="a00661.html">RestFrames::CombinatoricJigsaw</a></div><div class="ttdef"><b>Definition:</b> <a href="a00281_source.html#l00040">CombinatoricJigsaw.hh:40</a></div></div>
-<div class="ttc" id="aa00757_html_aabc97870d88ce65531be97ca30b05ded"><div class="ttname"><a href="a00757.html#aabc97870d88ce65531be97ca30b05ded">RestFrames::MinMassChi2CombJigsaw::SetMass</a></div><div class="ttdeci">virtual void SetMass(double mass, int i=0)</div><div class="ttdoc">Sets mass of a frame.</div><div class="ttdef"><b>Definition:</b> <a href="a00512_source.html#l00049">MinMassChi2CombJigsaw.cc:49</a></div></div>
-<div class="ttc" id="aa00353_html"><div class="ttname"><a href="a00353.html">MinMassChi2CombJigsaw.hh</a></div></div>
+<div class="ttc" id="aa01011_html"><div class="ttname"><a href="a01011.html">RestFrames::VisibleFrame</a></div><div class="ttdef"><b>Definition:</b> <a href="a00506_source.html#l00043">VisibleFrame.hh:43</a></div></div>
+<div class="ttc" id="aa00440_html"><div class="ttname"><a href="a00440.html">ReconstructionFrame.hh</a></div></div>
+<div class="ttc" id="aa00506_html"><div class="ttname"><a href="a00506.html">VisibleFrame.hh</a></div></div>
+<div class="ttc" id="aa01019_html_a3f3e609e45a93f337415b92406502cab"><div class="ttname"><a href="a01019.html#a3f3e609e45a93f337415b92406502cab">RestFrames::VisibleRecoFrame::Empty</a></div><div class="ttdeci">static VisibleRecoFrame &amp; Empty()</div><div class="ttdoc">Returns empty VisibleRecoFrame.</div><div class="ttdef"><b>Definition:</b> <a href="a00701_source.html#l00048">VisibleRecoFrame.cc:48</a></div></div>
+<div class="ttc" id="aa01019_html"><div class="ttname"><a href="a01019.html">RestFrames::VisibleRecoFrame</a></div><div class="ttdef"><b>Definition:</b> <a href="a00512_source.html#l00041">VisibleRecoFrame.hh:41</a></div></div>
+<div class="ttc" id="aa01019_html_af5277def53ca08ad73752f9d0b4af998"><div class="ttname"><a href="a01019.html#af5277def53ca08ad73752f9d0b4af998">RestFrames::VisibleRecoFrame::VisibleRecoFrame</a></div><div class="ttdeci">VisibleRecoFrame()</div><div class="ttdoc">Empty constructor.</div><div class="ttdef"><b>Definition:</b> <a href="a00701_source.html#l00041">VisibleRecoFrame.cc:41</a></div></div>
 <!-- HTML footer for doxygen 1.8.9.1-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Aug 11 2020 10:25:06 for RestFrames by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Sep 6 2020 20:01:37 for RestFrames by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.19
 </small></address>

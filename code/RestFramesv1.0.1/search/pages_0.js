@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['groups_848',['Groups',['../a00990.html',1,'']]]
+  ['recursive_20jigsaw_20reconstruction_954',['Recursive Jigsaw Reconstruction',['../a01160.html',1,'']]]
 ];

@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.19"/>
-<title>RestFrames: src/SetMassInvJigsaw.cc Source File</title>
+<title>RestFrames: src/HistPlotVar.cc Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -103,7 +103,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="headertitle">
-<div class="title">SetMassInvJigsaw.cc</div>  </div>
+<div class="title">HistPlotVar.cc</div>  </div>
 </div><!--header-->
 <div class="contents">
 <a href="a00563.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//   RestFrames: particle physics event analysis library</span></div>
@@ -124,64 +124,97 @@ $(function() {
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">//   You should have received a copy of the GNU General Public License</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">//   along with RestFrames. If not, see &lt;http://www.gnu.org/licenses/&gt;.</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="a00407.html">RestFrames/SetMassInvJigsaw.hh</a>&quot;</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="a00371.html">RestFrames/HistPlotVar.hh</a>&quot;</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">namespace </span>RestFrames {</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="comment">//SetMassInvJigsaw class methods</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="a00841.html#ab144d3391f8f4239b17fe9ba575b537f">   37</a></span>&#160;<span class="comment"></span>  <a class="code" href="a00841.html#a2ece5231e5baf14ab2472d4345da776b">SetMassInvJigsaw::SetMassInvJigsaw</a>(<span class="keyword">const</span> std::string&amp; sname, </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                     <span class="keyword">const</span> std::string&amp; stitle) : </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <a class="code" href="a00721.html">InvisibleJigsaw</a>(sname, stitle, 1, 0) {}</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="a00841.html#a2ece5231e5baf14ab2472d4345da776b">   41</a></span>&#160;  <a class="code" href="a00841.html#a2ece5231e5baf14ab2472d4345da776b">SetMassInvJigsaw::SetMassInvJigsaw</a>() : <a class="code" href="a00721.html">InvisibleJigsaw</a>() {}</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  SetMassInvJigsaw::~SetMassInvJigsaw() {}</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="a00841.html#a54b3ec9ec095fdaccd52ffb07388d7d8">   45</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="a00841.html#a54b3ec9ec095fdaccd52ffb07388d7d8">SetMassInvJigsaw::Clear</a>(){</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="code" href="a00721.html#afd557bb9a0a2abedfe4a042d6f5b49c7">InvisibleJigsaw::Clear</a>();</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  }</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <a class="code" href="a00841.html">SetMassInvJigsaw</a>&amp; SetMassInvJigsaw::Empty(){</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordflow">return</span> SetMassInvJigsaw::m_Empty;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  }</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="keywordtype">int</span> HistPlotVar::m_class_key = 0;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="a00819.html#a3cacf7b5f0557aa2ae58fb38589e96aa">   36</a></span>&#160;  <a class="code" href="a00819.html#a3cacf7b5f0557aa2ae58fb38589e96aa">HistPlotVar::HistPlotVar</a>() : <a class="code" href="a00923.html">RFBase</a>() </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  {</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    m_Log.<a class="code" href="a00963.html#ab0c48bffdb0e7e1c645a104a0a89faaa">SetSource</a>(<span class="stringliteral">&quot;HistPlotVar &quot;</span>+<a class="code" href="a00923.html#a393add2ce5a03e97238ac2c90f545f0e">GetName</a>());</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  }</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  </div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="a00819.html#ad214021ee055b9e81ad2993811ad9004">   41</a></span>&#160;  <a class="code" href="a00819.html#a3cacf7b5f0557aa2ae58fb38589e96aa">HistPlotVar::HistPlotVar</a>(<span class="keyword">const</span> std::string&amp; name, </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;               <span class="keyword">const</span> std::string&amp; title, </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;               <span class="keywordtype">double</span> minval, <span class="keywordtype">double</span> maxval,</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;               <span class="keyword">const</span> std::string&amp; unit = <span class="stringliteral">&quot;&quot;</span>)</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    : <a class="code" href="a00923.html">RFBase</a>(name, title, <a class="code" href="a00819.html">HistPlotVar</a>::m_class_key++),</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;      m_Min(minval), m_Max(maxval), m_Unit(unit), m_Val(0.) </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  {</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    m_Log.<a class="code" href="a00963.html#ab0c48bffdb0e7e1c645a104a0a89faaa">SetSource</a>(<span class="stringliteral">&quot;HistPlotVar &quot;</span>+<a class="code" href="a00923.html#a393add2ce5a03e97238ac2c90f545f0e">GetName</a>());</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  }</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  HistPlotVar::~HistPlotVar() {}</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="a00841.html#ad13104f5305373c3c22700ccd746819a">   53</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="a00841.html#ad13104f5305373c3c22700ccd746819a">SetMassInvJigsaw::AnalyzeEvent</a>(){</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordflow">if</span>(!IsSoundMind())</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;      <span class="keywordflow">return</span> SetSpirit(<span class="keyword">false</span>);</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    TLorentzVector inv_P = GetParentState().<a class="code" href="a00849.html#a538d28484b82b7bb2560f482879907f3">GetFourVector</a>();</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">double</span> M = std::max(0.,GetChildState(0).<a class="code" href="a00721.html#a24eb9d313bc93a1950301132ce18e0ea">GetMinimumMass</a>());</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    inv_P.SetVectM(inv_P.Vect(),M);</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    GetChildState(0).<a class="code" href="a00849.html#ad94f9ab87499da559a6bf96b5f2d9d2d">SetFourVector</a>(inv_P);</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordflow">return</span> SetSpirit(<span class="keyword">true</span>);</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  }</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keywordtype">void</span> SetMassInvJigsaw::FillStateJigsawDependancies(<a class="code" href="a00809.html">JigsawList</a>&amp; jigsaws)<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    Jigsaw::FillStateJigsawDependancies(jigsaws);</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    FillInvisibleMassJigsawDependancies(jigsaws);</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  }</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  SetMassInvJigsaw SetMassInvJigsaw::m_Empty;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;}</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="a00819.html#a9e962530c98bb0417fd72a03bf1d441a">   53</a></span>&#160;  <a class="code" href="a00819.html">HistPlotVar</a>&amp; <a class="code" href="a00819.html#a9e962530c98bb0417fd72a03bf1d441a">HistPlotVar::Empty</a>(){</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordflow">return</span> HistPlotVar::m_Empty;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  }</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="a00819.html#aabc7b18e2213b2cbcc2d93b5704482a1">   57</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="a00819.html#aabc7b18e2213b2cbcc2d93b5704482a1">HistPlotVar::operator = </a>(<span class="keywordtype">double</span> val)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    m_Val = val;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  }</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="a00819.html#a7762152bae11783910044e2852f81e0d">   61</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="a00819.html#a7762152bae11783910044e2852f81e0d">HistPlotVar::operator += </a>(<span class="keywordtype">double</span> val)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    m_Val += val;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  }</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  </div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="a00819.html#abdbcf5f727d1108cc36128df66e6f1b2">   65</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="a00819.html#abdbcf5f727d1108cc36128df66e6f1b2">HistPlotVar::operator -= </a>(<span class="keywordtype">double</span> val)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    m_Val -= val;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  }</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  </div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="a00819.html#a4dc7e44e19fd80c1bb79c7e8a3065995">   69</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="a00819.html#a4dc7e44e19fd80c1bb79c7e8a3065995">HistPlotVar::operator *= </a>(<span class="keywordtype">double</span> val)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    m_Val *= val;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  }</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  </div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="a00819.html#aab04252e9bd0f01858ec4f6ac9235c86">   73</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="a00819.html#aab04252e9bd0f01858ec4f6ac9235c86">HistPlotVar::operator /= </a>(<span class="keywordtype">double</span> val)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    m_Val /= val;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  }</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="a00819.html#ae940d08b106a0b2e976d6c7f7e2c83af">   77</a></span>&#160;  HistPlotVar::operator double()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordflow">return</span> m_Val;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  }</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="a00819.html#ab2ad814c5992a22170a3d87242c47e50">   81</a></span>&#160;  <span class="keywordtype">double</span> <a class="code" href="a00819.html#ab2ad814c5992a22170a3d87242c47e50">HistPlotVar::GetVal</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordflow">return</span> m_Val;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  }</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  </div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="a00819.html#ae17ae831c522e396f103a7d6d7b2a1f3">   85</a></span>&#160;  std::string <a class="code" href="a00819.html#ae17ae831c522e396f103a7d6d7b2a1f3">HistPlotVar::GetUnit</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordflow">return</span> m_Unit;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  }</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  </div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="a00819.html#ab5b4ce8977819855abd1cb48b7b40c1b">   89</a></span>&#160;  <span class="keywordtype">double</span> <a class="code" href="a00819.html#ab5b4ce8977819855abd1cb48b7b40c1b">HistPlotVar::GetMin</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordflow">return</span> m_Min;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  }</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  </div>
+<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="a00819.html#a30043cc62249b8606a06c65d70003d13">   93</a></span>&#160;  <span class="keywordtype">double</span> <a class="code" href="a00819.html#a30043cc62249b8606a06c65d70003d13">HistPlotVar::GetMax</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordflow">return</span> m_Max;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  }</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  <a class="code" href="a00819.html">HistPlotVar</a> HistPlotVar::m_Empty;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aa00841_html_ad13104f5305373c3c22700ccd746819a"><div class="ttname"><a href="a00841.html#ad13104f5305373c3c22700ccd746819a">RestFrames::SetMassInvJigsaw::AnalyzeEvent</a></div><div class="ttdeci">virtual bool AnalyzeEvent()</div><div class="ttdoc">Analyzes event for this jigsaw.</div><div class="ttdef"><b>Definition:</b> <a href="a00563_source.html#l00053">SetMassInvJigsaw.cc:53</a></div></div>
-<div class="ttc" id="aa00721_html_a24eb9d313bc93a1950301132ce18e0ea"><div class="ttname"><a href="a00721.html#a24eb9d313bc93a1950301132ce18e0ea">RestFrames::InvisibleJigsaw::GetMinimumMass</a></div><div class="ttdeci">virtual double GetMinimumMass() const</div><div class="ttdoc">Returns minimum Lorentz invariant mass.</div><div class="ttdef"><b>Definition:</b> <a href="a00485_source.html#l00156">InvisibleJigsaw.cc:156</a></div></div>
-<div class="ttc" id="aa00849_html_ad94f9ab87499da559a6bf96b5f2d9d2d"><div class="ttname"><a href="a00849.html#ad94f9ab87499da559a6bf96b5f2d9d2d">RestFrames::State::SetFourVector</a></div><div class="ttdeci">virtual void SetFourVector(const TLorentzVector &amp;V)</div><div class="ttdoc">Sets four-vector of this frame.</div><div class="ttdef"><b>Definition:</b> <a href="a00569_source.html#l00155">State.cc:155</a></div></div>
-<div class="ttc" id="aa00809_html"><div class="ttname"><a href="a00809.html">RestFrames::RFList&lt; Jigsaw &gt;</a></div></div>
-<div class="ttc" id="aa00841_html_a2ece5231e5baf14ab2472d4345da776b"><div class="ttname"><a href="a00841.html#a2ece5231e5baf14ab2472d4345da776b">RestFrames::SetMassInvJigsaw::SetMassInvJigsaw</a></div><div class="ttdeci">SetMassInvJigsaw()</div><div class="ttdoc">Empty constructor.</div><div class="ttdef"><b>Definition:</b> <a href="a00563_source.html#l00041">SetMassInvJigsaw.cc:41</a></div></div>
-<div class="ttc" id="aa00849_html_a538d28484b82b7bb2560f482879907f3"><div class="ttname"><a href="a00849.html#a538d28484b82b7bb2560f482879907f3">RestFrames::State::GetFourVector</a></div><div class="ttdeci">virtual TLorentzVector GetFourVector() const</div><div class="ttdoc">Returns four vector of this frame.</div><div class="ttdef"><b>Definition:</b> <a href="a00569_source.html#l00159">State.cc:159</a></div></div>
-<div class="ttc" id="aa00841_html_a54b3ec9ec095fdaccd52ffb07388d7d8"><div class="ttname"><a href="a00841.html#a54b3ec9ec095fdaccd52ffb07388d7d8">RestFrames::SetMassInvJigsaw::Clear</a></div><div class="ttdeci">virtual void Clear()</div><div class="ttdoc">Clears SetMassInvJigsaw from all connections to other objects.</div><div class="ttdef"><b>Definition:</b> <a href="a00563_source.html#l00045">SetMassInvJigsaw.cc:45</a></div></div>
-<div class="ttc" id="aa00841_html"><div class="ttname"><a href="a00841.html">RestFrames::SetMassInvJigsaw</a></div><div class="ttdef"><b>Definition:</b> <a href="a00407_source.html#l00037">SetMassInvJigsaw.hh:37</a></div></div>
-<div class="ttc" id="aa00407_html"><div class="ttname"><a href="a00407.html">SetMassInvJigsaw.hh</a></div></div>
-<div class="ttc" id="aa00721_html"><div class="ttname"><a href="a00721.html">RestFrames::InvisibleJigsaw</a></div><div class="ttdef"><b>Definition:</b> <a href="a00326_source.html#l00039">InvisibleJigsaw.hh:39</a></div></div>
-<div class="ttc" id="aa00721_html_afd557bb9a0a2abedfe4a042d6f5b49c7"><div class="ttname"><a href="a00721.html#afd557bb9a0a2abedfe4a042d6f5b49c7">RestFrames::InvisibleJigsaw::Clear</a></div><div class="ttdeci">virtual void Clear()</div><div class="ttdoc">Clears InvisibleJigsaw of all connections to other objects</div><div class="ttdef"><b>Definition:</b> <a href="a00485_source.html#l00058">InvisibleJigsaw.cc:58</a></div></div>
+<div class="ttc" id="aa00819_html_ab5b4ce8977819855abd1cb48b7b40c1b"><div class="ttname"><a href="a00819.html#ab5b4ce8977819855abd1cb48b7b40c1b">RestFrames::HistPlotVar::GetMin</a></div><div class="ttdeci">double GetMin() const</div><div class="ttdoc">Returns minimum value of histogram.</div><div class="ttdef"><b>Definition:</b> <a href="a00563_source.html#l00089">HistPlotVar.cc:89</a></div></div>
+<div class="ttc" id="aa00819_html_aabc7b18e2213b2cbcc2d93b5704482a1"><div class="ttname"><a href="a00819.html#aabc7b18e2213b2cbcc2d93b5704482a1">RestFrames::HistPlotVar::operator=</a></div><div class="ttdeci">void operator=(double val) const</div><div class="ttdoc">Tests whether val is the same as this object's value.</div><div class="ttdef"><b>Definition:</b> <a href="a00563_source.html#l00057">HistPlotVar.cc:57</a></div></div>
+<div class="ttc" id="aa00819_html_a30043cc62249b8606a06c65d70003d13"><div class="ttname"><a href="a00819.html#a30043cc62249b8606a06c65d70003d13">RestFrames::HistPlotVar::GetMax</a></div><div class="ttdeci">double GetMax() const</div><div class="ttdoc">Returns maximum value of histogram.</div><div class="ttdef"><b>Definition:</b> <a href="a00563_source.html#l00093">HistPlotVar.cc:93</a></div></div>
+<div class="ttc" id="aa00819_html_a4dc7e44e19fd80c1bb79c7e8a3065995"><div class="ttname"><a href="a00819.html#a4dc7e44e19fd80c1bb79c7e8a3065995">RestFrames::HistPlotVar::operator*=</a></div><div class="ttdeci">void operator*=(double val) const</div><div class="ttdoc">Operator to multiply val to this object's value.</div><div class="ttdef"><b>Definition:</b> <a href="a00563_source.html#l00069">HistPlotVar.cc:69</a></div></div>
+<div class="ttc" id="aa00819_html_a3cacf7b5f0557aa2ae58fb38589e96aa"><div class="ttname"><a href="a00819.html#a3cacf7b5f0557aa2ae58fb38589e96aa">RestFrames::HistPlotVar::HistPlotVar</a></div><div class="ttdeci">HistPlotVar()</div><div class="ttdoc">Empty constructor.</div><div class="ttdef"><b>Definition:</b> <a href="a00563_source.html#l00036">HistPlotVar.cc:36</a></div></div>
+<div class="ttc" id="aa00923_html_a393add2ce5a03e97238ac2c90f545f0e"><div class="ttname"><a href="a00923.html#a393add2ce5a03e97238ac2c90f545f0e">RestFrames::RFBase::GetName</a></div><div class="ttdeci">std::string GetName() const</div><div class="ttdoc">Returns object name.</div><div class="ttdef"><b>Definition:</b> <a href="a00641_source.html#l00104">RFBase.cc:104</a></div></div>
+<div class="ttc" id="aa00819_html_a7762152bae11783910044e2852f81e0d"><div class="ttname"><a href="a00819.html#a7762152bae11783910044e2852f81e0d">RestFrames::HistPlotVar::operator+=</a></div><div class="ttdeci">void operator+=(double val) const</div><div class="ttdoc">Operator to add val to this object's value.</div><div class="ttdef"><b>Definition:</b> <a href="a00563_source.html#l00061">HistPlotVar.cc:61</a></div></div>
+<div class="ttc" id="aa00963_html_ab0c48bffdb0e7e1c645a104a0a89faaa"><div class="ttname"><a href="a00963.html#ab0c48bffdb0e7e1c645a104a0a89faaa">RestFrames::RFLog::SetSource</a></div><div class="ttdeci">void SetSource(const std::string &amp;source)</div><div class="ttdoc">Sets name of instance that is associated with.</div><div class="ttdef"><b>Definition:</b> <a href="a00662_source.html#l00182">RFLog.cc:182</a></div></div>
+<div class="ttc" id="aa00819_html_ae17ae831c522e396f103a7d6d7b2a1f3"><div class="ttname"><a href="a00819.html#ae17ae831c522e396f103a7d6d7b2a1f3">RestFrames::HistPlotVar::GetUnit</a></div><div class="ttdeci">std::string GetUnit() const</div><div class="ttdoc">Returns unit of x-axis.</div><div class="ttdef"><b>Definition:</b> <a href="a00563_source.html#l00085">HistPlotVar.cc:85</a></div></div>
+<div class="ttc" id="aa00819_html_ab2ad814c5992a22170a3d87242c47e50"><div class="ttname"><a href="a00819.html#ab2ad814c5992a22170a3d87242c47e50">RestFrames::HistPlotVar::GetVal</a></div><div class="ttdeci">double GetVal() const</div><div class="ttdoc">Returns this object's value.</div><div class="ttdef"><b>Definition:</b> <a href="a00563_source.html#l00081">HistPlotVar.cc:81</a></div></div>
+<div class="ttc" id="aa00819_html_a9e962530c98bb0417fd72a03bf1d441a"><div class="ttname"><a href="a00819.html#a9e962530c98bb0417fd72a03bf1d441a">RestFrames::HistPlotVar::Empty</a></div><div class="ttdeci">static HistPlotVar &amp; Empty()</div><div class="ttdoc">Returns empty HistPlotVar.</div><div class="ttdef"><b>Definition:</b> <a href="a00563_source.html#l00053">HistPlotVar.cc:53</a></div></div>
+<div class="ttc" id="aa00819_html"><div class="ttname"><a href="a00819.html">RestFrames::HistPlotVar</a></div><div class="ttdef"><b>Definition:</b> <a href="a00371_source.html#l00040">HistPlotVar.hh:40</a></div></div>
+<div class="ttc" id="aa00819_html_abdbcf5f727d1108cc36128df66e6f1b2"><div class="ttname"><a href="a00819.html#abdbcf5f727d1108cc36128df66e6f1b2">RestFrames::HistPlotVar::operator-=</a></div><div class="ttdeci">void operator-=(double val) const</div><div class="ttdoc">Operator to substract val from this object's value.</div><div class="ttdef"><b>Definition:</b> <a href="a00563_source.html#l00065">HistPlotVar.cc:65</a></div></div>
+<div class="ttc" id="aa00371_html"><div class="ttname"><a href="a00371.html">HistPlotVar.hh</a></div></div>
+<div class="ttc" id="aa00819_html_aab04252e9bd0f01858ec4f6ac9235c86"><div class="ttname"><a href="a00819.html#aab04252e9bd0f01858ec4f6ac9235c86">RestFrames::HistPlotVar::operator/=</a></div><div class="ttdeci">void operator/=(double val) const</div><div class="ttdoc">Operator to divide val from object's value.</div><div class="ttdef"><b>Definition:</b> <a href="a00563_source.html#l00073">HistPlotVar.cc:73</a></div></div>
+<div class="ttc" id="aa00923_html"><div class="ttname"><a href="a00923.html">RestFrames::RFBase</a></div><div class="ttdoc">Base class for all RestFrame package objects.</div><div class="ttdef"><b>Definition:</b> <a href="a00452_source.html#l00053">RFBase.hh:53</a></div></div>
 <!-- HTML footer for doxygen 1.8.9.1-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Aug 11 2020 10:25:07 for RestFrames by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Sep 6 2020 20:01:37 for RestFrames by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.19
 </small></address>

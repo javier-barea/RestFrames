@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.19"/>
-<title>RestFrames: inc/RestFrames/SetRapidityInvJigsaw.hh Source File</title>
+<title>RestFrames: inc/RestFrames/MaxProbBreitWignerCombJigsaw.hh Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -103,7 +103,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="headertitle">
-<div class="title">SetRapidityInvJigsaw.hh</div>  </div>
+<div class="title">MaxProbBreitWignerCombJigsaw.hh</div>  </div>
 </div><!--header-->
 <div class="contents">
 <a href="a00410.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//   RestFrames: particle physics event analysis library</span></div>
@@ -124,47 +124,54 @@ $(function() {
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">//   You should have received a copy of the GNU General Public License</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">//   along with RestFrames. If not, see &lt;http://www.gnu.org/licenses/&gt;.</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#ifndef SetRapidityInvJigsaw_HH</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#define SetRapidityInvJigsaw_HH</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#ifndef MaxProbBreitWignerCombJigsaw_HH</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#define MaxProbBreitWignerCombJigsaw_HH</span></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="a00326.html">RestFrames/InvisibleJigsaw.hh</a>&quot;</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="a00332.html">RestFrames/CombinatoricJigsaw.hh</a>&quot;</span></div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">namespace </span>RestFrames {</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="a00845.html">   37</a></span>&#160;  <span class="keyword">class </span><a class="code" href="a00845.html">SetRapidityInvJigsaw</a> : <span class="keyword">public</span> <a class="code" href="a00721.html">InvisibleJigsaw</a> {</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="a00871.html">   37</a></span>&#160;  <span class="keyword">class </span><a class="code" href="a00871.html">MaxProbBreitWignerCombJigsaw</a> : <span class="keyword">public</span> <a class="code" href="a00767.html">CombinatoricJigsaw</a> {</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="a00845.html#ae7642f3ddb01251414b2d03f4b0dcf02">SetRapidityInvJigsaw</a>(<span class="keyword">const</span> std::string&amp; sname, <span class="keyword">const</span> std::string&amp; stitle);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="a00845.html#ae7642f3ddb01251414b2d03f4b0dcf02">SetRapidityInvJigsaw</a>();</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="a00845.html">SetRapidityInvJigsaw</a>();</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="a00845.html#a23f0fca687dd8a12055978ef7e429610">   53</a></span>&#160;    <span class="keyword">virtual</span> std::string <a class="code" href="a00845.html#a23f0fca687dd8a12055978ef7e429610">GetLabel</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;Set Invisible Rapidity&quot;</span>; }</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="a00845.html#ae6071be9335450e0d6f1fc9571fb7e0f">SetAxis</a>(<span class="keyword">const</span> TVector3&amp; axis);</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="a00845.html#a140319afe35dd0a1d287cef8e905f1cc">AnalyzeEvent</a>();</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    TVector3 m_Axis;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  </div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  };</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="code" href="a00871.html#af1d62f045e8dc660f4dc2dca07012b9b">MaxProbBreitWignerCombJigsaw</a>(<span class="keyword">const</span> std::string&amp; sname, </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                 <span class="keyword">const</span> std::string&amp; stitle,</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                 <span class="keywordtype">int</span> N_comb, <span class="keywordtype">int</span> N_object);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="a00871.html">MaxProbBreitWignerCombJigsaw</a>();</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="a00871.html#a1c5c06c22201bf400acab105374551c4">   54</a></span>&#160;    <span class="keyword">virtual</span> std::string <a class="code" href="a00871.html#a1c5c06c22201bf400acab105374551c4">GetLabel</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;Max Prob Breit-Wigner&quot;</span>; }</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="a00871.html#a17bc2c8464425c3757b05d4b71c0e88e">SetPoleMass</a>(<span class="keywordtype">double</span> mass, <span class="keywordtype">int</span> i = 0);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="a00871.html#a1a680af49a03cb28a32b8f0f1b19a9da">SetWidth</a>(<span class="keywordtype">double</span> width, <span class="keywordtype">int</span> i = 0);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> EvaluateMetric(<span class="keywordtype">double</span>&amp; metric) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> m_Ncomb;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> m_Nobj;</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;}</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    std::vector&lt;double&gt; m_Mass;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    std::vector&lt;double&gt; m_Width;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  };</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;}</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aa00845_html_a23f0fca687dd8a12055978ef7e429610"><div class="ttname"><a href="a00845.html#a23f0fca687dd8a12055978ef7e429610">RestFrames::SetRapidityInvJigsaw::GetLabel</a></div><div class="ttdeci">virtual std::string GetLabel() const</div><div class="ttdoc">Returns name of this Jigsaw.</div><div class="ttdef"><b>Definition:</b> <a href="a00410_source.html#l00053">SetRapidityInvJigsaw.hh:53</a></div></div>
-<div class="ttc" id="aa00845_html"><div class="ttname"><a href="a00845.html">RestFrames::SetRapidityInvJigsaw</a></div><div class="ttdef"><b>Definition:</b> <a href="a00410_source.html#l00037">SetRapidityInvJigsaw.hh:37</a></div></div>
-<div class="ttc" id="aa00845_html_ae6071be9335450e0d6f1fc9571fb7e0f"><div class="ttname"><a href="a00845.html#ae6071be9335450e0d6f1fc9571fb7e0f">RestFrames::SetRapidityInvJigsaw::SetAxis</a></div><div class="ttdeci">virtual void SetAxis(const TVector3 &amp;axis)</div><div class="ttdoc">Sets z-axis.</div><div class="ttdef"><b>Definition:</b> <a href="a00566_source.html#l00046">SetRapidityInvJigsaw.cc:46</a></div></div>
-<div class="ttc" id="aa00845_html_a140319afe35dd0a1d287cef8e905f1cc"><div class="ttname"><a href="a00845.html#a140319afe35dd0a1d287cef8e905f1cc">RestFrames::SetRapidityInvJigsaw::AnalyzeEvent</a></div><div class="ttdeci">virtual bool AnalyzeEvent()</div><div class="ttdoc">Analyzes event for this jigsaw.</div><div class="ttdef"><b>Definition:</b> <a href="a00566_source.html#l00050">SetRapidityInvJigsaw.cc:50</a></div></div>
-<div class="ttc" id="aa00326_html"><div class="ttname"><a href="a00326.html">InvisibleJigsaw.hh</a></div></div>
-<div class="ttc" id="aa00845_html_ae7642f3ddb01251414b2d03f4b0dcf02"><div class="ttname"><a href="a00845.html#ae7642f3ddb01251414b2d03f4b0dcf02">RestFrames::SetRapidityInvJigsaw::SetRapidityInvJigsaw</a></div><div class="ttdeci">SetRapidityInvJigsaw()</div><div class="ttdoc">Empty constructor.</div><div class="ttdef"><b>Definition:</b> <a href="a00566_source.html#l00042">SetRapidityInvJigsaw.cc:42</a></div></div>
-<div class="ttc" id="aa00721_html"><div class="ttname"><a href="a00721.html">RestFrames::InvisibleJigsaw</a></div><div class="ttdef"><b>Definition:</b> <a href="a00326_source.html#l00039">InvisibleJigsaw.hh:39</a></div></div>
+<div class="ttc" id="aa00871_html_a1c5c06c22201bf400acab105374551c4"><div class="ttname"><a href="a00871.html#a1c5c06c22201bf400acab105374551c4">RestFrames::MaxProbBreitWignerCombJigsaw::GetLabel</a></div><div class="ttdeci">virtual std::string GetLabel() const</div><div class="ttdoc">Returns name of this jigsaw.</div><div class="ttdef"><b>Definition:</b> <a href="a00410_source.html#l00054">MaxProbBreitWignerCombJigsaw.hh:54</a></div></div>
+<div class="ttc" id="aa00767_html"><div class="ttname"><a href="a00767.html">RestFrames::CombinatoricJigsaw</a></div><div class="ttdef"><b>Definition:</b> <a href="a00332_source.html#l00040">CombinatoricJigsaw.hh:40</a></div></div>
+<div class="ttc" id="aa00871_html_a1a680af49a03cb28a32b8f0f1b19a9da"><div class="ttname"><a href="a00871.html#a1a680af49a03cb28a32b8f0f1b19a9da">RestFrames::MaxProbBreitWignerCombJigsaw::SetWidth</a></div><div class="ttdeci">virtual void SetWidth(double width, int i=0)</div><div class="ttdoc">Sets width of a frame.</div><div class="ttdef"><b>Definition:</b> <a href="a00602_source.html#l00056">MaxProbBreitWignerCombJigsaw.cc:56</a></div></div>
+<div class="ttc" id="aa00332_html"><div class="ttname"><a href="a00332.html">CombinatoricJigsaw.hh</a></div></div>
+<div class="ttc" id="aa00871_html_af1d62f045e8dc660f4dc2dca07012b9b"><div class="ttname"><a href="a00871.html#af1d62f045e8dc660f4dc2dca07012b9b">RestFrames::MaxProbBreitWignerCombJigsaw::MaxProbBreitWignerCombJigsaw</a></div><div class="ttdeci">MaxProbBreitWignerCombJigsaw(const std::string &amp;sname, const std::string &amp;stitle, int N_comb, int N_object)</div><div class="ttdoc">Standard constructor.</div><div class="ttdef"><b>Definition:</b> <a href="a00602_source.html#l00035">MaxProbBreitWignerCombJigsaw.cc:35</a></div></div>
+<div class="ttc" id="aa00871_html_a17bc2c8464425c3757b05d4b71c0e88e"><div class="ttname"><a href="a00871.html#a17bc2c8464425c3757b05d4b71c0e88e">RestFrames::MaxProbBreitWignerCombJigsaw::SetPoleMass</a></div><div class="ttdeci">virtual void SetPoleMass(double mass, int i=0)</div><div class="ttdoc">Sets pole mass of a frame.</div><div class="ttdef"><b>Definition:</b> <a href="a00602_source.html#l00049">MaxProbBreitWignerCombJigsaw.cc:49</a></div></div>
+<div class="ttc" id="aa00871_html"><div class="ttname"><a href="a00871.html">RestFrames::MaxProbBreitWignerCombJigsaw</a></div><div class="ttdef"><b>Definition:</b> <a href="a00410_source.html#l00037">MaxProbBreitWignerCombJigsaw.hh:37</a></div></div>
 <!-- HTML footer for doxygen 1.8.9.1-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Aug 11 2020 10:25:04 for RestFrames by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Sep 6 2020 20:01:36 for RestFrames by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.19
 </small></address>
